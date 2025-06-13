@@ -38,6 +38,13 @@
             margin: 0 auto;
             padding: 20px 0;
         }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px 0;
+            }
+        }
 
         h1, h2, h3 {
             font-family: var(--heading-font);
@@ -114,12 +121,31 @@
 
         /* --- Hero Section --- */
         .hero {
-            background: linear-gradient(rgba(10, 47, 91, 0.85), rgba(10, 47, 91, 0.85)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=60'); /* Placeholder image */
+            background: linear-gradient(rgba(10, 47, 91, 0.80), rgba(10, 47, 91, 0.90)), url('https://images.unsplash.com/photo-1639322537504-6427a16b0a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');
             background-size: cover;
             background-position: center;
             color: var(--light-text-color);
             text-align: center;
             padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Add a subtle animation effect to the hero background */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(26, 188, 156, 0.1) 0%, rgba(10, 47, 91, 0) 70%);
+            z-index: 0;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
@@ -257,30 +283,115 @@
         .disclaimer p { margin-bottom: 0.5em; }
 
         /* --- Responsive Adjustments --- */
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        .mobile-menu-btn span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        
         @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
-                text-align: center;
+            header {
+                padding: 8px 0;
             }
+            
+            .hero {
+                padding: 60px 15px;
+            }
+            
+            header .container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 0;
+            }
+            
+            .logo {
+                font-size: 1.5em;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            nav#main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: var(--primary-color);
+                z-index: 1000;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+                padding-top: 60px;
+            }
+            
+            nav#main-nav.active {
+                right: 0;
+            }
+            
             nav ul {
-                margin-top: 15px;
                 flex-direction: column;
                 align-items: center;
+                margin-top: 0;
             }
+            
             nav ul li {
-                margin: 10px 0;
+                margin: 15px 0;
+                width: 100%;
+                text-align: center;
             }
+            
+            nav ul li a {
+                display: block;
+                padding: 10px 0;
+                font-size: 1.2em;
+            }
+            
+            /* Animation for hamburger to X */
+            .mobile-menu-btn.active span:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+            
+            .mobile-menu-btn.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .mobile-menu-btn.active span:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+            
             .hero h1 {
-                font-size: 2.5em;
+                font-size: 2.2em;
+                line-height: 1.3;
             }
+            
             .hero p {
                 font-size: 1.1em;
             }
+            
             .ytd-number {
                 font-size: 3em;
             }
+            
             h1 { font-size: 2.2em; }
             h2 { font-size: 1.8em; }
+            
             .grid {
                 grid-template-columns: 1fr; /* Stack grid items on smaller screens */
             }
@@ -293,7 +404,12 @@
     <header>
         <div class="container">
             <div class="logo">Trading<span class="highlight">Transformer</span></div>
-            <nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#strategy">Strategy</a></li>
@@ -338,10 +454,6 @@
                     <p>To deliver exceptional, risk-adjusted returns for our investors through disciplined, technology-driven investment strategies. We aim to redefine the boundaries of active management.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>Our Vision</h3>
-                    <p>To be the leading global investment firm recognized for our technological prowess, transparency, and unwavering commitment to client success in the evolving financial landscape.</p>
-                </div>
-                <div class="grid-item">
                     <h3>Core Values</h3>
                     <p style="line-height: 1.7;">
                         <strong style="color:#1976d2;">T</strong>rustworthiness<br>
@@ -364,6 +476,10 @@
                         <strong style="color:#00acc1;">R</strong>eliability
                     </p>
                 </div>
+                <div class="grid-item">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading global investment firm recognized for our technological prowess, transparency, and unwavering commitment to client success in the evolving financial landscape.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -378,12 +494,12 @@
                     <p>We employ sophisticated statistical models and machine learning algorithms—including large language models—not only to identify patterns and predict market movements with greater accuracy, but also to enhance both our investment decision making and the continuous iteration of our quantitative approaches.</p>
                 </div>
                 <div class="grid-item">
-                    <h4>AI-Powered Decisions</h4>
-                    <p>Our AI systems adapt to changing market conditions, learning from new data to refine strategies and enhance performance over time.</p>
+                    <h4>Risk Management</h4>
+                    <p>We <span style="color: var(--accent-color); font-weight: bold;">never borrow money and never use leverage</span>. Our investment process is strictly long-only and fully funded, ensuring that portfolio risk is controlled and always aligned with our clients' tolerance. Advanced risk modeling is integral to our process, providing additional resiliency in all market conditions.</p>
                 </div>
                 <div class="grid-item">
-                    <h4>Risk Management</h4>
-                    <p>We <span style="color: var(--accent-color); font-weight: bold;">never borrow money and never use leverage</span>. Our investment process is strictly long-only and fully funded, ensuring that portfolio risk is controlled and always aligned with our clients’ tolerance. Advanced risk modeling is integral to our process, providing additional resiliency in all market conditions.</p>
+                    <h4>AI-Powered Decisions</h4>
+                    <p>Our AI systems adapt to changing market conditions, learning from new data to refine strategies and enhance performance over time.</p>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 30px;">
@@ -448,6 +564,28 @@
     <script>
         // Simple script to update year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+        
+        if (menuBtn && mainNav) {
+            menuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+                // Prevent body scrolling when menu is open
+                document.body.classList.toggle('menu-open');
+            });
+            
+            // Close menu when clicking on a link
+            document.querySelectorAll('#main-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    menuBtn.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                });
+            });
+        }
 
         // Optional: Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
