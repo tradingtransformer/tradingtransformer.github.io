@@ -525,7 +525,7 @@
     <section id="learn-more" class="cta-section" style="background-color: var(--bg-light);">
         <div class="container">
             <h2 style="color: var(--primary-color);">Ready to Transform Your Portfolio?</h2>
-            <p style="color: #1abc9c; background: linear-gradient(90deg, #0A2F5B 0%, #5dade2 100%); max-width:600px; margin: 0 auto 2em auto; font-size:1.15em; padding: 1.2em 1.5em; border-radius: 18px; box-shadow: 0 4px 16px rgba(10,47,91,0.07); line-height: 1.7;">
+            <p style="color: #1abc9c; background: linear-gradient(90deg, #0A2F5B 0%, #5dade2 100%); max-width:600px; margin: 0 auto 2em auto; font-size:1.15em; padding: 1.2em 1.5em; border-radius: 18px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); line-height: 1.7;">
                 <span style="color: #00FF00; font-weight: 600;">Our proprietary technology</span>
                 <span style="color:#FFF;"> features a </span>
                 <span style="color:#00FF00; font-weight:600;">large language model-based method</span>
@@ -546,16 +546,137 @@
                style="
                    background-color: var(--primary-color);
                    color: var(--light-text-color);
-                   border: 2px solid var(--primary-color);
-                   font-size: 1.15em;
+                   border: 3px solid var(--primary-color);
+                   font-size: 1.2em;
+                   font-weight: 600;
                    letter-spacing: 0.04em;
-                   box-shadow: 0 2px 12px rgba(10,47,91,0.10);
-                   padding: 18px 40px;
-                   transition: background 0.2s, color 0.2s, border 0.2s;
+                   border-radius: 50px;
+                   box-shadow: 0 8px 25px rgba(10,47,91,0.25);
+                   padding: 20px 45px;
+                   transition: all 0.3s ease;
+                   transform: translateY(0);
+                   cursor: pointer;
+                   display: inline-block;
+                   text-decoration: none;
                "
-               onmouseover="this.style.backgroundColor='var(--accent-color)'; this.style.color='var(--primary-color)'; this.style.borderColor='var(--accent-color)';"
-               onmouseout="this.style.backgroundColor='var(--primary-color)'; this.style.color='var(--light-text-color)'; this.style.borderColor='var(--primary-color)';"
+               onmouseover="
+                   this.style.backgroundColor='var(--accent-color)'; 
+                   this.style.color='var(--primary-color)'; 
+                   this.style.borderColor='var(--accent-color)';
+                   this.style.transform='translateY(-3px)';
+                   this.style.boxShadow='0 12px 35px rgba(29,233,182,0.4)';
+               "
+               onmouseout="
+                   this.style.backgroundColor='var(--primary-color)'; 
+                   this.style.color='var(--light-text-color)'; 
+                   this.style.borderColor='var(--primary-color)';
+                   this.style.transform='translateY(0)';
+                   this.style.boxShadow='0 8px 25px rgba(10,47,91,0.25)';
+               "
+               onmousedown="this.style.transform='translateY(-1px)';"
+               onmouseup="this.style.transform='translateY(-3px)';"
              >WSW AI - Company Finder</a>
+        </div>
+    </section>
+
+    <!-- Claude Shannon Quote Section -->
+    <section style="
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 100px 20px;
+        position: relative;
+        overflow: hidden;
+        margin: 40px 0;
+        box-shadow: 
+            0 -10px 30px rgba(10,47,91,0.05),
+            0 10px 30px rgba(10,47,91,0.05);
+    ">
+        <!-- Decorative background elements -->
+        <div style="
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(10,47,91,0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        "></div>
+        <div style="
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(29,233,182,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="color: var(--primary-color); margin-bottom: 40px; font-size: 2.2em;">Our Founding Inspiration</h2>
+                
+                <div style="
+                    background: white;
+                    border-radius: 20px;
+                    padding: 50px 40px;
+                    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+                    border: 1px solid rgba(10,47,91,0.08);
+                    margin-bottom: 30px;
+                    position: relative;
+                ">
+                    <!-- Quote marks -->
+                    <div style="
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 4em;
+                        color: var(--accent-color);
+                        opacity: 0.3;
+                        font-family: Georgia, serif;
+                        line-height: 1;
+                    ">"</div>
+                    
+                    <blockquote style="
+                        font-style: italic;
+                        font-size: 1.2em;
+                        line-height: 1.7;
+                        color: #2c3e50;
+                        margin: 0;
+                        padding: 20px 40px 0 40px;
+                        font-family: Georgia, 'Times New Roman', serif;
+                        text-align: left;
+                        position: relative;
+                    ">
+                        Shannon set four goals for artificial intelligence to achieve by 2001: a chess-playing program that was crowned world champion, a poetry program that had a piece accepted by the New Yorker, a mathematical program that proved the elusive Riemann hypothesis, and, <strong style="color: var(--primary-color);">'most important,'</strong> <strong style="color: var(--accent-color);">a stock-picking program that outperformed the prime rate by 50 percent</strong>. 'These goals,' he said only half-jokingly, 'could mark the beginning of a phase-out of the stupid, entropy-increasing, and militant human race in favor of a more logical, energy conserving, and friendly species — the computer.'
+                    </blockquote>
+                    
+                    <!-- Closing quote mark -->
+                    <div style="
+                        position: absolute;
+                        bottom: 10px;
+                        right: 30px;
+                        font-size: 4em;
+                        color: var(--accent-color);
+                        opacity: 0.3;
+                        font-family: Georgia, serif;
+                        line-height: 1;
+                    ">"</div>
+                </div>
+                
+                <div style="
+                    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+                    color: white;
+                    padding: 25px 35px;
+                    border-radius: 15px;
+                    box-shadow: 0 10px 30px rgba(10,47,91,0.15);
+                ">
+                    <p style="margin: 0 0 8px 0; font-size: 1em; font-weight: 500;">
+                        From <em style="color: var(--accent-color);">A Mind at Play</em>, Jimmy Soni and Rob Goodman's 2017 biography of AI pioneer Claude Shannon
+                    </p>
+                    <p style="margin: 0; font-size: 0.95em; opacity: 0.9; font-style: italic;">
+                        Shannon wrote that in 1984. He died in 2001.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
