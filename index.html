@@ -365,6 +365,24 @@
         }
         .disclaimer p { margin-bottom: 0.5em; }
 
+        /* --- Values Columns Layout --- */
+        .values-columns {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        
+        .values-column {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .values-columns {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
         /* --- Responsive Adjustments --- */
         /* Mobile Menu Button */
         .mobile-menu-btn {
@@ -627,26 +645,35 @@
                 </div>
                 <div class="grid-item">
                     <h3>Core Values</h3>
-                    <p style="line-height: 1.7;">
-                        <strong style="color:#1976d2;">T</strong>rustworthiness<br>
-                        <strong style="color:#388e3c;">R</strong>esponsibility<br>
-                        <strong style="color:#fbc02d;">A</strong>daptability<br>
-                        <strong style="color:#d32f2f;">D</strong>iligence<br>
-                        <strong style="color:#8e24aa;">I</strong>nnovation<br>
-                        <strong style="color:#00acc1;">N</strong>imbleness<br>
-                        <strong style="color:#388e3c;">G</strong>rowth<br>
-                        <strong style="color:#1976d2;">T</strong>eamwork<br>
-                        <strong style="color:#d32f2f;">R</strong>esilience<br>
-                        <strong style="color:#fbc02d;">A</strong>ccountability<br>
-                        <strong style="color:#8e24aa;">N</strong>oble<br>
-                        <strong style="color:#00acc1;">S</strong>trategy<br>
-                        <strong style="color:#388e3c;">F</strong>ocus<br>
-                        <strong style="color:#1976d2;">O</strong>penness<br>
-                        <strong style="color:#d32f2f;">R</strong>esults<br>
-                        <strong style="color:#fbc02d;">M</strong>indfulness<br>
-                        <strong style="color:#8e24aa;">E</strong>ffortless<br>
+                    <div class="values-columns">
+                        <div class="values-column">
+                            <p style="line-height: 1.7;">
+                                <strong style="color:#1976d2;">T</strong>rustworthiness<br>
+                                <strong style="color:#388e3c;">R</strong>esponsibility<br>
+                                <strong style="color:#fbc02d;">A</strong>daptability<br>
+                                <strong style="color:#d32f2f;">D</strong>iligence<br>
+                                <strong style="color:#8e24aa;">I</strong>nnovation<br>
+                                <strong style="color:#00acc1;">N</strong>imbleness<br>
+                                <strong style="color:#388e3c;">G</strong>rowth<br>
+                               
+                            </p>
+                        </div>
+                        <div class="values-column">
+                            <p style="line-height: 1.7;">
+                                 <strong style="color:#1976d2;">T</strong>eamwork<br>
+                                <strong style="color:#d32f2f;">R</strong>esilience<br>
+                                <strong style="color:#fbc02d;">A</strong>ccountability<br>
+                                <strong style="color:#8e24aa;">N</strong>oble<br>
+                                <strong style="color:#00acc1;">S</strong>trategy<br>
+                                <strong style="color:#388e3c;">F</strong>ocus<br>
+                                <strong style="color:#1976d2;">O</strong>penness<br>
+                                <strong style="color:#d32f2f;">R</strong>esults<br>
+                                <strong style="color:#fbc02d;">M</strong>indfulness<br>
+                                <strong style="color:#8e24aa;">E</strong>ffortless<br>
                         <strong style="color:#00acc1;">R</strong>esolute<br>
-                    </p>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <h3>Our Vision</h3>
