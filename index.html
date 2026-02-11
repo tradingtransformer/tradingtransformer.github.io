@@ -35,7 +35,7 @@
     <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://apps.apple.com">
+    <link rel="dns-prefetch" href="https://wsw.ai">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17214811508"></script>
@@ -804,9 +804,9 @@
     
     <section id="learn-more" class="cta-section" style="background: linear-gradient(135deg, #0A2F5B 0%, #005A8D 50%, #1ABC9C 100%); padding: 60px 20px;">
         <div class="container" style="text-align: center;">
-            <h2 style="color: #fff; font-size: 2.4em; margin-bottom: 15px;">Experience AI-Powered Trading Today</h2>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; max-width: 600px; margin: 0 auto 25px auto;">
-                Get AI-powered news and insights to stay ahead of the market
+            <h2 style="color: #fff; font-size: 2.4em; margin-bottom: 15px;">Experience Our AI Agents Today</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; max-width: 650px; margin: 0 auto 25px auto;">
+                Chat with a wise AI version of <strong style="color: var(--accent-color);">Charlie Munger (1924–2023)</strong> for valuable life &amp; investing advice — our free app is devoted to his legacy
             </p>
             
             <!-- Trust badges -->
@@ -826,34 +826,66 @@
             </div>
             
             <!-- Main CTA button with animation -->
-            <a href="https://apps.apple.com/us/app/wsw-ai/id6747843100?platform=iphone" target="_blank" rel="noopener noreferrer"
-               style="
-                   background: linear-gradient(90deg, #1ABC9C, #16a085);
-                   color: #fff;
-                   padding: 18px 45px;
-                   border-radius: 50px;
-                   font-size: 1.2em;
-                   font-weight: bold;
-                   text-transform: uppercase;
-                   letter-spacing: 1px;
-                   transition: all 0.3s ease;
-                   display: inline-block;
-                   text-decoration: none;
-                   cursor: pointer;
-                   box-shadow: 0 8px 25px rgba(26, 188, 156, 0.4);
-               "
-               onmouseover="
-                   this.style.transform='translateY(-3px) scale(1.02)';
-                   this.style.boxShadow='0 12px 35px rgba(26, 188, 156, 0.5)';
-               "
-               onmouseout="
-                   this.style.transform='translateY(0) scale(1)';
-                   this.style.boxShadow='0 8px 25px rgba(26, 188, 156, 0.4)';
-               "
-            > Download Free WS AI Agents App</a>
+            <style>
+                @keyframes pulse-glow {
+                    0%, 100% { box-shadow: 0 8px 30px rgba(26, 188, 156, 0.4), 0 0 0 0 rgba(26, 188, 156, 0.3); }
+                    50% { box-shadow: 0 8px 40px rgba(26, 188, 156, 0.6), 0 0 0 12px rgba(26, 188, 156, 0); }
+                }
+                @keyframes shimmer {
+                    0% { background-position: -200% center; }
+                    100% { background-position: 200% center; }
+                }
+                .app-cta-btn {
+                    background: linear-gradient(135deg, #1ABC9C 0%, #16a085 40%, #1dd1a1 60%, #1ABC9C 100%);
+                    background-size: 200% auto;
+                    color: #fff;
+                    padding: 22px 55px;
+                    border-radius: 60px;
+                    font-size: 1.35em;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 12px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    animation: pulse-glow 2.5s ease-in-out infinite, shimmer 3s linear infinite;
+                    border: 2px solid rgba(255,255,255,0.2);
+                    position: relative;
+                    overflow: hidden;
+                }
+                .app-cta-btn:hover {
+                    transform: translateY(-4px) scale(1.05);
+                    box-shadow: 0 15px 45px rgba(26, 188, 156, 0.6), 0 0 0 0 rgba(26, 188, 156, 0);
+                    text-decoration: none;
+                    background-position: right center;
+                    border-color: rgba(255,255,255,0.4);
+                }
+                .app-cta-btn:active {
+                    transform: translateY(-1px) scale(1.01);
+                }
+                .app-cta-btn .btn-icon {
+                    font-size: 1.3em;
+                    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+                }
+                .app-cta-btn .btn-arrow {
+                    transition: transform 0.3s ease;
+                    font-size: 1.1em;
+                }
+                .app-cta-btn:hover .btn-arrow {
+                    transform: translateX(5px);
+                }
+            </style>
+            <a href="https://wsw.ai/" target="_blank" rel="noopener noreferrer" class="app-cta-btn">
+                <span class="btn-icon">🚀</span>
+                Download Free WS AI Agents App
+                <span class="btn-arrow">→</span>
+            </a>
             
-            <p style="color: rgba(255,255,255,0.7); font-size: 0.9em; margin-top: 20px;">
-                Available on the App Store • No credit card required
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.95em; margin-top: 22px; letter-spacing: 0.5px;">
+                ✨ Free to use • No credit card required • Chat with AI Charlie Munger
             </p>
         </div>
     </section>
