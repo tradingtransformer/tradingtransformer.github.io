@@ -37,6 +37,10 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://wsw.ai">
 
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="IMG_7307.jpg">
+    <link rel="preload" as="image" href="wswai.jpeg">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17214811508"></script>
     <script>
@@ -547,6 +551,77 @@
             }
         }
 
+        /* --- Mobile grid override for origin story --- */
+        @media (max-width: 768px) {
+            .origin-story-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* --- CTA App Button Animations --- */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 8px 25px rgba(26, 188, 156, 0.3); }
+            50% { box-shadow: 0 8px 35px rgba(26, 188, 156, 0.45); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        .app-cta-btn {
+            background: linear-gradient(135deg, #1ABC9C 0%, #16a085 40%, #1dd1a1 60%, #1ABC9C 100%);
+            background-size: 200% auto;
+            color: #fff;
+            padding: 22px 55px;
+            border-radius: 60px;
+            font-size: 1.35em;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            animation: pulse-glow 3s ease-in-out infinite;
+            border: 2px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .app-cta-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 15px 45px rgba(26, 188, 156, 0.6), 0 0 0 0 rgba(26, 188, 156, 0);
+            text-decoration: none;
+            background-position: right center;
+            border-color: rgba(255,255,255,0.4);
+            animation: shimmer 3s linear infinite;
+        }
+        .app-cta-btn:active {
+            transform: translateY(-1px) scale(1.01);
+        }
+        .app-cta-btn .btn-icon {
+            font-size: 1.3em;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+        .app-cta-btn .btn-arrow {
+            transition: transform 0.3s ease;
+            font-size: 1.1em;
+        }
+        .app-cta-btn:hover .btn-arrow {
+            transform: translateX(5px);
+        }
+
+        /* --- Scroll Fade-In Animation --- */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
     </style>
 </head>
 <body>
@@ -578,7 +653,7 @@
             <a href="annual-letter-2025.html" class="cta-button">Learn More</a>
         </div>
     </section>
-    <section id="founding-inspiration">
+    <section id="founding-inspiration" class="fade-in-section">
         <!-- Decorative background elements -->
         <div style="
             position: absolute;
@@ -695,7 +770,7 @@
         </div>
     </div>
 
-    <section id="about">
+    <section id="about" class="fade-in-section">
         <div class="container">
             <h2 class="section-title">About TradingTransformer Technologies LLC</h2>
             <p>Founded on the principle of innovation, TradingTransformer Technologies LLC is an AI Agents Holding Company, dedicated to harnessing the power of artificial intelligence and large language model AI agents. Our "Transformer" models are designed to identify and capitalize on market inefficiencies previously undetectable by traditional methods.</p>
@@ -709,12 +784,15 @@
                 border-left: 5px solid var(--accent-color);
                 box-shadow: 0 10px 40px rgba(0,0,0,0.08);
             ">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div class="origin-story-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
                     <!-- Photo Section -->
                     <div style="position: relative;">
                         <img src="IMG_7307.jpg" alt="TradingTransformer origin - PhD research project at UC dormitory, October 25, 2019" 
+                             width="600" height="450"
+                             loading="lazy"
                              style="
                                  width: 100%;
+                                 height: auto;
                                  border-radius: 15px;
                                  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
                                  transition: transform 0.3s ease;
@@ -770,14 +848,6 @@
                     </div>
                 </div>
                 
-                <!-- Mobile responsive adjustment -->
-                <style>
-                    @media (max-width: 768px) {
-                        div[style*="grid-template-columns: 1fr 1fr"] {
-                            grid-template-columns: 1fr !important;
-                        }
-                    }
-                </style>
             </div>
             
             <div class="grid">
@@ -825,7 +895,7 @@
         </div>
     </section>
 
-    <section id="strategy">
+    <section id="strategy" class="fade-in-section">
         <div class="container">
             <h2 class="section-title">Our Investment Strategy</h2>
             <p>Our proprietary "Transformer" investment engine is at the heart of our strategy. It continuously analyzes vast datasets, including market data and alternative text data, to generate predictive insights and optimize portfolio allocations.</p>
@@ -874,59 +944,6 @@
                 </div>
             </div>
             
-            <!-- Main CTA button with animation -->
-            <style>
-                @keyframes pulse-glow {
-                    0%, 100% { box-shadow: 0 8px 30px rgba(26, 188, 156, 0.4), 0 0 0 0 rgba(26, 188, 156, 0.3); }
-                    50% { box-shadow: 0 8px 40px rgba(26, 188, 156, 0.6), 0 0 0 12px rgba(26, 188, 156, 0); }
-                }
-                @keyframes shimmer {
-                    0% { background-position: -200% center; }
-                    100% { background-position: 200% center; }
-                }
-                .app-cta-btn {
-                    background: linear-gradient(135deg, #1ABC9C 0%, #16a085 40%, #1dd1a1 60%, #1ABC9C 100%);
-                    background-size: 200% auto;
-                    color: #fff;
-                    padding: 22px 55px;
-                    border-radius: 60px;
-                    font-size: 1.35em;
-                    font-weight: 800;
-                    text-transform: uppercase;
-                    letter-spacing: 1.5px;
-                    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 12px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    animation: pulse-glow 2.5s ease-in-out infinite, shimmer 3s linear infinite;
-                    border: 2px solid rgba(255,255,255,0.2);
-                    position: relative;
-                    overflow: hidden;
-                }
-                .app-cta-btn:hover {
-                    transform: translateY(-4px) scale(1.05);
-                    box-shadow: 0 15px 45px rgba(26, 188, 156, 0.6), 0 0 0 0 rgba(26, 188, 156, 0);
-                    text-decoration: none;
-                    background-position: right center;
-                    border-color: rgba(255,255,255,0.4);
-                }
-                .app-cta-btn:active {
-                    transform: translateY(-1px) scale(1.01);
-                }
-                .app-cta-btn .btn-icon {
-                    font-size: 1.3em;
-                    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-                }
-                .app-cta-btn .btn-arrow {
-                    transition: transform 0.3s ease;
-                    font-size: 1.1em;
-                }
-                .app-cta-btn:hover .btn-arrow {
-                    transform: translateX(5px);
-                }
-            </style>
             <a href="https://wsw.ai/" target="_blank" rel="noopener noreferrer" class="app-cta-btn">
                 <span class="btn-icon">🚀</span>
                 Download Free WS AI Agents App
@@ -939,7 +956,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-in-section">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <p style="text-align: center;">We welcome inquiries from accredited investors and institutions. Reach out to us to learn more about our fund and investment opportunities.</p>
@@ -1004,6 +1021,23 @@
                 }
             });
         });
+
+        // Scroll fade-in animation using IntersectionObserver
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeInSections.forEach(section => observer.observe(section));
+        } else {
+            // Fallback for older browsers
+            fadeInSections.forEach(section => section.classList.add('visible'));
+        }
     </script>
 
 </body>
