@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>NoArk — 无限记忆 | 用于氛围交易与预测市场的 AI 智能体</title>
+    <meta name="description" content="NoArk — 无限记忆是一款平价的通用 AI 智能体应用，专为氛围交易打造，并提供预测市场洞察助你决策。灵感源自克劳德·香农关于 AI 选股的愿景。与 Charlie 在 40 多个工作流中对话。在 iPhone、iPad、Mac 与 Apple Vision 上免费使用。">
+    <meta name="keywords" content="氛围交易, 预测市场, 预测市场洞察, AI 智能体应用, 通用 AI 智能体, NoArk, 无限记忆, AI 交易, 自主交易, 克劳德·香农 AI, AI 选股, DeepSeek, 查理·芒格 AI, TradingTransformer">
+    <meta name="author" content="TradingTransformer Technologies LLC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tradingtransformer.github.io/zh-cn/">
+
+    <!-- hreflang alternates -->
+    <link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/">
+    <link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/">
+    <link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/">
+    <link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradingtransformer.github.io/zh-cn/">
+    <meta property="og:title" content="NoArk — 无限记忆 | 用于氛围交易与预测市场的 AI 智能体">
+    <meta property="og:description" content="一款平价的通用 AI 智能体应用，专为氛围交易打造，并提供预测市场洞察助你决策。灵感源自克劳德·香农。与 Charlie 在 40 多个工作流中对话。在 iPhone、iPad、Mac 与 Apple Vision 上免费使用。">
+    <meta property="og:image" content="https://tradingtransformer.github.io/wswai.jpeg">
+    <meta property="og:site_name" content="TradingTransformer Technologies LLC">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tradingtransformer.github.io/zh-cn/">
+    <meta property="twitter:title" content="NoArk — 无限记忆 | 用于氛围交易与预测市场的 AI 智能体">
+    <meta property="twitter:description" content="一款平价的通用 AI 智能体应用，专为氛围交易打造，提供预测市场洞察助你决策。灵感源自克劳德·香农。与 Charlie 在 40 多个工作流中对话。免费下载。">
+    <meta property="twitter:image" content="https://tradingtransformer.github.io/wswai.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/wswai.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="/wswai.jpeg">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Multilingual switcher -->
+    <script src="/lang-switcher.js" defer></script>
+
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://wsw.ai">
+
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/app_store.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17214811508"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17214811508');
+    </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "TradingTransformer Technologies LLC",
+      "alternateName": "TradingTransformer",
+      "description": "由 AI 驱动的投资基金，运用前沿的 Transformer 模型与量化分析，通过纪律严明、技术驱动的策略实现卓越回报。",
+      "url": "https://tradingtransformer.github.io/zh-cn/",
+      "logo": "https://tradingtransformer.github.io/wswai.jpeg",
+      "foundingDate": "2023-06-06",
+      "foundingLocation": {
+        "@type": "Place",
+        "addressRegion": "Delaware",
+        "addressCountry": "US"
+      },
+      "serviceType": "Investment Management",
+      "areaServed": "Global",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "ceo@tradingtransformer.com",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.tradingtransformer.com",
+        "https://wsw.ai"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Investment Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI 驱动的投资管理",
+              "description": "运用 Transformer 模型与机器学习的量化投资策略"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Structured Data: NoArk app (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NoArk — Infinity Memory",
+      "alternateName": "NoArk",
+      "description": "一款平价的通用 AI 智能体，专为氛围交易打造，并提供由 AI 生成的预测市场洞察，帮助你做出更明智的决策。将实时全球头条与一键分析、关键词搜索和书签结合在一起。与 Charlie 在 40 多个预置工作流中对话，涵盖市场、效率、旅行与生活事务，支持文字、语音、照片或文件。",
+      "applicationCategory": "ProductivityApplication",
+      "keywords": "氛围交易, 预测市场, 预测市场洞察, AI 智能体应用, 通用 AI 智能体, AI 交易, 克劳德·香农 AI, AI 选股, DeepSeek, 查理·芒格 AI",
+      "operatingSystem": "iOS 17.0+, iPadOS 17.0+, macOS 14.0+, visionOS 1.0+",
+      "softwareVersion": "24.4.0",
+      "url": "https://apps.apple.com/us/app/noark-infinity-memory/id6747843100",
+      "downloadUrl": "https://apps.apple.com/us/app/noark-infinity-memory/id6747843100",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "TradingTransformer Technologies LLC",
+        "url": "https://tradingtransformer.github.io/zh-cn/"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: FAQ (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "什么是氛围交易？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "氛围交易是让 AI 智能体读懂市场整体的“氛围”——情绪、新闻流以及股票和预测市场的实时信号——并据此行动，而不是依赖人去盯着每一张图表。NoArk 的智能体会持续从新数据中学习，因此策略实时调整，而人工监督会随时间逐步退后。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AI 智能体能帮助预测市场吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。NoArk 的 AI 智能体会解读预测市场的赔率与信号，并把它们转化为清晰的、由 AI 生成的洞察，让你做出更明智的决策。NoArk 不会替你下预测市场的单——每一个决策都由你掌控。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "克劳德·香农对 AI 与选股做出过什么预言？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1984 年，信息论之父克劳德·香农将一个能跑赢市场的 AI 选股程序列为通用人工智能（AGI）“最重要”的目标，与国际象棋、诗歌以及证明黎曼猜想并列。这个预言正是 TradingTransformer 与 NoArk 的创立灵感。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是 NoArk — 无限记忆，它免费吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NoArk — 无限记忆是一款平价的通用 AI 智能体应用，专为氛围交易与预测市场洞察打造。你可以与 Charlie 在 40 多个预置工作流中对话，涵盖市场、效率、旅行与生活事务，支持文字、语音、照片或文件。它可在 iPhone、iPad、Mac（Apple Silicon）与 Apple Vision 上免费下载。应用分为四个档位——Free、Silver、Gold 与 Diamond。付费方案起价 9.99 美元/月——作为早鸟优惠，享常规价 5 折。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么叫 NoArk？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NoArk 有双重含义。其一，它呼应诺亚方舟（Noah's Ark）——一艘在巨变洪流中安全承载重要之物的方舟。其二，把它读作“no ark”（没有方舟）：在飞速变化的智能体时代，没有人会带着现成的方舟来拯救你。你必须成为自己的方舟——而 NoArk 的 AI 智能体正帮你做到这一点，承载你的知识、决策与记忆向前。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么叫“无限记忆”？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "这个名字源于一座无边泳池。在新加坡的一次旅行中，我们坐在酒店的无边泳池旁——池水仿佛没有边际地延伸开去——我们意识到，如果 AI 能毫无限制地记忆，那感觉正是如此：无限的记忆。于是我们打造了 NoArk，赋予 Charlie 极长的记忆，承载你的语境、对话与知识向前，永不触及边界。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "“Fiat Lux”是什么意思？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fiat Lux 是拉丁语，意为“要有光”——它也是 NoArk 诞生之地加州大学的校训。在应用中，Fiat Lux 是一个专属标签页。它概括了我们要做的事：为人们带来光，并激发每个人内在的光——最好的那一面。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "NoArk 有教育意义吗？我可以向谁学习？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有。除了市场，NoArk 还让你直接向历史上最伟大的头脑学习——这对年轻人尤为宝贵。你可以与科学、艺术、哲学、领导力与商业领域杰出人物的 AI 版本对话，每一位都准备好与你探讨他们毕生钻研的大问题。目前支持的导师包括：查理·芒格、史蒂夫·乔布斯、克劳德·香农、阿尔弗雷德·阿德勒、欧内斯特·海明威、列奥纳多·达·芬奇、巴勃罗·毕加索、克劳德·莫奈、马丁·路德·金、纳尔逊·曼德拉、圣雄甘地、科比·布莱恩特、本杰明·富兰克林、周恩来、邓小平、约翰·塞巴斯蒂安·巴赫、理查德·费曼、阿尔伯特·爱因斯坦、毛泽东、孙中山、艾萨克·牛顿、稻盛和夫、拿破仑·波拿巴、托马斯·爱迪生、李光耀、苏格拉底、马可·奥勒留、孔子、大卫·休谟、伽利略、查尔斯·达尔文、玛丽·居里、尼古拉·特斯拉、埃德温·兰德、沃尔夫冈·莫扎特、列夫·托尔斯泰与阿尔弗雷德·诺贝尔。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "与沃伦·巴菲特共进一餐要花多少钱——NoArk 又要花多少？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2022 年，与沃伦·巴菲特的最后一次慈善午餐以创纪录的 19,000,100 美元成交。如今，你可以在 NoArk 应用中免费与 AI 版 Charlie 对话——其原型是巴菲特一生的搭档查理·芒格。这正是我们的初衷：我们希望让接触世界上最伟大头脑的机会民主化，帮助缩小贫富差距，而不是把智慧关在 1900 万美元的门票之后。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么你们承诺将应用利润的 50% 捐给教育？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "因为它改变了我们自己的人生。我们创始人的教育得益于奖学金——资助我们前往剑桥大学、威斯康星大学麦迪逊分校、香港的多所大学以及加州大学留学。我们亲眼见到，金钱对年轻而渴望进取的人有着巨大的影响——它打开大门、释放流动性，并为人类创造长期的正向改变。因此我们承诺将 NoArk 应用业务利润的 50% 捐给教育事业，把我们曾获得的回馈出去。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是“香农的精灵”，NoArk 会使用它吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "除了对技术分析持怀疑态度，克劳德·香农也认识到真实市场的实际摩擦。他在概念上发展出高度系统化、由波动率驱动的投资组合再平衡策略——有时被称为“香农的精灵”——但他从未在华尔街执行这些数学构想中的许多，因为他得出结论：频繁交易的高佣金与交易成本会迅速吞噬相对于简单买入并持有策略的任何数学优势。NoArk 谨记同样的教训，偏好纪律严明、低频的策略，让成本无法侵蚀优势。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "在诺贝尔奖之前，有人破解了 Black-Scholes 公式，并拒绝投资 LTCM 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的——而且他是克劳德·香农的朋友与合作者。数学家爱德华·索普在 1973 年那篇著名论文之前数年，就推导出本质上等同于 Black-Scholes 的期权定价公式，并用它经营了史上最成功的对冲基金之一。转折在于：当迈伦·斯科尔斯与罗伯特·C·默顿——他们因该公式共享 1997 年诺贝尔奖——共同创立对冲基金长期资本管理公司（LTCM）时，索普拒绝投资。LTCM 随后在 1998 年戏剧性崩盘，需要华尔街的纾困。我们谨记的教训是：优雅的数学并不足够——纪律严明的风险管理，以及对杠杆和真实成本的敬畏，才是真正长久的东西。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们用夏普比率来衡量风险吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不——我们对它持怀疑态度。夏普比率由诺贝尔奖得主威廉·夏普提出，按每单位标准差衡量回报。但它只告诉你过去，而非未来，并且把标准差当作等同于风险——这一点我们并不认同。波动不是风险；真正的风险是资本的永久性损失。一个策略可能在崩盘之前一直拥有漂亮的历史夏普比率（参见 LTCM）。因此，我们不去优化一个向后看的波动率统计量，而是专注于避免永久性损失——绝不使用杠杆，只做多且全额出资。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "在 AI 时代，什么最重要？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们相信，是 AI 无法给你的东西：爱与品味。当机器承担越来越多的工作时，你关怀他人的能力，以及培养真正品味——懂得什么是好的、真的、值得做的——会成为你真正的优势。同样不可或缺的，是让你得以运用它们的基础：你的健康与稳固的财务根基。NoArk 正是为强化这些基础而打造，让你能自由地专注于只有你才能贡献的东西。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* --- Design Tokens --- */
+        :root {
+            --text: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --bg: #fff;
+            --bg-alt: #f5f5f7;
+            --accent: #0071e3;
+            --accent-hover: #0077ed;
+            --accent-dark: #2997ff; /* link on dark backgrounds */
+            --hairline: #d2d2d7;
+            --positive: #30d158;
+            --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--text);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.08;
+            margin: 0 0 0.5em;
+        }
+
+        h1 { font-size: 3.5em; }
+        h2 { font-size: 2.6em; }
+        h3 { font-size: 1.5em; }
+        h4 { font-size: 1.25em; }
+
+        p { margin: 0 0 1em; }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+
+        .highlight { color: inherit; }
+
+        /* --- Buttons --- */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background-color: var(--accent);
+            color: #fff;
+            padding: 12px 26px;
+            border-radius: 980px;
+            font-size: 1.05em;
+            font-weight: 400;
+            line-height: 1.2;
+            transition: background-color 0.25s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            text-decoration: none;
+        }
+        .btn-link {
+            color: var(--accent);
+            font-size: 1.05em;
+            font-weight: 400;
+        }
+        .btn-link:hover { text-decoration: underline; }
+
+        /* --- Header & Navigation --- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.72);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--hairline);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 52px;
+        }
+        .logo {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li { margin-left: 28px; }
+        nav ul li a {
+            color: var(--text);
+            font-weight: 400;
+            font-size: 0.85em;
+            transition: color 0.25s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: var(--bg);
+            color: var(--text);
+            text-align: center;
+            padding: 88px 20px 56px;
+        }
+        .hero h1 {
+            font-size: 4.2em;
+            margin: 0;
+        }
+        .hero-sub {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: var(--text);
+            margin: 0 0 0.25em;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
+        }
+        .hero-tagline {
+            font-size: 1.45em;
+            font-weight: 600;
+            color: var(--accent);
+            margin: 0 0 0.6em;
+        }
+        .hero-desc {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin: 0 auto 1.3em;
+            line-height: 1.45;
+        }
+        .hero-links {
+            display: flex;
+            gap: 28px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+        .app-badge {
+            display: inline-block;
+            max-width: 480px;
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .app-badge:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+        }
+
+        /* --- Performance Section (dark feature band) --- */
+        .performance-banner {
+            background-color: #000;
+            padding: 90px 20px;
+            text-align: center;
+            color: #f5f5f7;
+        }
+        .performance-banner h2 { color: #f5f5f7; }
+        .ytd-number {
+            font-size: 5em;
+            font-weight: 600;
+            color: var(--positive);
+            display: block;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+        .ytd-label {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        /* --- Content Sections --- */
+        section { padding: 90px 0; }
+        .hero { padding-top: 88px; }
+        #founding-inspiration,
+        #strategy,
+        #faq { background-color: var(--bg-alt); }
+        #about,
+        #learn-more,
+        #contact { background-color: var(--bg); }
+
+        /* --- FAQ --- */
+        .faq-item {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 28px 0;
+            border-bottom: 1px solid var(--hairline);
+            text-align: left;
+        }
+        .faq-item:first-of-type { border-top: 1px solid var(--hairline); }
+        .faq-item h3 {
+            font-size: 1.3em;
+            margin: 0 0 10px;
+        }
+        .faq-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .mentor-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            font-size: 0.95em;
+            text-align: left;
+        }
+        .mentor-table th,
+        .mentor-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--hairline);
+            vertical-align: top;
+        }
+        .mentor-table th { color: var(--text); font-weight: 600; }
+        .mentor-table td { color: var(--text-secondary); }
+        .mentor-table td:first-child {
+            color: var(--text);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.6em;
+            margin-bottom: 0.6em;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .grid-item {
+            background-color: var(--bg);
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--hairline);
+        }
+        .grid-item h3, .grid-item h4 {
+            margin-top: 0;
+            color: var(--text);
+        }
+
+        /* --- Card icon + key takeaway --- */
+        .card-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(0, 113, 227, 0.1);
+            color: var(--accent);
+            margin-bottom: 18px;
+        }
+        .card-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+        .key-point {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.05em;
+            margin: 0 0 10px;
+        }
+
+        /* --- App feature section --- */
+        .cta-section {
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 90px 20px;
+            text-align: center;
+        }
+        .cta-section h2 { color: var(--text); }
+        .stat-row {
+            display: flex;
+            justify-content: center;
+            gap: 56px;
+            flex-wrap: wrap;
+            margin-bottom: 44px;
+        }
+        .stat .num {
+            font-size: 2.6em;
+            font-weight: 600;
+            color: var(--text);
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+        .stat .cap {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--bg-alt);
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 36px 20px;
+            font-size: 0.8em;
+            border-top: 1px solid var(--hairline);
+        }
+        footer p { margin: 5px 0; }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: underline;
+        }
+        footer a:hover { color: var(--accent); }
+
+        /* --- Disclaimer --- */
+        .disclaimer {
+            padding: 32px 20px;
+            background-color: var(--bg-alt);
+            text-align: center;
+            font-size: 0.72em;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+        .disclaimer p { margin-bottom: 0.5em; }
+
+        /* --- Values Columns Layout --- */
+        .values-columns {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .values-column { flex: 1; }
+        .values-column p { color: var(--text-secondary); }
+        .values-column strong { color: var(--accent); font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .values-columns {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        /* --- Mobile Menu Button --- */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 26px;
+            height: 18px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        .mobile-menu-btn span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: var(--text);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .hero { padding: 60px 18px 44px; }
+            .hero h1 { font-size: 2.8em; }
+            .hero-sub { font-size: 1.6em; }
+            .hero-tagline { font-size: 1.15em; }
+            .hero-desc { font-size: 1.05em; }
+
+            .logo { font-size: 1.1em; }
+
+            .mobile-menu-btn { display: flex; }
+
+            nav#main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 72%;
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.95);
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+                backdrop-filter: saturate(180%) blur(20px);
+                z-index: 1000;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+                padding-top: 70px;
+                border-left: 1px solid var(--hairline);
+            }
+            nav#main-nav.active { right: 0; }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+            }
+            nav ul li {
+                margin: 14px 0;
+                width: 100%;
+                text-align: center;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 0;
+                font-size: 1.1em;
+            }
+
+            /* Hamburger to X */
+            .mobile-menu-btn.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+            .mobile-menu-btn.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+            .ytd-number { font-size: 3.2em; }
+
+            h1 { font-size: 2.4em; }
+            h2 { font-size: 1.9em; }
+            .section-title { font-size: 1.9em; }
+
+            .grid { grid-template-columns: 1fr; }
+
+            .stat-row { gap: 32px; }
+            .stat .num { font-size: 2.1em; }
+
+            .performance-banner { padding: 60px 18px; }
+            section { padding: 60px 0; }
+
+            #contact p { font-size: 0.98em; }
+            .disclaimer { padding: 24px 14px; font-size: 0.7em; }
+            footer { padding: 28px 16px; }
+        }
+
+        /* --- Mobile grid override for origin story --- */
+        @media (max-width: 768px) {
+            .origin-story-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* --- Scroll Fade-In Animation --- */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Trading<span class="highlight">Transformer</span></div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#learn-more">NoArk 应用</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#strategy">策略</a></li>
+                    <li><a href="#performance">业绩</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="/zh-cn/annual-letter-2025.html" target="_blank">CEO 信</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>NoArk</h1>
+            <p class="hero-sub">无限记忆</p>
+            <p class="hero-tagline">平价的通用 AI 智能体</p>
+            <p class="hero-desc">口袋里的通用 AI 智能体：实时全球头条配一键分析，外加 40 多个现成工作流，覆盖市场、效率、旅行与生活事务。用文字、语音、照片或文件与 Charlie 对话。</p>
+            <div class="hero-links">
+                <a href="https://apps.apple.com/us/app/noark-infinity-memory/id6747843100" target="_blank" rel="noopener noreferrer" class="btn-primary">获取应用</a>
+                <a href="/zh-cn/annual-letter-2025.html" class="btn-link">了解更多&nbsp;&rsaquo;</a>
+            </div>
+            <a href="https://apps.apple.com/us/app/noark-infinity-memory/id6747843100" target="_blank" rel="noopener noreferrer" aria-label="在 App Store 查看 NoArk — 无限记忆">
+                <img src="/app_store.png" alt="App Store 上的 NoArk — 无限记忆：平价的通用 AI 智能体" class="app-badge" width="480" loading="eager">
+            </a>
+        </div>
+    </section>
+
+    <section id="founding-inspiration" class="fade-in-section">
+        <div class="container">
+            <div style="max-width: 880px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">我们的创立灵感：克劳德·香农对 AI 的愿景</h2>
+                <p style="color: var(--text-secondary); font-size: 1.15em; line-height: 1.55; max-width: 760px; margin: 0 auto 36px;">1984 年，信息论先驱<strong style="color: var(--text);">克劳德·香农</strong>预言，一个 <strong style="color: var(--text);">AI 选股程序</strong>将成为通用人工智能（AGI）“最重要”的里程碑。正是这一愿景，让我们打造为人们工作——并投资——的 AI 智能体。</p>
+                <blockquote style="font-size: 1.5em; line-height: 1.45; color: var(--text); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 32px;">
+                    “1984 年，克劳德·香农为人工智能设定了到 2001 年要实现的四个目标：一个加冕世界冠军的国际象棋程序、一个作品被《纽约客》采用的诗歌程序、一个证明了难解的黎曼猜想的数学程序，以及——‘最重要的’——<span style="color: var(--accent);">一个回报率超出最优惠利率 50% 的选股程序</span>。‘这些目标，’他半开玩笑地说，‘也许标志着愚蠢、增熵且好战的人类，开始让位于一个更具逻辑、更节能、更友善的物种——计算机。’”
+                </blockquote>
+                <p style="color: var(--text-secondary); font-size: 1.05em; margin: 0 0 48px;">
+                    出自 <a href="https://www.amazon.com/Mind-Play-Shannon-Invented-Information/dp/1476766681" target="_blank" rel="noopener noreferrer">《A Mind at Play》</a>，这是 2017 年出版的 AI 先驱克劳德·香农传记。他在 1984 年写下此言；他于 2001 年辞世。
+                </p>
+
+                <!-- Shannon was also a great investor -->
+                <div class="stat-row" style="margin-bottom: 40px;">
+                    <div class="stat">
+                        <div class="num">~28%</div>
+                        <div class="cap">香农本人的年化回报</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">~30 年</div>
+                        <div class="cap">复利累积，跑赢专业投资者<sup>1</sup></div>
+                    </div>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 1.05em; line-height: 1.6; max-width: 720px; margin: 0 auto 36px;">香农不仅是理论家——他还默默地让自己的投资组合以<strong style="color: var(--text);">约每年 28% 的速度复利增长，持续约三十年</strong>，跑赢了同时代的大多数专业投资者。<sup>1</sup></p>
+
+                <!-- Shannon's Law thesis -->
+                <div style="background: var(--bg); border: 1px solid var(--hairline); border-radius: 18px; padding: 32px 36px; max-width: 720px; margin: 0 auto 28px; text-align: left;">
+                    <p class="key-point" style="margin-bottom: 8px;">香农定律——我们的论点</p>
+                    <p style="color: var(--text-secondary); font-size: 1.1em; line-height: 1.6; margin: 0 0 8px;">香农的 AGI 目标——<strong style="color: var(--text);">回报超出最优惠利率 50% 以上的选股程序</strong>——本质上是一条新的摩尔定律。按每年 50% 以上的速度，由 AI 智能体管理的资本大约<strong style="color: var(--text);">每 18 个月翻一番</strong>。</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9em; margin: 0;">&mdash; TradingTransformer，秉承摩尔定律与香农愿景的精神</p>
+                </div>
+
+                <!-- Sources -->
+                <p style="color: var(--text-secondary); font-size: 0.8em; line-height: 1.6; margin: 0;">
+                    <sup>1</sup> 来源：<a href="https://ia801807.us.archive.org/15/items/pitchtheperfectinvestment_theessentialguidetowinningonwallstreet/concentratedinvesting_strategiesoftheworldsgreatestconcentratedvalueinvestors.pdf" target="_blank" rel="noopener noreferrer"><em>《Concentrated Investing: Strategies of the World's Greatest Concentrated Value Investors》</em></a>（2016）。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="performance-banner" id="performance">
+        <div class="container">
+            <h2>业绩</h2>
+
+            <!-- 2026 YTD PERFORMANCE -->
+            <div style="margin-bottom: 48px;">
+                <span class="ytd-number">待定</span>
+                <span class="ytd-label">2026 年至今回报</span>
+            </div>
+
+            <!-- 2025 FULL YEAR PERFORMANCE -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 44px; max-width: 560px; margin: 0 auto;">
+                <p style="color: rgba(255,255,255,0.6); font-size: 1.05em; margin: 0 0 6px;">2025 全年</p>
+                <span class="ytd-number" style="font-size: 3.6em;">+55.28%</span>
+                <p style="font-size: 1.1em; margin-top: 12px; color: var(--positive);">
+                    是 <a href="https://fundresearch.fidelity.com/mutual-funds/summary/31617H201" target="_blank" style="color: #fff; text-decoration: underline;">富达货币市场基金</a>（+3.98%）的 <strong>13.9&times;</strong>
+                </p>
+            </div>
+
+            <p style="font-size: 0.85em; color: rgba(255,255,255,0.5); margin-top: 28px;">
+                过往业绩并不预示未来表现。
+            </p>
+            <p style="margin-top: 18px;"><a href="/zh-cn/annual-letter-2025.html" target="_blank" class="btn-link" style="color: var(--accent-dark);">阅读 2025 年度信&nbsp;&rsaquo;</a></p>
+        </div>
+    </div>
+
+    <section id="about" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">关于 TradingTransformer</h2>
+            <p style="max-width: 820px; margin: 0 auto 16px; text-align: center; color: var(--text-secondary); font-size: 1.15em; line-height: 1.55;">TradingTransformer Technologies LLC 创立于机会平等的理念之上，是一家致力于缩小贫富差距的 AI 智能体控股公司。借助人工智能与大语言模型 AI 智能体的力量，我们为那些品格端正、愿意学习并改善生活的人开辟通往财务增长的道路。我们的“Transformer”模型旨在识别并把握传统方法此前无法察觉的市场失效——把机构级的工具交到那些理应获得更好机会的人手中。</p>
+
+            <!-- Origin Story with Photo -->
+            <div style="background: var(--bg-alt); border-radius: 18px; padding: 40px; margin: 48px 0;">
+                <div class="origin-story-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <!-- Photo Section -->
+                    <div style="position: relative;">
+                        <img src="/IMG_7307.jpg" alt="TradingTransformer 起点——2019 年 10 月 25 日加州大学宿舍中的博士研究项目"
+                             width="600" height="450"
+                             loading="lazy"
+                             style="width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                        <!-- Date badge overlay -->
+                        <div style="position: absolute; top: 14px; left: 14px; background: rgba(0,0,0,0.55); color: #fff; padding: 8px 16px; border-radius: 980px; font-weight: 500; font-size: 0.8em; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
+                            2019 年 10 月 25 日
+                        </div>
+                    </div>
+
+                    <!-- Story Text Section -->
+                    <div style="text-align: left;">
+                        <h3 style="margin-top: 0;">一切从这里开始</h3>
+                        <p style="font-size: 1.05em; line-height: 1.6; color: var(--text-secondary);">
+                            我们在 <strong style="color: var(--text);">2019 年 10 月 25 日</strong> 起步，那是加州大学宿舍里的一个博士最后一年研究项目。
+                        </p>
+                        <p style="line-height: 1.6; color: var(--text-secondary);">
+                            起初只是深夜的研究与无数次迭代，最终演变为一种 AI 驱动交易的突破性方法。我们花了<strong style="color: var(--text);">六年潜心研究</strong>，才抵达卓越。
+                        </p>
+                        <p style="line-height: 1.6; color: var(--text-secondary);">
+                            <strong style="color: var(--text);">2023 年 6 月 6 日</strong> 在特拉华州完成法律注册，是我们旅程中一个难忘的里程碑。
+                        </p>
+                        <p style="line-height: 1.6; color: var(--text); border-left: 3px solid var(--accent); padding-left: 16px; margin-top: 22px;">
+                            我们感激，许多我们所爱的人在一切尚未显而易见之前，就已相信我们。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span>
+                    <h3>我们的使命</h3>
+                    <p style="color: var(--text-secondary);">借助 AI 技术的力量，缩小贫富之间的差距，并为那些品格端正、愿意学习并改善生活的人在这个世界上创造更多希望。</p>
+                </div>
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-9.5a4 4 0 017-2.6 4 4 0 017 2.6c0 5-7 9.5-7 9.5z"/></svg></span>
+                    <h3>核心价值观</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9em; margin: 0 0 12px;">首字母拼成 “TRADING TRANSFORMER”：</p>
+                    <div class="values-columns">
+                        <div class="values-column">
+                            <p style="line-height: 1.8;">
+                                <strong>T</strong>rustworthiness <span style="color: var(--text-secondary);">（值得信赖）</span><br>
+                                <strong>R</strong>esponsibility <span style="color: var(--text-secondary);">（责任）</span><br>
+                                <strong>A</strong>daptability <span style="color: var(--text-secondary);">（适应力）</span><br>
+                                <strong>D</strong>iligence <span style="color: var(--text-secondary);">（勤勉）</span><br>
+                                <strong>I</strong>nnovation <span style="color: var(--text-secondary);">（创新）</span><br>
+                                <strong>N</strong>imbleness <span style="color: var(--text-secondary);">（敏捷）</span><br>
+                                <strong>G</strong>rowth <span style="color: var(--text-secondary);">（成长）</span><br>
+                            </p>
+                        </div>
+                        <div class="values-column">
+                            <p style="line-height: 1.8;">
+                                <strong>T</strong>eamwork <span style="color: var(--text-secondary);">（团队协作）</span><br>
+                                <strong>R</strong>esilience <span style="color: var(--text-secondary);">（韧性）</span><br>
+                                <strong>A</strong>ccountability <span style="color: var(--text-secondary);">（担当）</span><br>
+                                <strong>N</strong>oble <span style="color: var(--text-secondary);">（高尚）</span><br>
+                                <strong>S</strong>trategy <span style="color: var(--text-secondary);">（战略）</span><br>
+                                <strong>F</strong>ocus <span style="color: var(--text-secondary);">（专注）</span><br>
+                                <strong>O</strong>penness <span style="color: var(--text-secondary);">（开放）</span><br>
+                                <strong>R</strong>esults <span style="color: var(--text-secondary);">（结果）</span><br>
+                                <strong>M</strong>indfulness <span style="color: var(--text-secondary);">（觉察）</span><br>
+                                <strong>E</strong>ffortless <span style="color: var(--text-secondary);">（举重若轻）</span><br>
+                                <strong>R</strong>esolute <span style="color: var(--text-secondary);">（坚定）</span><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                    <h3>我们的愿景</h3>
+                    <p style="color: var(--text-secondary);">受克劳德·香农愿景的启发，我们正在打造为人类工作、为人类赚钱的 AI 智能体。我们的终极目标，是一个 AI 技术弥合特权与机会之间鸿沟的世界——为那些有勇气学习、成长并改变自己人生的人，创造更多希望、更多繁荣，以及更公平的未来。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategy" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">我们的投资策略</h2>
+            <p style="max-width: 820px; margin: 0 auto 48px; text-align: center; color: var(--text-secondary); font-size: 1.15em; line-height: 1.55;">我们专有的“Transformer”投资引擎持续分析全球市场——美国、香港与上海——的海量数据，以生成预测性洞察并优化投资组合配置。</p>
+
+            <!-- Strategy facts -->
+            <div class="stat-row" style="margin-bottom: 56px;">
+                <div class="stat">
+                    <div class="num">0&times;</div>
+                    <div class="cap">永不使用杠杆</div>
+                </div>
+                <div class="stat">
+                    <div class="num">100%</div>
+                    <div class="cap">只做多且全额出资</div>
+                </div>
+                <div class="stat">
+                    <div class="num">3</div>
+                    <div class="cap">全球市场</div>
+                </div>
+                <div class="stat">
+                    <div class="num">6 年</div>
+                    <div class="cap">潜心研究</div>
+                </div>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10M9 21V4M15 21v-7M21 21V8"/></svg></span>
+                    <h4>量化分析</h4>
+                    <p class="key-point">人所忽略的规律。</p>
+                    <p style="color: var(--text-secondary);">统计模型与机器学习——包括大语言模型——识别规律并预测市场走势，同时持续打磨我们的决策与方法。</p>
+                </div>
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+                    <h4>风险管理</h4>
+                    <p class="key-point">只做多。绝不加杠杆。</p>
+                    <p style="color: var(--text-secondary);">我们从不借钱，也从不使用杠杆。我们的流程严格只做多且全额出资，因此投资组合风险始终可控，并与每位客户的风险承受度保持一致——辅以先进的风险建模，以在各种环境中保持韧性。</p>
+                </div>
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5 13.8 11.3 12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3z"/><path d="M19 14l.6 1.7 1.7.6-1.7.6L19 19l-.6-1.7-1.7-.6 1.7-.6L19 14z"/></svg></span>
+                    <h4>AI 驱动的氛围交易</h4>
+                    <p class="key-point">人工监督随时间减少。</p>
+                    <p style="color: var(--text-secondary);">我们的 AI 智能体通过读懂市场的氛围进行交易——适应不断变化的环境，每天从新数据中学习。随着模型不断自证其能，人工监督会随时间逐步退后，稳步迈向完全自主的决策。</p>
+                </div>
+                <div class="grid-item">
+                    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/><path d="M18 5h2v2"/></svg></span>
+                    <h4>预测市场洞察</h4>
+                    <p class="key-point">用更好的信息决策。</p>
+                    <p style="color: var(--text-secondary);">除了股票，NoArk 的 AI 智能体还会解读预测市场的赔率与信号，并把它们转化为清晰的、由 AI 生成的洞察——帮助你做出更明智的决策。每一笔交易都由你掌控。</p>
+                </div>
+            </div>
+
+            <!-- Vibe trading explainer (SEO + clarity) -->
+            <div style="max-width: 820px; margin: 56px auto 0; text-align: center;">
+                <h3>什么是氛围交易？</h3>
+                <p style="color: var(--text-secondary); font-size: 1.1em; line-height: 1.6;">氛围交易是让 AI 智能体读懂市场整体的“氛围”——情绪、新闻流以及股票和预测市场的实时信号——并据此行动，而不是依赖人去盯着每一张图表。NoArk 的智能体会持续从新数据中学习，因此策略实时调整，而人会随时间逐步退后。</p>
+            </div>
+            <div style="text-align: center; margin-top: 32px;">
+                <p style="max-width: 820px; margin: 0 auto; color: var(--text-secondary); line-height: 1.6;">
+                    我们的方法专注于投资全球市场——包括美国、香港与上海——的上市公司，保持只做多的仓位，不使用杠杆。作为一家低频交易公司，我们强调纪律严明、以研究为本的策略，优先追求可持续的增长与审慎的风险管理。
+                </p>
+            </div>
+
+            <!-- Shannon on technical analysis (aligns with our view) -->
+            <div style="max-width: 820px; margin: 56px auto 0; text-align: center;">
+                <blockquote style="font-size: 1.4em; line-height: 1.45; color: var(--text); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 16px;">
+                    “我认为，那些整天摆弄价格图表、研究‘头肩形态’和‘下破颈线’的技术派，所处理的是我所说的——重要数据的一个噪声极大的翻版。”
+                </blockquote>
+                <p style="color: var(--text-secondary); font-size: 1em; margin: 0 0 14px;">&mdash; 克劳德·香农</p>
+                <p style="color: var(--text-secondary); font-size: 1.05em; line-height: 1.6; margin: 0 0 8px;">我们认同这一观点——这正是为什么我们专注于基本面以及纪律严明的低频策略，而不去追逐图表形态。</p>
+                <p style="color: var(--text-secondary); font-size: 0.8em; margin: 0;">来源：<a href="https://ia801807.us.archive.org/15/items/pitchtheperfectinvestment_theessentialguidetowinningonwallstreet/concentratedinvesting_strategiesoftheworldsgreatestconcentratedvalueinvestors.pdf" target="_blank" rel="noopener noreferrer"><em>《Concentrated Investing》</em></a>（2016）。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn-more" class="cta-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 8px;">NoArk 能做什么</h2>
+            <p style="color: var(--accent); font-size: 1.15em; margin: 0 0 18px; font-weight: 600;">
+                你的 AI 智能体，覆盖市场、效率、旅行与生活
+            </p>
+            <p style="color: var(--text-secondary); font-size: 1.2em; max-width: 720px; margin: 0 auto 44px; line-height: 1.5;">
+                一款通用 AI 智能体，将<strong style="color: var(--text);">实时全球头条</strong>与一键分析、关键词搜索和书签结合在一起。与 <strong style="color: var(--text);">Charlie</strong> 在 <strong style="color: var(--text);">40 多个预置工作流</strong>中对话，涵盖市场、效率、旅行与生活事务——支持文字、语音、照片或文件（PDF、表格、网址）。
+            </p>
+
+            <!-- App stats from App Store -->
+            <div class="stat-row">
+                <div class="stat">
+                    <div class="num">5.0&#9733;</div>
+                    <div class="cap">App Store 评分</div>
+                </div>
+                <div class="stat">
+                    <div class="num">免费</div>
+                    <div class="cap">下载</div>
+                </div>
+                <div class="stat">
+                    <div class="num">v24.4</div>
+                    <div class="cap">最新版本</div>
+                </div>
+                <div class="stat">
+                    <div class="num">效率</div>
+                    <div class="cap">App Store 分类</div>
+                </div>
+            </div>
+
+            <!-- Platform compatibility -->
+            <p style="color: var(--text-secondary); font-size: 0.95em; margin-bottom: 28px;">
+                支持 iPhone · iPad · Mac（Apple Silicon）· Apple Vision
+            </p>
+
+            <a href="https://apps.apple.com/us/app/noark-infinity-memory/id6747843100" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                在 App Store 下载
+            </a>
+
+            <p style="color: var(--text-secondary); font-size: 0.85em; margin-top: 22px;">
+                由最新的 DeepSeek V4 驱动 · © 2019–2026 TradingTransformer Technologies LLC
+            </p>
+        </div>
+    </section>
+
+    <section id="faq" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-item">
+                <h3>什么是氛围交易？</h3>
+                <p>氛围交易是让 AI 智能体读懂市场整体的“氛围”——情绪、新闻流以及股票和预测市场的实时信号——并据此行动，而不是依赖人去盯着每一张图表。NoArk 的智能体会持续从新数据中学习，因此策略实时调整，而人工监督会随时间逐步退后。</p>
+            </div>
+            <div class="faq-item">
+                <h3>AI 智能体能帮助预测市场吗？</h3>
+                <p>可以。NoArk 的 AI 智能体会解读预测市场的赔率与信号，并把它们转化为清晰的、由 AI 生成的洞察，让你做出更明智的决策。NoArk 不会替你下预测市场的单——每一个决策都由你掌控。</p>
+            </div>
+            <div class="faq-item">
+                <h3>克劳德·香农对 AI 与选股做出过什么预言？</h3>
+                <p>1984 年，克劳德·香农——信息论之父——将一个能跑赢市场的 AI 选股程序列为通用人工智能（AGI）“最重要”的目标，与国际象棋、诗歌以及证明黎曼猜想并列。这个预言正是 TradingTransformer 与 NoArk 的创立灵感。</p>
+            </div>
+            <div class="faq-item">
+                <h3>什么是 NoArk — 无限记忆，它免费吗？</h3>
+                <p>NoArk — 无限记忆是一款平价的通用 AI 智能体应用，专为氛围交易与预测市场洞察打造。你可以与 Charlie 在 40 多个预置工作流中对话，涵盖市场、效率、旅行与生活事务，支持文字、语音、照片或文件。它可在 iPhone、iPad、Mac（Apple Silicon）与 Apple Vision 上免费下载。应用分为四个档位——<strong>Free</strong>、<strong>Silver</strong>、<strong>Gold</strong> 与 <strong>Diamond</strong>。付费方案起价 <strong>9.99 美元/月</strong>——作为早鸟优惠，享常规价 5 折。</p>
+            </div>
+            <div class="faq-item">
+                <h3>为什么叫 NoArk？</h3>
+                <p>NoArk 有双重含义。其一，它呼应<strong>诺亚方舟</strong>（Noah's Ark）——一艘在巨变洪流中安全承载重要之物的方舟。其二，把它读作 <strong>“no ark”</strong>（没有方舟）：在飞速变化的智能体时代，没有人会带着现成的方舟来拯救你。你必须成为自己的方舟——而 NoArk 的 AI 智能体正帮你做到这一点，承载你的知识、决策与记忆向前。</p>
+            </div>
+            <div class="faq-item">
+                <h3>为什么叫“无限记忆”？</h3>
+                <p>这个名字源于一座<strong>无边泳池</strong>。在新加坡的一次旅行中，我们坐在酒店的无边泳池旁——池水仿佛没有边际地延伸开去——我们意识到，如果 AI 能毫无限制地记忆，那感觉正是如此：<strong>无限的记忆</strong>。于是我们打造了 NoArk，赋予 Charlie 极长的记忆，承载你的语境、对话与知识向前，永不触及边界。</p>
+            </div>
+            <div class="faq-item">
+                <h3>“Fiat Lux”是什么意思？</h3>
+                <p><strong>Fiat Lux</strong> 是拉丁语，意为 <strong>“要有光”</strong>——它也是 NoArk 诞生之地加州大学的校训。在应用中，Fiat Lux 是一个专属标签页。它概括了我们要做的事：为人们带来光，并激发每个人内在的光——最好的那一面。</p>
+            </div>
+            <div class="faq-item">
+                <h3>NoArk 有教育意义吗？我可以向谁学习？</h3>
+                <p>有。除了市场，NoArk 还旨在教育——尤其是年轻人——让你直接向历史上最伟大的头脑学习。你可以与科学、艺术、哲学、领导力与商业领域杰出人物的 AI 版本对话，每一位都准备好与你探讨他们毕生钻研的大问题。以下是我们目前支持的所有人：</p>
+                <div style="overflow-x: auto;">
+                <table class="mentor-table">
+                    <thead>
+                        <tr><th>导师</th><th>他们帮你探讨的一个问题</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>查理·芒格</td><td>在人生与投资中，我该用哪些思维模型做出更好的决策？</td></tr>
+                        <tr><td>史蒂夫·乔布斯</td><td>我该如何打造人们尚不知道自己需要的东西？</td></tr>
+                        <tr><td>克劳德·香农</td><td>在日常决策中，我该如何思考信息与不确定性？</td></tr>
+                        <tr><td>阿尔弗雷德·阿德勒</td><td>我为何总是寻求认可——又该如何停止？</td></tr>
+                        <tr><td>欧内斯特·海明威</td><td>我该如何诚实地写作，并删去一切无关紧要的东西？</td></tr>
+                        <tr><td>列奥纳多·达·芬奇</td><td>我该如何在众多领域培养好奇心，却不沦为浅尝辄止的人？</td></tr>
+                        <tr><td>巴勃罗·毕加索</td><td>我该如何富有创意地打破规则，却不失去意义？</td></tr>
+                        <tr><td>克劳德·莫奈</td><td>我该如何学会真正地看——光、瞬间，以及事物的真相？</td></tr>
+                        <tr><td>马丁·路德·金</td><td>当为正义挺身而出需要我付出个人代价时，我该如何坚持？</td></tr>
+                        <tr><td>纳尔逊·曼德拉</td><td>我该如何宽恕深深伤害过我的人——并继续前行？</td></tr>
+                        <tr><td>圣雄甘地</td><td>我该如何抵抗不公，却不沦为我所反对的那种人？</td></tr>
+                        <tr><td>科比·布莱恩特</td><td>成为最好的人究竟需要付出什么——这份牺牲值得吗？</td></tr>
+                        <tr><td>本杰明·富兰克林</td><td>哪些日常习惯能在数十年间复利成就非凡的人生？</td></tr>
+                        <tr><td>周恩来</td><td>当每个人都有相互冲突的利益时，我该如何驾驭复杂的关系？</td></tr>
+                        <tr><td>邓小平</td><td>我该如何从内部改革一个崩坏的体制，却不将其摧毁？</td></tr>
+                        <tr><td>约翰·塞巴斯蒂安·巴赫</td><td>如何在严格的约束之内寻得美与超越？</td></tr>
+                        <tr><td>理查德·费曼</td><td>我该如何从第一性原理思考，而非借用他人的结论？</td></tr>
+                        <tr><td>阿尔伯特·爱因斯坦</td><td>我该如何培养出看见他人所不能见的想象力？</td></tr>
+                        <tr><td>毛泽东</td><td>你如何动员普通人去完成非凡的变革？</td></tr>
+                        <tr><td>孙中山</td><td>当旧体制拒绝消亡时，你如何建立一个新体制？</td></tr>
+                        <tr><td>艾萨克·牛顿</td><td>我该如何培养深度专注，对一个问题钻研到它让步为止？</td></tr>
+                        <tr><td>稻盛和夫</td><td>我该如何打造一家既服务利润、又服务人心的企业？</td></tr>
+                        <tr><td>拿破仑·波拿巴</td><td>当成败攸关时，我该如何在压力下大胆领导？</td></tr>
+                        <tr><td>托马斯·爱迪生</td><td>我该如何把失败化为进步，并在一切都行不通时坚持下去？</td></tr>
+                        <tr><td>李光耀</td><td>当所有人都想要短期安逸时，我该如何为长远做出艰难而务实的抉择？</td></tr>
+                        <tr><td>苏格拉底</td><td>我该如何审视自己的信念，而不自欺地以为已经知道答案？</td></tr>
+                        <tr><td>马可·奥勒留</td><td>当生活显得混乱、失控时，我该如何保持平静、明智行事？</td></tr>
+                        <tr><td>孔子</td><td>在日常的细小行为中——而非宏大姿态中——修养德行，究竟是什么样子？</td></tr>
+                        <tr><td>大卫·休谟</td><td>如果我无法证明未来会与过去相似，那我究竟该如何做决策？</td></tr>
+                        <tr><td>伽利略</td><td>当身边所有人都说我错了时，我该如何相信自己的证据？</td></tr>
+                        <tr><td>查尔斯·达尔文</td><td>我该如何分辨耐心何时已变成拖延——又何时该最终发表我的成果？</td></tr>
+                        <tr><td>玛丽·居里</td><td>当还没有任何重要人物相信它时，我该如何持续做出一流的工作？</td></tr>
+                        <tr><td>尼古拉·特斯拉</td><td>那种在动手之前就完整看见发明的想象力，能被训练出来吗？</td></tr>
+                        <tr><td>埃德温·兰德</td><td>我该如何分辨手头所做之事是真正重要，还是只是感觉重要？</td></tr>
+                        <tr><td>沃尔夫冈·莫扎特</td><td>当期限与债务压在每一个小节上时，一位以此为生的艺术家如何让音乐保持诚实？</td></tr>
+                        <tr><td>列夫·托尔斯泰</td><td>倘若我的一生都错了——我该如何面对这个问题而不被它压垮？</td></tr>
+                        <tr><td>阿尔弗雷德·诺贝尔</td><td>你发明炸药是为了移山，它却被用于战场。你如何与初衷和影响之间的落差共处？</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                <p style="margin-top: 16px;">少了谁吗？<a href="mailto:team@wsw.ai?subject=Luminary%20suggestion%20for%20NoArk">给我们发邮件</a>，告诉我们你个人喜爱与敬仰、却还不在此列的杰出人物——他们只需是已经离世的历史人物——我们会考虑加入。</p>
+            </div>
+            <div class="faq-item">
+                <h3>与沃伦·巴菲特共进一餐要花多少钱——NoArk 又要花多少？</h3>
+                <p>2022 年，与 <strong>沃伦·巴菲特</strong> 的最后一次慈善午餐以创纪录的 <strong>19,000,100 美元</strong> 成交。如今，你可以在 NoArk 应用中 <strong>免费</strong> 与 AI 版 <strong>Charlie</strong> 对话——其原型是巴菲特一生的搭档查理·芒格。这正是我们的初衷：我们希望让接触世界上最伟大头脑的机会民主化，帮助缩小贫富差距，而不是把智慧关在 1900 万美元的门票之后。</p>
+            </div>
+            <div class="faq-item">
+                <h3>为什么你们承诺将应用利润的 50% 捐给教育？</h3>
+                <p>因为它改变了我们自己的人生。我们创始人的教育得益于奖学金——资助我们前往 <strong>剑桥大学</strong>、<strong>威斯康星大学麦迪逊分校</strong>、<strong>香港</strong> 的多所大学以及 <strong>加州大学</strong> 留学。我们亲眼见到，金钱对年轻而渴望进取的人有着巨大的影响——它打开大门、释放流动性，并为人类创造长期的正向改变。因此我们承诺将 NoArk 应用业务利润的 <strong>50%</strong> 捐给教育事业，把我们曾获得的回馈出去。</p>
+            </div>
+            <div class="faq-item">
+                <h3>什么是“香农的精灵”，NoArk 会使用它吗？</h3>
+                <p>除了对技术分析持怀疑态度，克劳德·香农也认识到真实市场的实际摩擦。他在概念上发展出高度系统化、由波动率驱动的投资组合再平衡策略——有时被称为“香农的精灵”——但他从未在华尔街执行这些数学构想中的许多，因为他得出结论：频繁交易的高佣金与交易成本会迅速吞噬相对于简单买入并持有策略的任何数学优势。NoArk 谨记同样的教训，偏好纪律严明、低频的策略，让成本无法侵蚀优势。</p>
+            </div>
+            <div class="faq-item">
+                <h3>在诺贝尔奖之前，有人破解了 Black-Scholes 公式，并拒绝投资 LTCM 吗？</h3>
+                <p>是的——而且他是克劳德·香农的朋友与合作者。数学家 <strong>爱德华·索普</strong> 在 1973 年那篇著名论文之前数年，就推导出本质上等同于 <strong>Black-Scholes</strong> 的期权定价公式，并用它经营了史上最成功的对冲基金之一。转折在于：当 <strong>迈伦·斯科尔斯</strong> 与 <strong>罗伯特·C·默顿</strong>——他们因该公式共享 1997 年诺贝尔奖——共同创立对冲基金 <strong>长期资本管理公司（LTCM）</strong> 时，索普拒绝投资。LTCM 随后在 1998 年戏剧性崩盘，需要华尔街的纾困。我们谨记的教训是：优雅的数学并不足够——纪律严明的风险管理，以及对杠杆和真实成本的敬畏，才是真正长久的东西。</p>
+            </div>
+            <div class="faq-item">
+                <h3>你们用夏普比率来衡量风险吗？</h3>
+                <p>不——我们对它持怀疑态度。夏普比率由诺贝尔奖得主威廉·夏普提出，按每单位标准差衡量回报。但它只告诉你 <strong>过去，而非未来</strong>，并且把 <strong>标准差当作等同于风险</strong>——这一点我们并不认同。波动不是风险；真正的风险是资本的永久性损失。一个策略可能在崩盘之前一直拥有漂亮的历史夏普比率（参见 LTCM）。因此，我们不去优化一个向后看的波动率统计量，而是专注于避免永久性损失——绝不使用杠杆，只做多且全额出资。</p>
+            </div>
+            <div class="faq-item">
+                <h3>在 AI 时代，什么最重要？</h3>
+                <p>我们相信，是 AI 无法给你的东西：<strong>爱</strong> 与 <strong>品味</strong>。当机器承担越来越多的工作时，你关怀他人的能力，以及培养真正品味——懂得什么是好的、真的、值得做的——会成为你真正的优势。同样不可或缺的，是让你得以运用它们的基础：你的 <strong>健康</strong> 与稳固的 <strong>财务根基</strong>。NoArk 正是为强化这些基础而打造，让你能自由地专注于只有你才能贡献的东西。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <p style="text-align: center; max-width: 720px; margin: 0 auto; line-height: 1.6; color: var(--text-secondary); font-size: 1.1em;">
+                我们有一个新想法：那些秉承克劳德·香农愿景、成功开发出 AI 智能体的公司，应当帮助把部分利润分配给它们的客户。这将有助于缩小贫富差距，让人们过上更好的生活。
+            </p>
+            <p style="text-align: center; max-width: 720px; margin: 20px auto 0; line-height: 1.6; color: var(--text-secondary); font-size: 1.1em;">
+                告诉我们你接下来想要什么：发邮件给我们，提出你渴望看到的 <strong>定制功能</strong>，你对这款应用 <strong>喜欢或不喜欢</strong> 的任何地方，或是你个人敬仰、却不在我们名单上的 <strong>杰出人物</strong>（他们只需是已经离世的历史人物）。我们会阅读每一条消息。
+            </p>
+            <div style="text-align: center; font-size: 1.1em; margin-top: 24px;">
+                <p><a href="mailto:ceo@tradingtransformer.com">ceo@tradingtransformer.com</a> &nbsp;·&nbsp; <a href="mailto:team@wsw.ai">team@wsw.ai</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <div class="container">
+            <p><strong>重要免责声明：</strong>投资任何基金，包括由 TradingTransformer Technologies LLC 管理的基金，都涉及风险，包括可能损失本金。过往业绩不保证未来结果。本网站所提供的信息仅供参考，不构成出售要约，也不构成购买任何证券或投资产品的要约邀请。任何此类要约或邀请，仅会通过保密的私募发行备忘录和相应的认购协议作出，且仅在法律许可的司法管辖区内进行。在做出任何投资决策之前，请咨询你的财务顾问。</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> TradingTransformer Technologies LLC. 保留所有权利。</p>
+            <p><a href="/zh-cn/wsw_ai/privacy-policy.html">隐私政策</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to update year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+
+        if (menuBtn && mainNav) {
+            menuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+                // Prevent body scrolling when menu is open
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('#main-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    menuBtn.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                });
+            });
+        }
+
+        // Optional: Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#' || this.getAttribute('href') === '#0') return;
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll fade-in animation using IntersectionObserver
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+            fadeInSections.forEach(section => observer.observe(section));
+        } else {
+            // Fallback for older browsers
+            fadeInSections.forEach(section => section.classList.add('visible'));
+        }
+    </script>
+
+</body>
+</html>
