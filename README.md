@@ -89,10 +89,52 @@ To update content:
 - Contact information must remain current
 - Any material changes should be reviewed for regulatory compliance
 
+## 🌐 Multilingual SEO (Bing & others)
+
+The site ships in six languages — English (root), `es/`, `fr/`, `ja/`, `zh-cn/`
+(Simplified), `zh-tw/` (Traditional). Each locale page has correct on-page SEO
+(self-referencing `canonical`, full `hreflang` block, localized title/description) and
+is listed in `sitemap.xml`.
+
+**Why non-English pages weren't appearing in Bing:** the locale pages had no crawlable
+inbound `<a href>` links — the only way to reach them was the JavaScript language picker
+(`lang-switcher.js`). Bing barely executes JS and uses `hreflang`/sitemaps only as weak
+discovery hints, so it treated the locale pages as orphans and never indexed them. The
+fix: a static **footer language switcher** (`nav.ttx-lang-links`) with real anchor links
+to all six languages now lives on every content page. Keep adding it to any new page.
+
+### After each deploy — push URLs to Bing instantly
+
+```bash
+./indexnow-submit.sh      # POSTs every sitemap URL to IndexNow (Bing, Yandex, …)
+```
+
+- IndexNow key file: `89cbebd9dc814ded8ba7e82926a405bf.txt` at the repo root (must stay
+  reachable at `https://tradingtransformer.github.io/89cbebd9dc814ded8ba7e82926a405bf.txt`).
+- Bump the relevant `<lastmod>` dates in `sitemap.xml` when you change pages, so Bing
+  re-crawls.
+
+### One-time — Bing Webmaster Tools (account: w@wsw.ai)
+
+The public `robots.txt` `Sitemap:` line alone is not enough for a new low-authority
+`github.io` site. Submit directly:
+
+1. Sign in at <https://www.bing.com/webmasters> and add
+   `https://tradingtransformer.github.io/`. Fastest verification: **import from Google
+   Search Console** if already verified there; otherwise paste the provided
+   `<meta name="msvalidate.01" content="…">` into the root `index.html` `<head>`, or
+   upload their `BingSiteAuth.xml` to the repo root.
+2. **Sitemaps → Submit** `https://tradingtransformer.github.io/sitemap.xml`.
+3. **URL Inspection → Submit** the six locale homepages to force a first crawl.
+
+Then confirm: `site:tradingtransformer.github.io/zh-cn/` in Bing returns the page, and
+the localized hero snippet becomes searchable. Indexing latency after this is on Bing's
+side — the repo-side changes above are what unblock discovery.
+
 ## 📧 Contact
 
 For technical issues with the website or content updates, contact the development team through the standard company channels.
 
 ---
 
-*Last updated: June 2025*
+*Last updated: June 2026*
