@@ -162,6 +162,166 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2025.html"/>
   </url>
 
+  <!-- ===== Annual letters index (all locales) ===== -->
+  <url>
+    <loc>https://tradingtransformer.github.io/annual-letters.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letters.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/es/annual-letters.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letters.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/zh-cn/annual-letters.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letters.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/zh-tw/annual-letters.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letters.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/fr/annual-letters.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letters.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/ja/annual-letters.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letters.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letters.html"/>
+  </url>
+
+  <!-- ===== Annual letter 2026 (all locales) ===== -->
+  <url>
+    <loc>https://tradingtransformer.github.io/annual-letter-2026.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/es/annual-letter-2026.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/fr/annual-letter-2026.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+  </url>
+  <url>
+    <loc>https://tradingtransformer.github.io/ja/annual-letter-2026.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingtransformer.github.io/es/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tradingtransformer.github.io/zh-cn/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tradingtransformer.github.io/zh-tw/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tradingtransformer.github.io/fr/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tradingtransformer.github.io/ja/annual-letter-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingtransformer.github.io/annual-letter-2026.html"/>
+  </url>
+
   <!-- ===== Privacy policy (all locales) ===== -->
   <url>
     <loc>https://tradingtransformer.github.io/wsw_ai/privacy-policy.html</loc>
