@@ -145,6 +145,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "NoArk は Apple Intelligence と何が違いますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "最も重要な二つの点で違います。提供状況：Apple Intelligence は現実の規制上の摩擦に直面してきました——その展開は欧州連合（デジタル市場法のもと）でも中国本土でも遅延・制限され、米国のように自由に使える状態になったことはありません。プライバシー：Apple Intelligence は「パーソナル・コンテキスト」を構築して本当に役立つために、あなたのデバイス全体——アプリ、画面に表示されている内容、写真ライブラリのすべて——にまで手を伸ばします。自分で完全には制御できないシステムに与えるには、あまりに多くの可視性です。NoArk は正反対の道を行きます。Siri がそうあるべきだった、能動的で文脈を理解する Infinity Memory として設計されており——既定でプライバシー優先です。あなたの記憶はデバイスとあなた自身の iCloud にローカルに保存され、私たちのサーバーに蓄積されることはなく、あなたの注意もデータも決して収益化しません。それでもなお、すべてのデバイスにまたがる、文脈を理解したシステム全体のオーケストレーターが手に入ります——デジタル人生のすべてを差し出すことなく。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "バイブトレーディングとは何ですか？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -165,6 +173,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "1984年、情報理論の父クロード・シャノンは、市場を上回るAIの銘柄選定プログラムを、チェス、詩、リーマン予想の証明と並ぶ汎用人工知能（AGI）の「最も重要な」目標として挙げました。この予言こそ、TradingTransformerとNoArkの創業の着想です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TradingViewについてどう思いますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "チャートは重要ではありません。情報理論の父であり、それ自体が傑出した投資家でもあったクロード・シャノンはこう述べています。「価格チャートに『ヘッド・アンド・ショルダーズ』や『急落するネックライン』といったものを使ってあれほど熱心に取り組むテクニシャンたちは、私に言わせれば、重要なデータの非常にノイズの多い再現を相手にしているのだと思う」。TradingViewやそれに類するツールは、それ自体としては問題ありませんが、価格チャートは企業を実際に動かすものの、ノイズだらけの反映にすぎません。私たちはその注意を、チャートのパターンを追いかけることではなく、ファンダメンタルズと規律ある低頻度の戦略に向けたいと考えています。"
           }
         },
         {
@@ -526,6 +542,25 @@
             line-height: 1.6;
             margin: 0;
         }
+        /* FAQ accordion (native <details>) */
+        details.faq-item > summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        details.faq-item > summary::-webkit-details-marker { display: none; }
+        details.faq-item > summary h3 { margin: 0; }
+        details.faq-item > summary:hover h3 { color: var(--accent); }
+        details.faq-item[open] > summary { margin-bottom: 14px; }
+        .faq-chevron {
+            flex-shrink: 0;
+            color: var(--text-secondary);
+            transition: transform 0.25s ease;
+        }
+        details.faq-item[open] > summary .faq-chevron { transform: rotate(180deg); }
         .mentor-table {
             width: 100%;
             border-collapse: collapse;
@@ -813,7 +848,7 @@
             <p class="hero-desc">NoArk は、すべての人のデジタルな生活と仕事のためのインテリジェントOS——教育・投資・感情コーチング・旅行・生産性・創造性・レコメンドエンジンを一つに統合したスーパーアプリです。リアルタイムの世界のヘッドラインをワンタップ分析、40以上の既製ワークフロー、そして「Fiat Lux」タブでは、テキスト・音声・写真・ファイルを通じて、Charlie だけでなく歴史上の偉人たちのAI版——スティーブ・ジョブズ、アルベルト・アインシュタイン、レオナルド・ダ・ヴィンチ、チャーリー・マンガーなど——とも対話できます。そして私たちが知る限り、あなたのデータをすべてご自身の端末内に保存する唯一のAIエージェントアプリ——サインインも、メールアドレスや電話番号の入力もお願いしません。データを収集せず、あなたのデータで利益を得ることもありません。</p>
             <div class="hero-links">
                 <a href="https://apps.apple.com/jp/app/noark-%E7%84%A1%E9%99%90%E8%A8%98%E6%86%B6/id6747843100" target="_blank" rel="noopener noreferrer" class="btn-primary">アプリを入手</a>
-                <a href="#faq" class="btn-link">詳しく見る&nbsp;&rsaquo;</a>
+                <a href="#testimonials" class="btn-link">詳しく見る&nbsp;&rsaquo;</a>
             </div>
             <a href="https://apps.apple.com/jp/app/noark-%E7%84%A1%E9%99%90%E8%A8%98%E6%86%B6/id6747843100" target="_blank" rel="noopener noreferrer" aria-label="App Store で NoArk — Infinity Memory を見る">
                 <img src="/app_store.png" alt="App Store の NoArk — Infinity Memory：すべての人のためのインテリジェントOS" class="app-badge" width="480" loading="eager">
@@ -821,6 +856,19 @@
             <div style="margin-top: 28px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <img src="/app-privacy.png" alt="Apple App Store のプライバシーラベル：データを収集していません — TradingTransformer Technologies LLC はこのアプリからデータを収集しません" width="1580" height="562" loading="eager" style="max-width: 460px; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--hairline); box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
                 <p style="font-size: 0.9em; margin: 0;"><a href="#data-privacy" style="color: var(--accent); text-decoration: none;">Apple 公式の App プライバシーラベル——<strong>データを収集していません</strong> &rsaquo;</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="orchestrator" class="fade-in-section">
+        <div class="container">
+            <div style="max-width: 880px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">あなたのデジタル人生すべてを束ねる、ひとつのオーケストレーター</h2>
+                <p style="color: var(--text-secondary); font-size: 1.15em; line-height: 1.55; max-width: 760px; margin: 0 auto 28px;">NoArk は中心に立つ、<strong style="color: var(--text);">プライバシー優先のシステムオーケストレーター</strong>です——<strong style="color: var(--text);">Siri がそうあるべきだった、能動的で文脈を理解する Infinity Memory</strong>として、あなたのすべてのデバイスにまたがって働きます。</p>
+                <figure style="margin: 0 auto; max-width: 460px;">
+                    <img src="/noark-system-orchestrator.jpg" alt="図：中心の「Human + NoArk」がシステムオーケストレーターとして、音声・テキスト・画像・オンスクリーン認識・パーソナルコンテキスト・アプリ・アクション・世界知識を iPhone、iPad、Mac、Apple Watch、Apple Vision Pro にわたって統括する" width="928" height="1152" loading="eager" style="width: 100%; height: auto; border-radius: 16px;">
+                    <figcaption style="color: var(--text-secondary); font-size: 0.92em; line-height: 1.6; max-width: 560px; margin: 14px auto 0;">Human&nbsp;+&nbsp;NoArk がシステムオーケストレーターとして——音声・テキスト・画像・オンスクリーン認識・パーソナルコンテキスト・アプリ・アクション・世界知識を、iPhone、iPad、Mac、Apple Watch、Apple Vision Pro にわたって束ねます。</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -1098,15 +1146,43 @@
         </div>
     </section>
 
+    <section id="testimonials" class="fade-in-section" style="background-color: var(--bg-alt);">
+        <div class="container">
+            <h2 class="section-title">メンバーが NoArk を愛する理由</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <div style="color: #f5a623; font-size: 1.05em; letter-spacing: 3px; margin-bottom: 14px;">★★★★★</div>
+                    <p style="font-size: 1.12em; line-height: 1.6; color: var(--text); margin: 0 0 18px;">「つらい別れのあと、誰にも話せない午前3時に語りかけました。決して否定せず耳を傾けてくれて、また自分らしさを取り戻せました。」</p>
+                    <p style="color: var(--text-secondary); font-weight: 600; margin: 0;">会社員・31歳</p>
+                </div>
+                <div class="grid-item">
+                    <div style="color: #f5a623; font-size: 1.05em; letter-spacing: 3px; margin-bottom: 14px;">★★★★★</div>
+                    <p style="font-size: 1.12em; line-height: 1.6; color: var(--text); margin: 0 0 18px;">「52歳で、私は静かにすべてを問い直していました——キャリアも、それに意味があるのかも。こうした対話のおかげで思考が整理され、再び足場を取り戻せました。」</p>
+                    <p style="color: var(--text-secondary); font-weight: 600; margin: 0;">大学教授</p>
+                </div>
+                <div class="grid-item">
+                    <div style="color: #f5a623; font-size: 1.05em; letter-spacing: 3px; margin-bottom: 14px;">★★★★★</div>
+                    <p style="font-size: 1.12em; line-height: 1.6; color: var(--text); margin: 0 0 18px;">「後悔していたであろう衝動的な取引を、3回も思いとどまらせてくれました。『買う』ボタンを押す直前に、冷静で博識な友人がいるようです。」</p>
+                    <p style="color: var(--text-secondary); font-weight: 600; margin: 0;">ソフトウェアエンジニア</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="faq" class="fade-in-section">
         <div class="container">
             <h2 class="section-title">よくある質問</h2>
-            <div class="faq-item">
-                <h3>バイブトレーディングとは何ですか？</h3>
+            <details class="faq-item" open>
+                <summary><h3>NoArk は Apple Intelligence と何が違いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>最も重要な二つの点で違います。<strong>提供状況：</strong>Apple Intelligence は現実の規制上の摩擦に直面してきました——その展開は<strong>欧州連合（デジタル市場法のもと）でも中国本土でも遅延・制限され</strong>、米国のように自由に使える状態になったことはありません。<strong>プライバシー：</strong>Apple Intelligence は<em>パーソナル・コンテキスト</em>を構築して本当に役立つために、<strong>あなたのデバイス全体——アプリ、画面に表示されている内容、写真ライブラリのすべて</strong>——にまで手を伸ばします。自分で完全には制御できないシステムに与えるには、あまりに多くの可視性です。</p>
+                <p>NoArk は正反対の道を行きます。<strong>Siri がそうあるべきだった、能動的で文脈を理解する Infinity Memory</strong> として設計されており——<strong>既定でプライバシー優先</strong>です。あなたの記憶はデバイスとあなた自身の iCloud にローカルに保存され、私たちのサーバーに蓄積されることはなく、あなたの注意もデータも決して収益化しません。それでもなお、すべてのデバイスにまたがる、文脈を理解したシステム全体のオーケストレーターが手に入ります——デジタル人生のすべてを差し出すことなく。</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>バイブトレーディングとは何ですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>バイブトレーディングとは、人がすべてのチャートを見張るのではなく、AIエージェントに市場全体の「空気感」——センチメント、ニュースの流れ、株式や予測市場のリアルタイムなシグナル——を読み取らせ、それに基づいて行動させることです。NoArkのエージェントは新しいデータから継続的に学習するため、戦略はリアルタイムに適応し、人による監督は時間とともに後退していきます。</p>
-            </div>
-            <div class="faq-item">
-                <h3>AIエージェントは予測市場に役立ちますか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>AIエージェントは予測市場に役立ちますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>役立ちます——ただし、優れたエージェントは「やってみなさい」と背中を押すのではなく、率直な判断を返します。以下は、Charlie（チャーリー・マンガーをモデルにした当社のAIエージェント）に「どうすれば若者に予測市場を使わせられるか」と尋ねたときの、飾らない答えです：</p>
                 <p style="margin-top: 16px;"><strong>核心の結論：私は若者に予測市場を勧めません。むしろ使うなと言います。</strong></p>
                 <p style="margin-top: 16px;">理由は三つ：</p>
@@ -1119,41 +1195,45 @@
                 <p style="margin-top: 16px;"><strong>まとめ：</strong>若者の最も貴重な資産は時間と可塑性だ。予測市場は時間を細切れにし、注意を短期化し、思考をギャンブル化する——そのどれもが、彼らが最も育てるべき能力を蝕む。本当に賢い若者は、良書を読み、複利を生むスキルを学び、価値を生むシステムを築くことに力を注ぐ。</p>
                 <p style="margin-top: 16px;">予測市場はあなたを賢くしない。ただ賢くなった気にさせるだけだ。そして賢くなった気でいることこそ、愚かさへの最短の道だ。</p>
                 <p style="margin-top: 12px; text-align: right;">——Charlie</p>
-            </div>
-            <div class="faq-item">
-                <h3>クロード・シャノンはAIと銘柄選定について何を予言しましたか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>クロード・シャノンはAIと銘柄選定について何を予言しましたか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>1984年、クロード・シャノン——情報理論の父——は、市場を上回るAIの銘柄選定プログラムを、チェス、詩、リーマン予想の証明と並ぶ汎用人工知能（AGI）の「最も重要な」目標として挙げました。この予言こそ、TradingTransformerとNoArkの創業の着想です。</p>
-            </div>
-            <div class="faq-item">
-                <h3>NoArk — Infinity Memory とは何で、無料ですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>TradingViewについてどう思いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>チャートは重要ではありません。情報理論の父であり、それ自体が傑出した投資家でもあったクロード・シャノンはこう述べています。「価格チャートに『ヘッド・アンド・ショルダーズ』や『急落するネックライン』といったものを使ってあれほど熱心に取り組むテクニシャンたちは、私に言わせれば、重要なデータの非常にノイズの多い再現を相手にしているのだと思う」。TradingViewやそれに類するツールは、それ自体としては問題ありませんが、価格チャートは企業を実際に動かすものの、ノイズだらけの反映にすぎません。私たちはその注意を、チャートのパターンを追いかけることではなく、ファンダメンタルズと規律ある低頻度の戦略に向けたいと考えています。</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>NoArk — Infinity Memory とは何で、無料ですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>NoArk — Infinity Memory は、すべての人の生活と仕事のためのインテリジェントOS・AIスーパーアプリで、教育・投資・感情コーチング・旅行・生産性・創造性・レコメンドエンジンを一つに統合します。40以上のプリセットワークフローで、テキスト・音声・写真・ファイルを使って、Charlie や「Fiat Lux」タブの歴史上の偉人たちのAI版と対話できます。iPhone・iPad・Mac（Apple Silicon）・Apple Vision で無料ダウンロードできます。アプリには <strong>Free</strong>・<strong>Silver</strong>・<strong>Gold</strong>・<strong>Diamond</strong> の4段階があります。有料プランは <strong>月額9.99ドル</strong>から——早割として通常価格の50%オフです。</p>
-            </div>
-            <div class="faq-item">
-                <h3>NoArk は Apple Intelligence、Google の Gemini、Manus と何が違いますか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>NoArk は Apple Intelligence、Google の Gemini、Manus と何が違いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>NoArk は、もう一つの何でも屋のチャットボットを目指してはいません。私たちは、従来であればフルタイムの<strong>エグゼクティブ・アシスタント</strong>を雇うようなハイエンドのお客様のために、<strong>最も信頼でき</strong>、<strong>最も客観的な</strong> AI エージェントを構築しています。Apple Intelligence、Google の Gemini、Manus はいずれも優れた汎用ツールですが、最終的にはプラットフォームやエコシステム、そして広告やデータに基づくビジネスモデルに仕えています。NoArk が仕えるのは、<strong>あなただけ</strong>です。私たちはあなたの注意も、あなたのデータも収益化しません。だからこそ Charlie は、あなたの市場、意思決定、日々の雑務について、利害のしがらみのない率直な判断を示せるのです——一流のエグゼクティブ・アシスタントに期待するような慎み深さと信頼性を、一つのアプリで。</p>
-            </div>
-            <div class="faq-item" id="data-privacy">
-                <h3>NoArk は私のデータをどう扱いますか？</h3>
+            </details>
+            <details class="faq-item" id="data-privacy">
+                <summary><h3>NoArk は私のデータをどう扱いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>あなたのデータは、あなたのものであり続けます。<strong>私たち自身があなたのデータを収集することはありません。</strong>NoArk で作成したものはすべて、<strong>あなたのデバイスとあなた自身の iCloud にローカルで保存され</strong>——私たちのサーバーには保存されません。Charlie が何かを考える必要があるとき、NoArk はクラウド上の大規模言語モデルと <strong>API</strong> を介してやり取りします。そして、それらの提供元の API 利用規約のもとでは、あなたのコンテンツは<strong>保存されることも、モデルの学習に使われることもありません</strong>。<strong>要するに、あなたの記憶はあなたとともにあり、私たちがそれを溜め込むことは決してなく、私たちが呼び出す AI モデルもそれを保持しないのです。そしてもう一つ理由があります。データを溜め込まないことで、上昇し続けるストレージのコストも抑えられるのです——一石二鳥、あなたにとっても、私たちにとっても良いことです。</strong></p>
-            </div>
-            <div class="faq-item">
-                <h3>なぜサインインする場所がないのですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>なぜサインインする場所がないのですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>本当に<strong>一切のデータを収集していない</strong>からです。多くのアプリは、あなたの行動をIDに結びつけてプロフィールを作るためにサインインを求めます——私たちはまさにそれをしません。NoArk には<strong>サインインもアカウントもありません</strong>。あなたのメールアドレスも、名前も、個人を特定できる情報も、私たちには一切見えません。あなたが作成したものはすべて、<strong>ご自身の端末と iCloud</strong> に保存されます。ログインがなければ、漏れるものも、売るものも、私たちが預かって失うものもありません——NoArk では、プライバシーは設定項目ではなく、初めから当たり前のものです。</p>
-            </div>
-            <div class="faq-item">
-                <h3>なぜ NoArk という名前なのですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>なぜ NoArk という名前なのですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>NoArkには二重の意味があります。第一に、<strong>ノアの方舟</strong>（Noah's Ark）——変化の洪水を、大切なものを乗せて安全に渡るための船——を想起させます。第二に、<strong>「no ark（方舟はない）」</strong>と読むこともできます。急速に変わるエージェントの時代に、出来合いの方舟であなたを救いに来る人はいません。あなた自身が方舟にならなければならない——NoArkのAIエージェントは、あなたの知識・判断・記憶を前へ運ぶことで、まさにそれを助けます。</p>
-            </div>
-            <div class="faq-item">
-                <h3>なぜ「Infinity Memory」なのですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>なぜ「Infinity Memory」なのですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>この名前は<strong>インフィニティプール</strong>から生まれました。シンガポール旅行で、ホテルのインフィニティプール——水面が縁もなく広がっていくように見える——のそばに座っていたとき、もしAIが限界なく記憶できたら、まさにこんな感じだろう、<strong>無限の記憶</strong>だと気づきました。そこで私たちはNoArkを作り、Charlieに非常に長い記憶を与えました。あなたの文脈・会話・知識を、縁に行き当たることなく前へと運びます。</p>
-            </div>
-            <div class="faq-item">
-                <h3>「Fiat Lux」とはどういう意味ですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>「Fiat Lux」とはどういう意味ですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p><strong>Fiat Lux</strong> はラテン語で <strong>「光あれ」</strong> という意味で、NoArkが生まれたカリフォルニア大学のモットーでもあります。アプリ内では、Fiat Lux は専用のタブです。それは私たちがここで成し遂げたいことを表しています。人々に光をもたらし、そして誰の中にもある光——最良のもの——を引き出すことです。</p>
-            </div>
-            <div class="faq-item">
-                <h3>NoArkは教育的ですか？誰から学べますか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>NoArkは教育的ですか？誰から学べますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>はい。市場にとどまらず、NoArkは——特に若い人々を——教育するために作られており、歴史上の偉大な頭脳から直接学べます。科学・芸術・哲学・リーダーシップ・ビジネスの著名人のAI版と対話でき、彼らが生涯をかけて取り組んだ大きな問いをともに探究できます。これまでに対応しているすべての方々は次のとおりです：</p>
                 <div style="overflow-x: auto;">
                 <table class="mentor-table">
@@ -1202,39 +1282,39 @@
                 </table>
                 </div>
                 <p style="margin-top: 16px;">誰か足りませんか？ あなたが個人的に敬愛していて、まだここにいない人物——すでに亡くなった歴史上の人物であることだけが条件です——を <a href="mailto:team@wsw.ai?subject=Luminary%20suggestion%20for%20NoArk">メールで教えてください</a>。追加を検討します。</p>
-            </div>
-            <div class="faq-item">
-                <h3>ウォーレン・バフェットとの食事はいくらでしたか——そしてNoArkはいくらですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>ウォーレン・バフェットとの食事はいくらでしたか——そしてNoArkはいくらですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>2022年、<strong>ウォーレン・バフェット</strong> との最後のチャリティーランチは、過去最高の <strong>19,000,100ドル</strong> で落札されました。今では、バフェットの生涯の盟友チャーリー・マンガーをモデルにしたAIの <strong>Charlie</strong> と、NoArkアプリで <strong>無料</strong> で対話できます。それこそが要点です。私たちは世界の偉大な頭脳へのアクセスを民主化し、富の格差を縮めたいのであって、知恵を1,900万ドルの値札の向こうに閉じ込めたいわけではありません。</p>
-            </div>
-            <div class="faq-item">
-                <h3>なぜアプリ利益の50%を教育に寄付すると約束しているのですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>なぜアプリ利益の50%を教育に寄付すると約束しているのですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>それが私たち自身の人生を変えたからです。創業者たちの教育は奨学金によって可能になりました——<strong>ケンブリッジ大学</strong>、<strong>ウィスコンシン大学マディソン校</strong>、<strong>香港</strong> の大学、<strong>カリフォルニア大学</strong> への留学を支えてくれたのです。お金が、学ぶことに飢えた若者に絶大な影響を与えることを、私たちは身をもって見てきました。扉を開き、流動性を解き放ち、人類に長期的な良い変化を生み出します。だからこそ、私たちはNoArkアプリ事業の利益の <strong>50%</strong> を教育への取り組みに寄付すると約束しました。与えられたものを次へ送るために。</p>
-            </div>
-            <div class="faq-item">
-                <h3>シャノンのエントロピー（情報量）とは何ですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>シャノンのエントロピー（情報量）とは何ですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>1948年、<strong>クロード・シャノン</strong>は<strong>エントロピー</strong>を、情報の流れが持つ不確実性——いわば「驚き」の度合い——として定義しました。メッセージが予測しにくいほど、それが運ぶ情報は多く、<strong>「ビット」</strong>で測られます。これはデータ圧縮から誤りのない通信まで、デジタル時代の数学的な土台となりました。投資家にとっても直感的です。すでに完全に予測できる価格は何の情報も優位ももたらしません——本当のシグナルは、<strong>市場がまだ織り込んでいない部分</strong>に宿ります。NoArkのエージェントは、誰もがすでに見えているノイズではなく、その「残された不確実性」を見つけて活かすために作られています。</p>
-            </div>
-            <div class="faq-item">
-                <h3>マクスウェルの悪魔とシャノンのデーモンにはどんな関係がありますか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>マクスウェルの悪魔とシャノンのデーモンにはどんな関係がありますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>どちらも、ランダムさから秩序を生み出すように見える「魔物」です。<strong>マクスウェルの悪魔</strong>は、物理学者ジェームズ・クラーク・マクスウェルが1867年に思い描いた仮想の存在で、速い分子と遅い分子を選り分けて気体のエントロピーを下げ——<strong>熱力学第二法則</strong>を破るかに見えます。この逆説が解かれたのは20世紀になってからでした。<strong>レオ・シラード</strong>が、そして後に<strong>ロルフ・ランダウアー</strong>が、悪魔は選り分けのために情報を取得し最終的に消去しなければならず、その情報の消去自体がエネルギーを要することを示したのです。情報と物理的エントロピーは同じコインの裏表だった——まさにシャノンの情報理論が精密に捉えた結びつきです。彼にちなんで名づけられた<strong>「シャノンのデーモン」</strong>、すなわちボラティリティを収穫するリバランス戦略は、その金融版のこだまです。変動する価格の無秩序でランダムな揺れから「秩序」——着実な複利——を取り出すのです。両者の深い教訓は同じです。<strong>秩序はタダでは手に入りません</strong>。マクスウェルの悪魔はエネルギーで支払い、シャノンのデーモンは取引コストで支払う。だからこそNoArkは、秩序を収穫するコストが収穫する秩序を決して上回らない、規律ある低頻度の戦略を好むのです。</p>
-            </div>
-            <div class="faq-item">
-                <h3>「シャノンのデーモン」とは何で、NoArkはそれを使いますか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>「シャノンのデーモン」とは何で、NoArkはそれを使いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>テクニカル分析への懐疑に加え、クロード・シャノンは現実の市場の実務的な摩擦も認識していました。彼は、ボラティリティ駆動の高度に体系的なポートフォリオ・リバランス戦略——時に「シャノンのデーモン」と呼ばれる——を概念的に発展させましたが、その数学的アイデアの多くをウォール街で実行することはありませんでした。頻繁な取引の高い手数料と取引コストが、単純なバイ・アンド・ホールド戦略に対する数学的優位をたちまち食いつぶす、と結論づけたからです。NoArkも同じ教訓を胸に刻み、コストが優位を侵食しない、規律ある低頻度の戦略を好みます。</p>
-            </div>
-            <div class="faq-item">
-                <h3>ノーベル賞より前にブラック・ショールズ式を解いた人がいて、LTCMへの投資を断ったというのは本当ですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>ノーベル賞より前にブラック・ショールズ式を解いた人がいて、LTCMへの投資を断ったというのは本当ですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>はい——しかも彼はクロード・シャノンの友人であり共同研究者でした。数学者 <strong>エドワード・ソープ</strong> は、有名な1973年の論文より何年も前に、本質的に <strong>ブラック・ショールズ</strong> と等価なオプション価格式を導き、それを使って史上最も成功したヘッジファンドの一つを運用しました。転機はこうです。<strong>マイロン・ショールズ</strong> と <strong>ロバート・C・マートン</strong>——その式で1997年のノーベル賞を共同受賞——がヘッジファンド <strong>ロングターム・キャピタル・マネジメント（LTCM）</strong> を共同設立したとき、ソープは投資を断りました。LTCMはその後1998年に劇的に破綻し、ウォール街の救済を必要としました。私たちが胸に刻む教訓はこうです。優雅な数学だけでは足りない——規律あるリスク管理、そしてレバレッジと現実のコストへの敬意こそが、本当に長続きするのです。</p>
-            </div>
-            <div class="faq-item">
-                <h3>リスクの計測にシャープレシオを使いますか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>リスクの計測にシャープレシオを使いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>いいえ——私たちはそれに懐疑的です。ノーベル賞受賞者ウィリアム・シャープが提唱したシャープレシオは、標準偏差1単位あたりのリターンを評価します。しかしそれは <strong>過去を語るだけで、未来を語りません</strong>。そして <strong>標準偏差をあたかもリスクと等しいかのように扱います</strong> が——私たちはそれを受け入れません。ボラティリティはリスクではありません。本当のリスクは資本の恒久的な損失です。戦略は、破綻する直前まで美しい過去のシャープレシオを示し得ます（LTCMを参照）。だから私たちは、過去を振り返るボラティリティ統計を最適化するのではなく、恒久的な損失を避けることに注力します——決してレバレッジを使わず、ロングオンリーで全額自己資金です。</p>
-            </div>
-            <div class="faq-item">
-                <h3>AIの時代に最も大切なものは何ですか？</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>AIの時代に最も大切なものは何ですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>私たちは、AIがあなたに与えられないもの——<strong>愛</strong> と <strong>審美眼（テイスト）</strong>——だと信じています。機械がより多くの仕事を担うようになるほど、人を思いやる力、そして本物の審美眼——何が良く、真実で、なすに値するかを知ること——を育む力が、あなたの本当の強みになります。同じく不可欠なのは、それらを使うための土台です。すなわちあなたの <strong>健康</strong> と、確かな <strong>経済的基盤</strong> です。NoArkはそれらの土台を強くするために作られています。あなたにしかもたらせないものに、自由に集中できるように。</p>
-            </div>
+            </details>
         </div>
     </section>
 
@@ -1249,6 +1329,18 @@
             </p>
             <div style="text-align: center; font-size: 1.1em; margin-top: 24px;">
                 <p><a href="mailto:ceo@tradingtransformer.com">ceo@tradingtransformer.com</a> &nbsp;·&nbsp; <a href="mailto:team@wsw.ai">team@wsw.ai</a></p>
+            <div class="grid grid-2" style="margin-top: 44px;">
+                <div class="grid-item" style="text-align: center;">
+                    <h3 style="margin-top: 0;">メールで問い合わせ</h3>
+                    <p style="color: var(--text-secondary);">迷っていますか？お気軽にご連絡ください。</p>
+                    <p style="font-size: 1.1em; margin: 0;"><a href="mailto:team@wsw.ai">team@wsw.ai</a></p>
+                </div>
+                <div class="grid-item" style="text-align: center;">
+                    <h3 style="margin-top: 0;">担当者に電話で相談</h3>
+                    <p style="color: var(--text-secondary);">留守番電話にメッセージを残してください。すべて確認し、折り返しご連絡します。</p>
+                    <p style="font-size: 1.1em; margin: 0;"><a href="tel:+18085901493">+1 (808) 590-1493</a></p>
+                </div>
+            </div>
             </div>
         </div>
     </section>

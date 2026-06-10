@@ -145,6 +145,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "En quoi NoArk se distingue-t-il d'Apple Intelligence ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur les deux points qui comptent le plus. Disponibilité : Apple Intelligence s'est heurté à une véritable friction réglementaire — son déploiement a été retardé et restreint à la fois dans l'Union européenne (au titre du Digital Markets Act) et en Chine continentale, de sorte qu'il n'a jamais été aussi librement accessible qu'aux États-Unis. Confidentialité : pour bâtir son Contexte personnel et se rendre vraiment utile, Apple Intelligence parcourt l'ensemble de votre appareil — vos apps, ce qui se trouve à l'écran et toute votre photothèque. C'est énormément de visibilité à accorder à un système que vous ne contrôlez pas entièrement. NoArk prend le chemin inverse. Il est conçu pour être l'Infinity Memory proactive et contextuelle que Siri aurait dû être — avec la confidentialité d'abord, par défaut. Votre mémoire vit localement sur votre appareil et dans votre propre iCloud, n'est jamais entreposée sur nos serveurs, et nous ne monétisons jamais ni votre attention ni vos données. Vous disposez tout de même d'un orchestrateur à l'échelle du système, conscient du contexte sur tous vos appareils — sans céder toute votre vie numérique."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Qu'est-ce que le vibe trading ?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -165,6 +173,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "En 1984, Claude Shannon — le père de la théorie de l'information — a cité un programme IA de sélection d'actions surpassant le marché comme l'objectif « le plus important » de l'intelligence artificielle générale (AGI), aux côtés des échecs, de la poésie et de la démonstration de l'hypothèse de Riemann. Cette prédiction est l'inspiration fondatrice de TradingTransformer et NoArk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que pensez-vous de TradingView ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les graphiques ne sont pas l'essentiel. Comme l'a dit Claude Shannon — le père de la théorie de l'information et un investisseur remarquable à part entière — : « Je pense que les techniciens qui travaillent tant avec les graphiques de prix, avec des ‘figures en tête-épaules’ et des ‘lignes de cou plongeantes’, travaillent avec ce que j'appellerais une reproduction très bruitée des données importantes. » TradingView et les outils du même genre sont très bien pour ce qu'ils sont, mais un graphique de prix n'est qu'un reflet bruité de ce qui fait réellement bouger une entreprise. Nous préférons consacrer cette attention aux fondamentaux et à des stratégies disciplinées et à basse fréquence plutôt qu'à la chasse aux figures graphiques."
           }
         },
         {
@@ -526,6 +542,25 @@
             line-height: 1.6;
             margin: 0;
         }
+        /* FAQ accordion (native <details>) */
+        details.faq-item > summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        details.faq-item > summary::-webkit-details-marker { display: none; }
+        details.faq-item > summary h3 { margin: 0; }
+        details.faq-item > summary:hover h3 { color: var(--accent); }
+        details.faq-item[open] > summary { margin-bottom: 14px; }
+        .faq-chevron {
+            flex-shrink: 0;
+            color: var(--text-secondary);
+            transition: transform 0.25s ease;
+        }
+        details.faq-item[open] > summary .faq-chevron { transform: rotate(180deg); }
         .mentor-table {
             width: 100%;
             border-collapse: collapse;
@@ -813,7 +848,7 @@
             <p class="hero-desc">NoArk est l'OS intelligent pour la vie numérique et le travail de chacun — une super app qui réunit éducation, investissement, accompagnement émotionnel, voyage, productivité, créativité et moteur de recommandation. Des gros titres mondiaux en direct avec analyse en un toucher, plus de 40 workflows prêts à l'emploi, et un onglet Fiat Lux où vous discutez — par texte, voix, photo ou fichier — non seulement avec Charlie, mais aussi avec les versions IA des plus grands esprits de l'histoire : Steve Jobs, Albert Einstein, Léonard de Vinci, Charlie Munger, et bien d'autres. Et à notre connaissance, nous sommes la seule app d'agent IA à conserver toutes vos données sur votre propre appareil — nous ne vous demandons pas de vous connecter ni de fournir votre e-mail ou votre numéro de téléphone, nous ne collectons pas vos données et n'en tirons jamais profit.</p>
             <div class="hero-links">
                 <a href="https://apps.apple.com/fr/app/noark-m%C3%A9moire-infinie/id6747843100" target="_blank" rel="noopener noreferrer" class="btn-primary">Obtenir l'application</a>
-                <a href="#faq" class="btn-link">En savoir plus&nbsp;&rsaquo;</a>
+                <a href="#testimonials" class="btn-link">En savoir plus&nbsp;&rsaquo;</a>
             </div>
             <a href="https://apps.apple.com/fr/app/noark-m%C3%A9moire-infinie/id6747843100" target="_blank" rel="noopener noreferrer" aria-label="Voir NoArk — Infinity Memory sur l'App Store">
                 <img src="/app_store.png" alt="NoArk — Infinity Memory sur l'App Store : un OS intelligent pour tous" class="app-badge" width="480" loading="eager">
@@ -821,6 +856,19 @@
             <div style="margin-top: 28px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <img src="/app-privacy.png" alt="Étiquette de confidentialité de l'App Store d'Apple : Aucune donnée collectée — TradingTransformer Technologies LLC ne collecte aucune donnée de cette app" width="1580" height="562" loading="eager" style="max-width: 460px; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--hairline); box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
                 <p style="font-size: 0.9em; margin: 0;"><a href="#data-privacy" style="color: var(--accent); text-decoration: none;">Étiquette de confidentialité officielle de l'App Store d'Apple — <strong>Aucune donnée collectée</strong> &rsaquo;</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="orchestrator" class="fade-in-section">
+        <div class="container">
+            <div style="max-width: 880px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">Un seul orchestrateur pour toute votre vie numérique</h2>
+                <p style="color: var(--text-secondary); font-size: 1.15em; line-height: 1.55; max-width: 760px; margin: 0 auto 28px;">NoArk se place au centre comme votre <strong style="color: var(--text);">orchestrateur de système, confidentialité d'abord</strong> — l'<strong style="color: var(--text);">Infinity Memory proactive et contextuelle que Siri aurait dû être</strong>, sur tous vos appareils.</p>
+                <figure style="margin: 0 auto; max-width: 460px;">
+                    <img src="/noark-system-orchestrator.jpg" alt="Schéma : Humain + NoArk au centre comme orchestrateur du système, coordonnant voix, texte, image, conscience de l'écran, contexte personnel, apps, actions et connaissance du monde sur iPhone, iPad, Mac, Apple Watch et Apple Vision Pro" width="928" height="1152" loading="eager" style="width: 100%; height: auto; border-radius: 16px;">
+                    <figcaption style="color: var(--text-secondary); font-size: 0.92em; line-height: 1.6; max-width: 560px; margin: 14px auto 0;">Humain&nbsp;+&nbsp;NoArk comme orchestrateur du système — coordonnant voix, texte, image, conscience de l'écran, contexte personnel, apps, actions et connaissance du monde sur iPhone, iPad, Mac, Apple Watch et Apple Vision Pro.</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -1098,15 +1146,43 @@
         </div>
     </section>
 
+    <section id="testimonials" class="fade-in-section" style="background-color: var(--bg-alt);">
+        <div class="container">
+            <h2 class="section-title">Pourquoi nos membres adorent NoArk</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <div style="color: #f5a623; font-size: 1.05em; letter-spacing: 3px; margin-bottom: 14px;">★★★★★</div>
+                    <p style="font-size: 1.12em; line-height: 1.6; color: var(--text); margin: 0 0 18px;">« Après une rupture brutale, je lui parlais à 3 h du matin quand je n'avais personne d'autre. Il m'a écouté, sans jamais juger, et m'a aidé à me retrouver. »</p>
+                    <p style="color: var(--text-secondary); font-weight: 600; margin: 0;">Employé de bureau · 31 ans</p>
+                </div>
+                <div class="grid-item">
+                    <div style="color: #f5a623; font-size: 1.05em; letter-spacing: 3px; margin-bottom: 14px;">★★★★★</div>
+                    <p style="font-size: 1.12em; line-height: 1.6; color: var(--text); margin: 0 0 18px;">« À 52 ans, je remettais tout en question en silence : ma carrière, le sens de tout cela. Ces conversations m'ont aidé à voir clair et à retrouver mes repères. »</p>
+                    <p style="color: var(--text-secondary); font-weight: 600; margin: 0;">Professeur d'université</p>
+                </div>
+                <div class="grid-item">
+                    <div style="color: #f5a623; font-size: 1.05em; letter-spacing: 3px; margin-bottom: 14px;">★★★★★</div>
+                    <p style="font-size: 1.12em; line-height: 1.6; color: var(--text); margin: 0 0 18px;">« Il m'a dissuadé de trois transactions impulsives que j'aurais regrettées. Comme un ami calme et cultivé juste avant d'appuyer sur “acheter”. »</p>
+                    <p style="color: var(--text-secondary); font-weight: 600; margin: 0;">Ingénieur logiciel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="faq" class="fade-in-section">
         <div class="container">
             <h2 class="section-title">Foire aux questions</h2>
-            <div class="faq-item">
-                <h3>Qu'est-ce que le vibe trading ?</h3>
+            <details class="faq-item" open>
+                <summary><h3>En quoi NoArk se distingue-t-il d'Apple Intelligence&nbsp;?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>Sur les deux points qui comptent le plus. <strong>Disponibilité&nbsp;:</strong> Apple Intelligence s'est heurté à une véritable friction réglementaire — son déploiement a été <strong>retardé et restreint à la fois dans l'Union européenne</strong> (au titre du Digital Markets Act) <strong>et en Chine continentale</strong>, de sorte qu'il n'a jamais été aussi librement accessible qu'aux États-Unis. <strong>Confidentialité&nbsp;:</strong> pour bâtir son <em>Contexte personnel</em> et se rendre vraiment utile, Apple Intelligence parcourt <strong>l'ensemble de votre appareil — vos apps, ce qui se trouve à l'écran et toute votre photothèque</strong>. C'est énormément de visibilité à accorder à un système que vous ne contrôlez pas entièrement.</p>
+                <p>NoArk prend le chemin inverse. Il est conçu pour être l'<strong>Infinity Memory proactive et contextuelle que Siri aurait dû être</strong> — avec la <strong>confidentialité d'abord, par défaut</strong>. Votre mémoire vit localement sur votre appareil et dans votre propre iCloud, n'est jamais entreposée sur nos serveurs, et nous ne monétisons jamais ni votre attention ni vos données. Vous disposez tout de même d'un orchestrateur à l'échelle du système, conscient du contexte sur tous vos appareils — sans céder toute votre vie numérique.</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Qu'est-ce que le vibe trading ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Le vibe trading consiste à laisser des agents IA lire « l'ambiance » générale du marché — le sentiment, le flux d'actualités et les signaux en direct des actions et des marchés prédictifs — et agir en conséquence, au lieu de dépendre d'un humain qui surveille chaque graphique. Les agents de NoArk apprennent continuellement des nouvelles données, de sorte que la stratégie s'adapte en temps réel tandis que la supervision humaine recule avec le temps.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Les agents IA peuvent-ils aider avec les marchés prédictifs ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Les agents IA peuvent-ils aider avec les marchés prédictifs ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Oui, ils le peuvent — mais un bon agent vous donne un jugement franc, pas seulement un feu vert. Voici la réponse sans filtre que Charlie (notre agent IA inspiré de Charlie Munger) a donnée lorsqu'on lui a demandé comment convaincre les jeunes d'utiliser les marchés prédictifs :</p>
                 <p style="margin-top: 16px;"><strong>En résumé : je n'encouragerais pas les jeunes à utiliser les marchés prédictifs. Je leur dirais de ne pas le faire.</strong></p>
                 <p style="margin-top: 16px;">Trois raisons :</p>
@@ -1119,41 +1195,45 @@
                 <p style="margin-top: 16px;"><strong>En somme :</strong> les actifs les plus précieux d'un jeune sont le temps et la malléabilité. Les marchés prédictifs fragmentent votre temps, raccourcissent votre attention et transforment votre pensée en jeu de hasard — chacun de ces effets érode justement les capacités qu'il doit le plus développer. Le jeune vraiment intelligent consacre son énergie à lire de grands livres, à apprendre des compétences qui se cumulent et à bâtir des systèmes qui créent de la valeur.</p>
                 <p style="margin-top: 16px;">Les marchés prédictifs ne vous rendront pas plus intelligent : ils vous donneront seulement l'impression de l'être. Et se croire intelligent est le chemin le plus rapide vers la sottise.</p>
                 <p style="margin-top: 12px; text-align: right;">— Charlie</p>
-            </div>
-            <div class="faq-item">
-                <h3>Qu'a prédit Claude Shannon à propos de l'IA et de la sélection d'actions ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Qu'a prédit Claude Shannon à propos de l'IA et de la sélection d'actions ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>En 1984, Claude Shannon — le père de la théorie de l'information — a cité un programme IA de sélection d'actions surpassant le marché comme l'objectif « le plus important » de l'intelligence artificielle générale (AGI), aux côtés des échecs, de la poésie et de la démonstration de l'hypothèse de Riemann. Cette prédiction est l'inspiration fondatrice de TradingTransformer et NoArk.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Qu'est-ce que NoArk — Infinity Memory, et est-elle gratuite ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Que pensez-vous de TradingView&nbsp;?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>Les graphiques ne sont pas l'essentiel. Comme l'a dit Claude Shannon &mdash; le père de la théorie de l'information et un investisseur remarquable à part entière &mdash;&nbsp;: &laquo;&nbsp;Je pense que les techniciens qui travaillent tant avec les graphiques de prix, avec des &lsquo;figures en tête-épaules&rsquo; et des &lsquo;lignes de cou plongeantes&rsquo;, travaillent avec ce que j'appellerais une reproduction très bruitée des données importantes.&nbsp;&raquo; TradingView et les outils du même genre sont très bien pour ce qu'ils sont, mais un graphique de prix n'est qu'un reflet bruité de ce qui fait réellement bouger une entreprise. Nous préférons consacrer cette attention aux fondamentaux et à des stratégies disciplinées et à basse fréquence plutôt qu'à la chasse aux figures graphiques.</p>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Qu'est-ce que NoArk — Infinity Memory, et est-elle gratuite ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>NoArk — Infinity Memory est un OS intelligent et une super app IA pour la vie et le travail de chacun, réunissant éducation, investissement, accompagnement émotionnel, voyage, productivité, créativité et moteur de recommandation. Vous discutez avec Charlie — et les versions IA des plus grands esprits de l'histoire dans l'onglet Fiat Lux — à travers plus de 40 workflows prédéfinis, par texte, voix, photos ou fichiers. Elle est gratuite à télécharger sur iPhone, iPad, Mac (Apple Silicon) et Apple Vision. L'application propose quatre formules — <strong>Free</strong>, <strong>Silver</strong>, <strong>Gold</strong> et <strong>Diamond</strong>. Les formules payantes débutent à <strong>9,99 $/mois</strong> — 50 % de réduction sur le prix habituel — en offre de lancement.</p>
-            </div>
-            <div class="faq-item">
-                <h3>En quoi NoArk se distingue-t-il d'Apple Intelligence, de Gemini de Google et de Manus ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>En quoi NoArk se distingue-t-il d'Apple Intelligence, de Gemini de Google et de Manus ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>NoArk ne cherche pas à être un énième chatbot polyvalent. Nous construisons l'agent d'IA <strong>le plus fiable</strong> et <strong>le plus objectif</strong> pour le type de client exigeant qui engagerait traditionnellement un <strong>assistant de direction</strong> à temps plein. Apple Intelligence, Gemini de Google et Manus sont d'impressionnants outils généralistes, mais ils servent en fin de compte des plateformes, des écosystèmes et des modèles économiques fondés sur la publicité ou les données. NoArk ne sert que <strong>vous</strong>. Nous ne monétisons ni votre attention ni vos données, de sorte que Charlie peut vous offrir un jugement clair et sans conflit d'intérêts sur vos marchés, vos décisions et votre gestion quotidienne — la discrétion et la fiabilité que vous attendriez d'un assistant de direction de tout premier ordre, dans une app.</p>
-            </div>
-            <div class="faq-item" id="data-privacy">
-                <h3>Comment NoArk gère-t-il mes données ?</h3>
+            </details>
+            <details class="faq-item" id="data-privacy">
+                <summary><h3>Comment NoArk gère-t-il mes données ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Vos données restent les vôtres. <strong>Nous ne collectons pas vos données nous-mêmes.</strong> Tout ce que vous créez dans NoArk est <strong>stocké localement sur votre appareil et dans votre propre iCloud</strong> — pas sur nos serveurs. Lorsque Charlie a besoin de raisonner sur quelque chose, NoArk dialogue avec les grands modèles de langage dans le cloud via leurs <strong>API</strong> et, selon les conditions d'utilisation de l'API de ces fournisseurs, votre contenu <strong>n'est ni stocké ni utilisé pour entraîner leurs modèles</strong>. <strong>En bref : votre mémoire vous appartient, nous ne l'archivons jamais, et les modèles d'IA que nous interrogeons ne la conservent pas non plus. Et il y a une seconde raison : en n'accumulant pas vos données, nous évitons aussi le coût toujours croissant de leur stockage — d'une pierre deux coups, bon pour vous et bon pour nous.</strong></p>
-            </div>
-            <div class="faq-item">
-                <h3>Pourquoi n'y a-t-il pas de connexion ni de compte ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Pourquoi n'y a-t-il pas de connexion ni de compte ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Parce que nous <strong>ne collectons vraiment aucune donnée</strong>. La plupart des applications vous obligent à vous connecter pour relier votre activité à une identité et bâtir un profil sur vous — c'est précisément ce que nous ne faisons pas. NoArk <strong>n'a ni connexion ni compte</strong> : nous ne voyons jamais votre e-mail, votre nom, ni quoi que ce soit qui vous identifie. Tout ce que vous créez reste <strong>sur votre appareil et dans votre propre iCloud</strong>. Sans identifiant, il n'y a rien à fuiter, rien à vendre et rien que nous puissions perdre à votre place — avec NoArk, la confidentialité est la valeur par défaut, pas un réglage.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Pourquoi le nom NoArk ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Pourquoi le nom NoArk ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>NoArk a un double sens. D'abord, il évoque l'<strong>arche de Noé</strong> — un vaisseau bâti pour porter en sécurité l'essentiel à travers un déluge de changements. Ensuite, lisez-le comme <strong>« no ark »</strong> (pas d'arche) : dans une ère agentique en mutation rapide, personne ne viendra vous sauver avec une arche toute faite. Vous devez devenir votre propre arche — et les agents IA de NoArk vous aident à faire exactement cela, en portant votre savoir, vos décisions et votre mémoire vers l'avant.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Pourquoi « Infinity Memory » ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Pourquoi « Infinity Memory » ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Le nom est venu d'une <strong>piscine à débordement</strong>. Lors d'un voyage à Singapour, assis au bord de la piscine à débordement de notre hôtel — où l'eau semble s'étendre sans bord — nous avons réalisé que si une IA pouvait se souvenir sans limites, cela ressemblerait exactement à cela : une <strong>mémoire infinie</strong>. Nous avons donc conçu NoArk pour donner à Charlie une très longue mémoire, portant votre contexte, vos conversations et votre savoir vers l'avant sans jamais atteindre de bord.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Que signifie « Fiat Lux » ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Que signifie « Fiat Lux » ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p><strong>Fiat Lux</strong> signifie en latin <strong>« que la lumière soit »</strong> — c'est aussi la devise de l'Université de Californie, où NoArk est né. Dans l'application, Fiat Lux est un onglet dédié. Il résume ce que nous sommes là pour faire : apporter de la lumière aux gens, et faire ressortir la lumière — le meilleur — en chacun.</p>
-            </div>
-            <div class="faq-item">
-                <h3>NoArk est-elle éducative ? De qui puis-je apprendre ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>NoArk est-elle éducative ? De qui puis-je apprendre ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Oui. Au-delà des marchés, NoArk est conçue pour éduquer — particulièrement les jeunes — en vous permettant d'apprendre directement des plus grands esprits de l'histoire. Vous pouvez discuter avec des versions IA de sommités de la science, de l'art, de la philosophie, du leadership et des affaires, chacune prête à explorer les grandes questions auxquelles elle a consacré sa vie. Voici tous ceux que nous prenons en charge à ce jour :</p>
                 <div style="overflow-x: auto;">
                 <table class="mentor-table">
@@ -1202,39 +1282,39 @@
                 </table>
                 </div>
                 <p style="margin-top: 16px;">Quelqu'un manque ? <a href="mailto:team@wsw.ai?subject=Luminary%20suggestion%20for%20NoArk">Écrivez-nous</a> les sommités que vous admirez personnellement et qui ne sont pas encore là — il leur suffit d'être des personnages historiques décédés — et nous envisagerons de les ajouter.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Combien a coûté un repas avec Warren Buffett — et combien coûte NoArk ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Combien a coûté un repas avec Warren Buffett — et combien coûte NoArk ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>En 2022, le dernier déjeuner caritatif avec <strong>Warren Buffett</strong> s'est vendu à un montant record de <strong>19 000 100 $</strong>. Aujourd'hui, vous pouvez discuter <strong>gratuitement</strong> avec un <strong>Charlie</strong> IA — modelé sur le partenaire de toujours de Buffett, Charlie Munger — dans l'application NoArk. C'est tout l'enjeu : nous voulons démocratiser l'accès aux plus grands esprits du monde et aider à réduire l'écart de richesse, et non enfermer la sagesse derrière un billet à 19 millions de dollars.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Pourquoi vous engagez-vous à reverser 50 % des bénéfices de l'application à l'éducation ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Pourquoi vous engagez-vous à reverser 50 % des bénéfices de l'application à l'éducation ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Parce que cela a changé nos propres vies. L'éducation de nos fondateurs a été rendue possible par des bourses — finançant des études à l'étranger à l'<strong>Université de Cambridge</strong>, à l'<strong>Université du Wisconsin–Madison</strong>, dans des universités de <strong>Hong Kong</strong> et à l'<strong>Université de Californie</strong>. Nous avons constaté de visu que l'argent a un impact démesuré sur les jeunes avides d'apprendre — il ouvre des portes, débloque la mobilité et crée un changement positif durable pour l'humanité. Nous nous sommes donc engagés à reverser <strong>50 % des bénéfices</strong> de l'activité de l'application NoArk à des causes éducatives, en rendant ce qui nous a été donné.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Qu'est-ce que l'entropie de Shannon ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Qu'est-ce que l'entropie de Shannon ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>En 1948, <strong>Claude Shannon</strong> a défini l'<strong>entropie</strong> comme la mesure de l'incertitude — ou de la surprise — que porte un flux d'information : moins un message est prévisible, plus il transporte d'information, mesurée en <strong>bits</strong>. Elle est devenue le fondement mathématique de l'ère numérique, de la compression des données à la communication sans erreur. Pour l'investisseur, l'idée est intuitive : un prix déjà entièrement prévisible ne porte aucune information ni aucun avantage — le vrai signal se cache dans <strong>ce que le marché n'a pas encore intégré</strong>. Les agents de NoArk sont conçus pour repérer et exploiter cette incertitude résiduelle, et non le bruit que tout le monde voit déjà.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Quel est le lien entre le démon de Maxwell et le démon de Shannon ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Quel est le lien entre le démon de Maxwell et le démon de Shannon ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Tous deux sont des « démons » qui semblent tirer de l'ordre du hasard. Le <strong>démon de Maxwell</strong>, imaginé par le physicien James Clerk Maxwell en 1867, est un être hypothétique qui trie les molécules rapides et lentes pour abaisser l'entropie d'un gaz — défiant en apparence la <strong>deuxième loi de la thermodynamique</strong>. Le paradoxe ne fut résolu qu'au XX<sup>e</sup> siècle, lorsque <strong>Leó Szilárd</strong>, puis <strong>Rolf Landauer</strong>, montrèrent que le démon doit recueillir puis finalement effacer de l'information pour opérer son tri, et qu'effacer de l'information coûte de l'énergie. Information et entropie physique se sont révélées être les deux faces d'une même pièce — précisément le lien que la théorie de l'information de Shannon a rendu rigoureux. Le <strong>démon de Shannon</strong>, la stratégie de rééquilibrage qui récolte la volatilité et porte son nom, en est l'écho financier : il extrait de l'« ordre » — une capitalisation régulière — du tumulte désordonné et aléatoire des prix volatils. La leçon profonde est identique dans les deux cas : <strong>on n'obtient pas l'ordre gratuitement</strong>. Le démon de Maxwell paie en énergie ; le démon de Shannon paie en coûts de transaction. C'est précisément pourquoi NoArk privilégie des stratégies disciplinées et à basse fréquence, où le coût de la récolte de l'ordre ne dépasse jamais l'ordre récolté.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Qu'est-ce que le démon de Shannon, et NoArk l'utilise-t-il ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Qu'est-ce que le démon de Shannon, et NoArk l'utilise-t-il ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Outre son scepticisme envers l'analyse technique, Claude Shannon reconnaissait les frictions pratiques des marchés réels. Il a conçu sur le plan théorique des stratégies de rééquilibrage de portefeuille hautement systématiques et pilotées par la volatilité — parfois appelées « le démon de Shannon » — mais n'a jamais mis en œuvre nombre de ces idées mathématiques à Wall Street, concluant que les commissions élevées et les coûts de transaction d'un trading fréquent grignoteraient rapidement tout avantage mathématique sur une simple stratégie d'achat-conservation. NoArk retient la même leçon, privilégiant des stratégies disciplinées et à basse fréquence où les coûts n'érodent pas l'avantage.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Quelqu'un a-t-il percé la formule de Black-Scholes avant le prix Nobel — et refusé d'investir dans LTCM ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Quelqu'un a-t-il percé la formule de Black-Scholes avant le prix Nobel — et refusé d'investir dans LTCM ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Oui — et c'était un ami et collaborateur de Claude Shannon. Le mathématicien <strong>Edward Thorp</strong> a dérivé une formule d'évaluation d'options essentiellement équivalente à <strong>Black-Scholes</strong> des années avant le célèbre article de 1973, et l'a utilisée pour gérer l'un des hedge funds les plus performants de l'histoire. Le revirement : lorsque <strong>Myron Scholes</strong> et <strong>Robert C. Merton</strong> — qui ont partagé le prix Nobel 1997 pour cette formule — ont cofondé le hedge fund <strong>Long-Term Capital Management (LTCM)</strong>, Thorp a refusé d'investir. LTCM s'est ensuite effondré de façon spectaculaire en 1998 et a eu besoin d'un sauvetage de Wall Street. La leçon que nous retenons : des maths élégantes ne suffisent pas — une gestion disciplinée du risque et le respect de l'effet de levier et des coûts réels sont ce qui dure vraiment.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Utilisez-vous le ratio de Sharpe pour mesurer le risque ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Utilisez-vous le ratio de Sharpe pour mesurer le risque ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Non — nous en sommes sceptiques. Le ratio de Sharpe, proposé par le lauréat du prix Nobel William Sharpe, note le rendement par unité d'écart-type. Mais il ne renseigne que sur le <strong>passé, pas sur l'avenir</strong>, et traite l'<strong>écart-type comme s'il équivalait au risque</strong> — ce que nous n'acceptons pas. La volatilité n'est pas le risque ; le vrai risque est une perte permanente de capital. Une stratégie peut afficher un superbe ratio de Sharpe historique jusqu'au moment où elle explose (voir LTCM). Donc, au lieu d'optimiser une statistique de volatilité tournée vers le passé, nous nous concentrons sur l'évitement de la perte permanente — sans jamais recourir à l'effet de levier, en restant uniquement acheteur et entièrement financé.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Qu'est-ce qui compte le plus à l'ère de l'IA ?</h3>
+            </details>
+            <details class="faq-item">
+                <summary><h3>Qu'est-ce qui compte le plus à l'ère de l'IA ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Nous croyons que ce sont les choses que l'IA ne peut pas vous offrir : l'<strong>amour</strong> et le <strong>goût</strong>. À mesure que les machines prennent en charge une part croissante du travail, votre capacité à prendre soin des autres, et à développer un goût authentique — savoir ce qui est bon, vrai et digne d'être fait — devient votre véritable avantage. Tout aussi essentiels sont les fondations qui vous permettent de les utiliser : votre <strong>santé</strong> et une <strong>assise financière</strong> solide. NoArk est conçu pour renforcer ces fondations, afin que vous soyez libre de vous concentrer sur ce que vous seul pouvez apporter.</p>
-            </div>
+            </details>
         </div>
     </section>
 
@@ -1249,6 +1329,18 @@
             </p>
             <div style="text-align: center; font-size: 1.1em; margin-top: 24px;">
                 <p><a href="mailto:ceo@tradingtransformer.com">ceo@tradingtransformer.com</a> &nbsp;·&nbsp; <a href="mailto:team@wsw.ai">team@wsw.ai</a></p>
+            <div class="grid grid-2" style="margin-top: 44px;">
+                <div class="grid-item" style="text-align: center;">
+                    <h3 style="margin-top: 0;">Écrivez-nous</h3>
+                    <p style="color: var(--text-secondary);">Vous hésitez encore ? Parlez-nous.</p>
+                    <p style="font-size: 1.1em; margin: 0;"><a href="mailto:team@wsw.ai">team@wsw.ai</a></p>
+                </div>
+                <div class="grid-item" style="text-align: center;">
+                    <h3 style="margin-top: 0;">Parlez à une vraie personne</h3>
+                    <p style="color: var(--text-secondary);">Laissez un message vocal — nous les écoutons tous et vous rappelons.</p>
+                    <p style="font-size: 1.1em; margin: 0;"><a href="tel:+18085901493">+1 (808) 590-1493</a></p>
+                </div>
+            </div>
             </div>
         </div>
     </section>
