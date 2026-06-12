@@ -3,7 +3,7 @@
 # Run after each deploy:  ./indexnow-submit.sh
 set -euo pipefail
 
-HOST="tradingtransformer.github.io"
+HOST="www.tradingtransformer.com"
 KEY="89cbebd9dc814ded8ba7e82926a405bf"
 KEY_LOCATION="https://${HOST}/${KEY}.txt"
 

@@ -1,5 +1,5 @@
 /*
- * Shared multilingual switcher for tradingtransformer.github.io
+ * Shared multilingual switcher for www.tradingtransformer.com
  * - Injects a floating language picker (no per-page markup needed).
  * - Shows an Apple-style, dismissible "view in your language?" banner on first visit.
  * - Never hard-redirects; the requested URL is always served as-is (SEO-safe).
