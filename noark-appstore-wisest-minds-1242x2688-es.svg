@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="2688" viewBox="0 0 1242 2688">
+<defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070f"/><stop offset="0.42" stop-color="#0b1020"/>
+      <stop offset="0.72" stop-color="#161634"/><stop offset="1" stop-color="#241a30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#ffcf8a" stop-opacity="0.28"/>
+      <stop offset="0.7" stop-color="#ffb877" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffb877" stop-opacity="0"/>
+    </radialGradient></defs>
+<rect width="1242" height="2688" fill="url(#bg)"/>
+<ellipse cx="621" cy="1584" rx="900" ry="760" fill="url(#glow)"/>
+<text x="621" y="811" text-anchor="middle" font-family="'New York','Hoefler Text','Iowan Old Style', Georgia, serif" font-weight="500" font-size="124" fill="#f3f5fb">Cuando la vida</text>
+<text x="621" y="952" text-anchor="middle" font-family="'New York','Hoefler Text','Iowan Old Style', Georgia, serif" font-weight="500" font-size="124" fill="#f3f5fb">se vuelve</text>
+<text x="621" y="1094" text-anchor="middle" font-family="'New York','Hoefler Text','Iowan Old Style', Georgia, serif" font-weight="500" font-style="italic" font-size="124" fill="#ffd98a">confusa,</text>
+<text x="621" y="1353" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="48" fill="#aab0c2">no lo afrontes a solas.</text>
+<text x="621" y="1553" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="66" fill="#ffffff" letter-spacing="-0.5">Pregunta a las mentes</text>
+<text x="621" y="1635" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="66" fill="#ffffff" letter-spacing="-0.5">más sabias de la historia.</text>
+<text x="621" y="1797" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="37" fill="#8a8fa3">Munger · Jobs · Einstein · da Vinci · Aurelio · y 30+ más</text>
+</svg>
