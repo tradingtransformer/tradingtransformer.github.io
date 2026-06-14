@@ -356,7 +356,7 @@
 
     <!-- Reddit Pixel -->
     <script>
-    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j3ydv8qcnz17",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j3ydv8qcnz17');rdt('track', 'PageVisit');
+    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j3ydv8qcnz17",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);var _ruid=localStorage.getItem('rdt_uid');if(!_ruid){_ruid=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():(Date.now()+'-'+Math.random());localStorage.setItem('rdt_uid',_ruid);}rdt('init','a2_j3ydv8qcnz17',{externalId:_ruid});rdt('track', 'PageVisit');
     </script>
 
     <!-- Conversion tracking: App Store clicks (Google Ads + Reddit Pixel) -->
