@@ -55,6 +55,7 @@ content[""] = {
  "related": [
   (hp, "NoArk — Infinity Memory: the intelligent AI OS & super app"),
   (cp, "NoArk vs Character.AI"),
+  (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "Frequently asked questions about NoArk"),
  ],
@@ -108,6 +109,7 @@ content["es"] = {
  "related": [
   (hp, "NoArk — Infinity Memory: el SO inteligente y súper app de IA"),
   (cp, "NoArk vs Character.AI"),
+  (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "Preguntas frecuentes sobre NoArk"),
  ],
@@ -161,6 +163,7 @@ content["fr"] = {
  "related": [
   (hp, "NoArk — Infinity Memory : l'OS intelligent et la super app IA"),
   (cp, "NoArk vs Character.AI"),
+  (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "Questions fréquentes sur NoArk"),
  ],
@@ -214,6 +217,7 @@ content["ja"] = {
  "related": [
   (hp, "NoArk — Infinity Memory：インテリジェントAI OS・スーパーアプリ"),
   (cp, "NoArk vs Character.AI"),
+  (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "NoArk についてのよくある質問"),
  ],
@@ -267,6 +271,7 @@ content["zh-cn"] = {
  "related": [
   (hp, "NoArk — 无限记忆：智能 AI 操作系统与超级应用"),
   (cp, "NoArk 对比 Character.AI"),
+  (hp + "noark-vs-gemini.html", "NoArk 对比 Gemini"),
   (ap, "NoArk 对比 Apple Intelligence"),
   (fp, "关于 NoArk 的常见问题"),
  ],
@@ -320,6 +325,7 @@ content["zh-tw"] = {
  "related": [
   (hp, "NoArk — 無限記憶：智慧型 AI 作業系統與超級應用程式"),
   (cp, "NoArk 對比 Character.AI"),
+  (hp + "noark-vs-gemini.html", "NoArk 對比 Gemini"),
   (ap, "NoArk 對比 Apple Intelligence"),
   (fp, "關於 NoArk 的常見問題"),
  ],
