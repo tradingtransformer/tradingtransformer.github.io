@@ -50,6 +50,7 @@ content[""] = {
  "related_heading": "Keep reading",
  "related": [
   (hp, "NoArk — Infinity Memory: the intelligent AI OS & super app"),
+  (hp + "noark-vs-chatgpt.html", "NoArk vs ChatGPT"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "Frequently asked questions about NoArk"),
  ],
@@ -102,6 +103,7 @@ content["es"] = {
  "related_heading": "Sigue leyendo",
  "related": [
   (hp, "NoArk — Infinity Memory: el SO inteligente y súper app de IA"),
+  (hp + "noark-vs-chatgpt.html", "NoArk vs ChatGPT"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "Preguntas frecuentes sobre NoArk"),
  ],
@@ -154,6 +156,7 @@ content["fr"] = {
  "related_heading": "À lire ensuite",
  "related": [
   (hp, "NoArk — Infinity Memory : l'OS intelligent et la super app IA"),
+  (hp + "noark-vs-chatgpt.html", "NoArk vs ChatGPT"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "Questions fréquentes sur NoArk"),
  ],
@@ -206,6 +209,7 @@ content["ja"] = {
  "related_heading": "あわせて読む",
  "related": [
   (hp, "NoArk — Infinity Memory：インテリジェントAI OS・スーパーアプリ"),
+  (hp + "noark-vs-chatgpt.html", "NoArk vs ChatGPT"),
   (ap, "NoArk vs Apple Intelligence"),
   (fp, "NoArk についてのよくある質問"),
  ],
@@ -258,6 +262,7 @@ content["zh-cn"] = {
  "related_heading": "继续阅读",
  "related": [
   (hp, "NoArk — 无限记忆：智能 AI 操作系统与超级应用"),
+  (hp + "noark-vs-chatgpt.html", "NoArk 对比 ChatGPT"),
   (ap, "NoArk 对比 Apple Intelligence"),
   (fp, "关于 NoArk 的常见问题"),
  ],
@@ -310,6 +315,7 @@ content["zh-tw"] = {
  "related_heading": "繼續閱讀",
  "related": [
   (hp, "NoArk — 無限記憶：智慧型 AI 作業系統與超級應用程式"),
+  (hp + "noark-vs-chatgpt.html", "NoArk 對比 ChatGPT"),
   (ap, "NoArk 對比 Apple Intelligence"),
   (fp, "關於 NoArk 的常見問題"),
  ],
