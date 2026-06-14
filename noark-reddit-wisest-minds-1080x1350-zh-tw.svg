@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070f"/><stop offset="0.42" stop-color="#0b1020"/>
+      <stop offset="0.72" stop-color="#161634"/><stop offset="1" stop-color="#241a30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#ffcf8a" stop-opacity="0.28"/>
+      <stop offset="0.7" stop-color="#ffb877" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffb877" stop-opacity="0"/>
+    </radialGradient></defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<ellipse cx="540.0" cy="960.1" rx="783" ry="661" fill="url(#glow)"/>
+<text x="540" y="330.6" text-anchor="middle" font-family="'Songti TC','STSong', serif" font-weight="500" font-size="106.1" fill="#f3f5fb">當生活</text>
+<text x="540" y="461.9" text-anchor="middle" font-family="'Songti TC','STSong', serif" font-weight="500" font-size="106.1" fill="#ffd98a">陷入迷惘，</text>
+<text x="540" y="695.8" text-anchor="middle" font-family="'PingFang TC','Heiti TC', sans-serif" font-weight="400" font-size="40.0" fill="#aab0c2">別獨自面對。</text>
+<text x="540" y="868.0" text-anchor="middle" font-family="'PingFang TC','Heiti TC', sans-serif" font-weight="700" font-size="62.6" fill="#ffffff" letter-spacing="-0.5">請教歷史上</text>
+<text x="540" y="949.7" text-anchor="middle" font-family="'PingFang TC','Heiti TC', sans-serif" font-weight="700" font-size="62.6" fill="#ffffff" letter-spacing="-0.5">最有智慧的人。</text>
+<text x="540" y="1095.8" text-anchor="middle" font-family="'PingFang TC','Heiti TC', sans-serif" font-weight="500" font-size="28.7" fill="#8a8fa3">蒙格·賈伯斯·愛因斯坦·達文西·奧理略·等30+位</text>
+<text x="50" y="1305" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="32" fill="#ffffff">NoArk - 無限記憶</text>
+</svg>

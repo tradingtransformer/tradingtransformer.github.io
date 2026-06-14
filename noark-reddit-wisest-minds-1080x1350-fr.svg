@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070f"/><stop offset="0.42" stop-color="#0b1020"/>
+      <stop offset="0.72" stop-color="#161634"/><stop offset="1" stop-color="#241a30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#ffcf8a" stop-opacity="0.28"/>
+      <stop offset="0.7" stop-color="#ffb877" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffb877" stop-opacity="0"/>
+    </radialGradient></defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<ellipse cx="540.0" cy="960.8" rx="783" ry="661" fill="url(#glow)"/>
+<text x="540" y="287.7" text-anchor="middle" font-family="'New York','Hoefler Text','Iowan Old Style', Georgia, serif" font-weight="500" font-size="107.8" fill="#f3f5fb">Quand la vie</text>
+<text x="540" y="411.2" text-anchor="middle" font-family="'New York','Hoefler Text','Iowan Old Style', Georgia, serif" font-weight="500" font-size="107.8" fill="#f3f5fb">devient</text>
+<text x="540" y="533.8" text-anchor="middle" font-family="'New York','Hoefler Text','Iowan Old Style', Georgia, serif" font-weight="500" font-style="italic" font-size="107.8" fill="#ffd98a">confuse,</text>
+<text x="540" y="759.0" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="40.0" fill="#aab0c2">ne restez pas seul face à ça.</text>
+<text x="540" y="931.2" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="55.7" fill="#ffffff" letter-spacing="-0.5">Demandez aux plus grands</text>
+<text x="540" y="1000.8" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="55.7" fill="#ffffff" letter-spacing="-0.5">esprits de l'histoire.</text>
+<text x="540" y="1139.9" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="30.4" fill="#8a8fa3">Munger · Jobs · Einstein · de Vinci · Aurèle · et 30+ autres</text>
+<text x="50" y="1305" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="32" fill="#ffffff">NoArk - Mémoire Infinie</text>
+</svg>
