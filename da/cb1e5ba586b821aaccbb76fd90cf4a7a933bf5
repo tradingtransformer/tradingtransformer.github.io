@@ -1,0 +1,42 @@
+zh-tw/index.html
+  s_dfee26133f3f80::t_779f108eac595e 75
+  s_dfee26133f3f80::t_11dd27ff0767dc 96
+fr/index.html
+  s_dfee26133f3f80::t_b381095f3bcdae 96
+  s_dfee26133f3f80::t_2e7eff0e3b9992 75
+zh-cn/index.html
+  s_dfee26133f3f80::t_b7bf964dff349b 96
+  s_dfee26133f3f80::t_30410122cca4cc 75
+index.html
+  s_3fe7daab61a3cd::t_84bb934d672d09 75,78,96
+es/index.html
+  s_dfee26133f3f80::t_14e22a865ff1c9 96
+  s_dfee26133f3f80::t_f9b6da0d18844c 75
+ja/index.html
+  s_dfee26133f3f80::t_241c96da027981 75
+  s_dfee26133f3f80::t_b32026b2943765 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.10-trip",
+  "base_commit_sha": "dacb1e5ba586b821aaccbb76fd90cf4a7a933bf5",
+  "prompts": {},
+  "sessions": {
+    "s_3fe7daab61a3cd": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "3df90de7-1ec3-41e4-9d3a-aae194e356fd",
+        "model": "Claude Sonnet 4.6 Thinking"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    },
+    "s_dfee26133f3f80": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "50a72073-b039-4e5b-a65e-67eec5b46875",
+        "model": "arn:aws:bedrock:us-west-2:671660153913:application-inference-profile/iwn212cjpyff"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
