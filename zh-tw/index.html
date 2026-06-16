@@ -257,6 +257,14 @@
         },
         {
           "@type": "Question",
+          "name": "NoArk 的訊息是端對端加密的嗎？Apple 或 NoArk 能讀到我的訊息嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以——NoArk 現已支援端對端加密訊息，其設計確保除了你和與你對話的人之外，沒有任何人能讀到內容。當你傳送一則訊息時，NoArk 會在你的裝置上把它封裝進一個加密信封，並且只把這段無法辨識的密文上傳到 CloudKit——Apple 的公開資料庫——它僅僅充當一個零知識中繼。可解密的內容和所有金鑰從不離開你的裝置：Apple 始終只持有它無法讀取的亂碼密文，且僅暫時儲存，直到傳送方在 7 天 TTL 後將其刪除。只有持有金鑰的兩台裝置才能真正解密並閱讀這則訊息——Apple 不行，我們也不行。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "為什麼沒有登入入口？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1356,6 +1364,11 @@
             <details class="faq-item" id="data-privacy">
                 <summary><h3>NoArk 如何處理我的資料？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>你的資料始終屬於你。<strong>我們自己並不收集你的資料。</strong>你在 NoArk 中建立的一切都<strong>本機儲存在你的裝置和你自己的 iCloud 中</strong>——而不是在我們的伺服器上。當 Charlie 需要進行推理時，NoArk 會透過 <strong>API</strong> 與雲端的大型語言模型對話；而根據這些服務商的 API 服務條款，你的內容<strong>不會被儲存，也不會被用於訓練它們的模型</strong>。<strong>簡而言之：你的記憶與你同在，我們絕不囤積它，我們所呼叫的 AI 模型也同樣不會保留它。而且，我們不收集資料還有另一個原因：隨著儲存成本不斷上漲，不囤積資料也幫我們省下了這筆開銷——一舉兩得，對你好，也對我們好。</strong></p>
+            </details>
+            <details class="faq-item" id="encrypted-messaging">
+                <summary><h3>NoArk 的訊息是端對端加密的嗎？Apple 或 NoArk 能讀到我的訊息嗎？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>可以——NoArk 現已支援<strong>端對端加密訊息</strong>，其設計確保除了你和與你對話的人之外，沒有任何人能讀到內容。當你傳送一則訊息時，NoArk 會在你的裝置上把它<strong>封裝進一個加密信封</strong>，並且只把這段無法辨識的密文上傳到 <strong>CloudKit</strong>——Apple 的公開資料庫——它僅僅充當一個<strong>零知識中繼</strong>。</p>
+                <p>可解密的內容和所有金鑰<strong>從不離開你的裝置</strong>：Apple 始終只持有它無法讀取的亂碼密文，且僅暫時儲存，直到傳送方在 <strong>7 天 TTL</strong> 後將其刪除。只有持有金鑰的兩台裝置才能真正解密並閱讀這則訊息——<strong>Apple 不行，我們也不行</strong>。</p>
             </details>
             <details class="faq-item">
                 <summary><h3>為什麼沒有登入入口？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

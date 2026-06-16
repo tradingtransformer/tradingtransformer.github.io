@@ -257,6 +257,14 @@
         },
         {
           "@type": "Question",
+          "name": "Is NoArk messaging end-to-end encrypted? Can Apple or NoArk read my messages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — NoArk now supports end-to-end encrypted messaging, designed so that no one but you and the person you're messaging can ever read it. When you send a message, NoArk seals it into an encrypted envelope on your device and uploads only that opaque ciphertext to CloudKit — Apple's public database — which acts purely as a zero-knowledge relay. The decryptable content and all the keys never leave your devices: Apple only ever holds scrambled ciphertext it can't read, stored temporarily until the sender deletes it after a 7-day TTL. Only the two devices holding the keys can actually decrypt and read the message — not Apple, and not us."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Why is there no sign-in or account?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1357,6 +1365,11 @@
             <details class="faq-item" id="data-privacy">
                 <summary><h3>How does NoArk handle my data?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Your data stays yours. <strong>We don't collect your data ourselves.</strong> Everything you create in NoArk is <strong>stored locally on your device and in your own iCloud</strong> — not on our servers. When Charlie needs to reason over something, NoArk talks to large language models in the cloud through their <strong>APIs</strong>, and under those providers' API terms of service your content is <strong>not stored or used to train their models</strong>. <strong>In short: your memory lives with you, we never warehouse it, and the AI models we call don't keep it either. And it cuts both ways: by not hoarding your data, we also sidestep the ever-rising cost of storing it — one stone, two birds, good for you and good for us.</strong></p>
+            </details>
+            <details class="faq-item" id="encrypted-messaging">
+                <summary><h3>Is NoArk messaging end-to-end encrypted? Can Apple or NoArk read my messages?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>Yes — NoArk now supports <strong>end-to-end encrypted messaging</strong>, designed so that no one but you and the person you're messaging can ever read it. When you send a message, NoArk seals it into an <strong>encrypted envelope on your device</strong> and uploads only that opaque ciphertext to <strong>CloudKit</strong> — Apple's public database — which acts purely as a <strong>zero-knowledge relay</strong>.</p>
+                <p>The decryptable content and all the keys <strong>never leave your devices</strong>: Apple only ever holds scrambled ciphertext it can't read, stored temporarily until the sender deletes it after a <strong>7-day TTL</strong>. Only the two devices holding the keys can actually decrypt and read the message — <strong>not Apple, and not us</strong>.</p>
             </details>
             <details class="faq-item">
                 <summary><h3>Why is there no sign-in or account?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

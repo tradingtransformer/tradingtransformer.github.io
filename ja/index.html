@@ -257,6 +257,14 @@
         },
         {
           "@type": "Question",
+          "name": "NoArk のメッセージはエンドツーエンドで暗号化されていますか？Apple や NoArk は私のメッセージを読めますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい——NoArk はエンドツーエンド暗号化メッセージに対応しました。あなたと、あなたがメッセージを送る相手以外の誰も読めないように設計されています。メッセージを送信すると、NoArk はそれをあなたの端末上で暗号化された封筒に封入し、その判読不能な暗号文だけを CloudKit——Apple の公開データベース——にアップロードします。CloudKit は純粋にゼロ知識のリレーとして機能するだけです。復号できる内容とすべての鍵は、あなたの端末から決して出ません。Apple が保持するのは読めないスクランブル化された暗号文だけで、しかも一時的に保存されるにすぎず、送信者が 7 日間の TTL の後にそれを削除します。鍵を持つ2台の端末だけが、実際にメッセージを復号して読むことができます——Apple にも、私たちにも読めません。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "なぜサインインする場所がないのですか？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1356,6 +1364,11 @@
             <details class="faq-item" id="data-privacy">
                 <summary><h3>NoArk は私のデータをどう扱いますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>あなたのデータは、あなたのものであり続けます。<strong>私たち自身があなたのデータを収集することはありません。</strong>NoArk で作成したものはすべて、<strong>あなたのデバイスとあなた自身の iCloud にローカルで保存され</strong>——私たちのサーバーには保存されません。Charlie が何かを考える必要があるとき、NoArk はクラウド上の大規模言語モデルと <strong>API</strong> を介してやり取りします。そして、それらの提供元の API 利用規約のもとでは、あなたのコンテンツは<strong>保存されることも、モデルの学習に使われることもありません</strong>。<strong>要するに、あなたの記憶はあなたとともにあり、私たちがそれを溜め込むことは決してなく、私たちが呼び出す AI モデルもそれを保持しないのです。そしてもう一つ理由があります。データを溜め込まないことで、上昇し続けるストレージのコストも抑えられるのです——一石二鳥、あなたにとっても、私たちにとっても良いことです。</strong></p>
+            </details>
+            <details class="faq-item" id="encrypted-messaging">
+                <summary><h3>NoArk のメッセージはエンドツーエンドで暗号化されていますか？Apple や NoArk は私のメッセージを読めますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>はい——NoArk は<strong>エンドツーエンド暗号化メッセージ</strong>に対応しました。あなたと、あなたがメッセージを送る相手以外の誰も読めないように設計されています。メッセージを送信すると、NoArk はそれをあなたの端末上で<strong>暗号化された封筒に封入</strong>し、その判読不能な暗号文だけを <strong>CloudKit</strong>——Apple の公開データベース——にアップロードします。CloudKit は純粋に<strong>ゼロ知識のリレー</strong>として機能するだけです。</p>
+                <p>復号できる内容とすべての鍵は、<strong>あなたの端末から決して出ません</strong>。Apple が保持するのは読めないスクランブル化された暗号文だけで、しかも一時的に保存されるにすぎず、送信者が <strong>7 日間の TTL</strong> の後にそれを削除します。鍵を持つ2台の端末だけが、実際にメッセージを復号して読むことができます——<strong>Apple にも、私たちにも読めません</strong>。</p>
             </details>
             <details class="faq-item">
                 <summary><h3>なぜサインインする場所がないのですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

@@ -257,6 +257,14 @@
         },
         {
           "@type": "Question",
+          "name": "La messagerie de NoArk est-elle chiffrée de bout en bout ? Apple ou NoArk peuvent-ils lire mes messages ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui — NoArk prend désormais en charge la messagerie chiffrée de bout en bout, conçue pour que personne, à part vous et la personne à qui vous écrivez, ne puisse jamais la lire. Lorsque vous envoyez un message, NoArk le scelle dans une enveloppe chiffrée sur votre appareil et ne téléverse que ce texte chiffré opaque vers CloudKit — la base de données publique d'Apple — qui sert uniquement de relais à connaissance nulle. Le contenu déchiffrable et toutes les clés ne quittent jamais vos appareils : Apple ne détient qu'un texte chiffré illisible qu'il ne peut pas lire, stocké temporairement jusqu'à ce que l'expéditeur le supprime après un TTL de 7 jours. Seuls les deux appareils détenant les clés peuvent réellement déchiffrer et lire le message — ni Apple, ni nous."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Pourquoi n'y a-t-il pas de connexion ni de compte ?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1356,6 +1364,11 @@
             <details class="faq-item" id="data-privacy">
                 <summary><h3>Comment NoArk gère-t-il mes données ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Vos données restent les vôtres. <strong>Nous ne collectons pas vos données nous-mêmes.</strong> Tout ce que vous créez dans NoArk est <strong>stocké localement sur votre appareil et dans votre propre iCloud</strong> — pas sur nos serveurs. Lorsque Charlie a besoin de raisonner sur quelque chose, NoArk dialogue avec les grands modèles de langage dans le cloud via leurs <strong>API</strong> et, selon les conditions d'utilisation de l'API de ces fournisseurs, votre contenu <strong>n'est ni stocké ni utilisé pour entraîner leurs modèles</strong>. <strong>En bref : votre mémoire vous appartient, nous ne l'archivons jamais, et les modèles d'IA que nous interrogeons ne la conservent pas non plus. Et il y a une seconde raison : en n'accumulant pas vos données, nous évitons aussi le coût toujours croissant de leur stockage — d'une pierre deux coups, bon pour vous et bon pour nous.</strong></p>
+            </details>
+            <details class="faq-item" id="encrypted-messaging">
+                <summary><h3>La messagerie de NoArk est-elle chiffrée de bout en bout ? Apple ou NoArk peuvent-ils lire mes messages ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>Oui — NoArk prend désormais en charge la <strong>messagerie chiffrée de bout en bout</strong>, conçue pour que personne, à part vous et la personne à qui vous écrivez, ne puisse jamais la lire. Lorsque vous envoyez un message, NoArk le scelle dans une <strong>enveloppe chiffrée sur votre appareil</strong> et ne téléverse que ce texte chiffré opaque vers <strong>CloudKit</strong> — la base de données publique d'Apple — qui sert uniquement de <strong>relais à connaissance nulle</strong>.</p>
+                <p>Le contenu déchiffrable et toutes les clés <strong>ne quittent jamais vos appareils</strong> : Apple ne détient qu'un texte chiffré illisible qu'il ne peut pas lire, stocké temporairement jusqu'à ce que l'expéditeur le supprime après un <strong>TTL de 7 jours</strong>. Seuls les deux appareils détenant les clés peuvent réellement déchiffrer et lire le message — <strong>ni Apple, ni nous</strong>.</p>
             </details>
             <details class="faq-item">
                 <summary><h3>Pourquoi n'y a-t-il pas de connexion ni de compte ?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

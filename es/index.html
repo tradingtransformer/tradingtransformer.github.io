@@ -257,6 +257,14 @@
         },
         {
           "@type": "Question",
+          "name": "¿La mensajería de NoArk está cifrada de extremo a extremo? ¿Pueden Apple o NoArk leer mis mensajes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí — NoArk ahora admite mensajería cifrada de extremo a extremo, diseñada para que nadie salvo tú y la persona con la que hablas pueda leerla jamás. Cuando envías un mensaje, NoArk lo sella en un sobre cifrado en tu dispositivo y sube únicamente ese texto cifrado opaco a CloudKit — la base de datos pública de Apple — que actúa puramente como un relé de conocimiento cero. El contenido descifrable y todas las claves nunca salen de tus dispositivos: Apple solo llega a tener texto cifrado ilegible que no puede leer, almacenado temporalmente hasta que el remitente lo elimina tras un TTL de 7 días. Solo los dos dispositivos que poseen las claves pueden realmente descifrar y leer el mensaje — ni Apple, ni nosotros."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿Por qué no hay inicio de sesión ni cuenta?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1356,6 +1364,11 @@
             <details class="faq-item" id="data-privacy">
                 <summary><h3>¿Cómo gestiona NoArk mis datos?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Tus datos siguen siendo tuyos. <strong>No recopilamos tus datos nosotros mismos.</strong> Todo lo que creas en NoArk se <strong>almacena localmente en tu dispositivo y en tu propio iCloud</strong> — no en nuestros servidores. Cuando Charlie necesita razonar sobre algo, NoArk se comunica con los grandes modelos de lenguaje en la nube a través de sus <strong>API</strong> y, según los términos de servicio de la API de esos proveedores, tu contenido <strong>no se almacena ni se usa para entrenar sus modelos</strong>. <strong>En resumen: tu memoria vive contigo, nosotros nunca la almacenamos y los modelos de IA que consultamos tampoco la conservan. Y hay un segundo motivo: al no acumular tus datos, también evitamos el coste cada vez mayor de almacenarlos — matar dos pájaros de un tiro, bueno para ti y bueno para nosotros.</strong></p>
+            </details>
+            <details class="faq-item" id="encrypted-messaging">
+                <summary><h3>¿La mensajería de NoArk está cifrada de extremo a extremo? ¿Pueden Apple o NoArk leer mis mensajes?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>Sí — NoArk ahora admite <strong>mensajería cifrada de extremo a extremo</strong>, diseñada para que nadie salvo tú y la persona con la que hablas pueda leerla jamás. Cuando envías un mensaje, NoArk lo sella en un <strong>sobre cifrado en tu dispositivo</strong> y sube únicamente ese texto cifrado opaco a <strong>CloudKit</strong> — la base de datos pública de Apple — que actúa puramente como un <strong>relé de conocimiento cero</strong>.</p>
+                <p>El contenido descifrable y todas las claves <strong>nunca salen de tus dispositivos</strong>: Apple solo llega a tener texto cifrado ilegible que no puede leer, almacenado temporalmente hasta que el remitente lo elimina tras un <strong>TTL de 7 días</strong>. Solo los dos dispositivos que poseen las claves pueden realmente descifrar y leer el mensaje — <strong>ni Apple, ni nosotros</strong>.</p>
             </details>
             <details class="faq-item">
                 <summary><h3>¿Por qué no hay inicio de sesión ni cuenta?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
