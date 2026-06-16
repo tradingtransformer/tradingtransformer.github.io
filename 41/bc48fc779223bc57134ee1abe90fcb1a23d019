@@ -1,0 +1,101 @@
+ja/noark-vs-character-ai.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+ja/noark-vs-gemini.html
+  s_137a7b148836cb::t_37e8b56551ae5a 332
+noark-vs-perplexity.html
+  s_137a7b148836cb::t_37e8b56551ae5a 329
+zh-cn/noark-vs-chatgpt.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+es/noark-vs-chatgpt.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+ja/noark-vs-perplexity.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+sitemap.xml
+  s_137a7b148836cb::t_5ba68bb50a4409 795-872
+noark-vs-character-ai.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+zh-tw/noark-vs-chatgpt.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+fr/noark-vs-character-ai.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+es/noark-vs-apple-intelligence.html
+  s_137a7b148836cb::t_220b6c12e23805 373
+noark-vs-apple-intelligence.html
+  s_137a7b148836cb::t_8f61608d3bdd01 361
+zh-tw/noark-vs-gemini.html
+  s_137a7b148836cb::t_37e8b56551ae5a 332
+noark-vs-manus.html
+  s_137a7b148836cb::t_8fece281755949 1-374
+fr/noark-vs-manus.html
+  s_137a7b148836cb::t_8fece281755949 1-376
+_build_perplexity.py
+  s_137a7b148836cb::t_39629be15c42f7 61,115,169,223,277,331
+es/noark-vs-manus.html
+  s_137a7b148836cb::t_8fece281755949 1-376
+_build_gemini.py
+  s_137a7b148836cb::t_39629be15c42f7 61,116,171,226,281,336
+fr/noark-vs-chatgpt.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+zh-cn/noark-vs-gemini.html
+  s_137a7b148836cb::t_37e8b56551ae5a 332
+zh-cn/noark-vs-character-ai.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+fr/noark-vs-apple-intelligence.html
+  s_137a7b148836cb::t_6bbc16c8724b9f 373
+ja/noark-vs-manus.html
+  s_137a7b148836cb::t_8fece281755949 1-376
+_build_manus.py
+  s_137a7b148836cb::t_013493382734fc 1-356
+zh-cn/noark-vs-perplexity.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+zh-tw/noark-vs-character-ai.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+_build_char.py
+  s_137a7b148836cb::t_39629be15c42f7 57,113,169,225,281,337
+ja/noark-vs-apple-intelligence.html
+  s_137a7b148836cb::t_5ab3556853cc03 373
+es/noark-vs-perplexity.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+fr/noark-vs-perplexity.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+zh-tw/noark-vs-apple-intelligence.html
+  s_137a7b148836cb::t_cfe450374ea2b0 373
+fr/noark-vs-gemini.html
+  s_137a7b148836cb::t_37e8b56551ae5a 332
+zh-tw/noark-vs-manus.html
+  s_137a7b148836cb::t_8fece281755949 1-376
+zh-tw/noark-vs-perplexity.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+noark-vs-gemini.html
+  s_137a7b148836cb::t_37e8b56551ae5a 330
+es/noark-vs-character-ai.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+es/noark-vs-gemini.html
+  s_137a7b148836cb::t_37e8b56551ae5a 332
+ja/noark-vs-chatgpt.html
+  s_137a7b148836cb::t_37e8b56551ae5a 333
+_build_chatgpt.py
+  s_137a7b148836cb::t_39629be15c42f7 61,117,173,229,285,341
+zh-cn/noark-vs-apple-intelligence.html
+  s_137a7b148836cb::t_c30be8ed0ab7de 373
+noark-vs-chatgpt.html
+  s_137a7b148836cb::t_37e8b56551ae5a 331
+zh-cn/noark-vs-manus.html
+  s_137a7b148836cb::t_8fece281755949 1-376
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.17-trip",
+  "base_commit_sha": "41bc48fc779223bc57134ee1abe90fcb1a23d019",
+  "prompts": {},
+  "sessions": {
+    "s_137a7b148836cb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4b4f8f21-3ecc-44b5-99e9-ee7ff60df092",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
