@@ -58,6 +58,7 @@ content[""] = {
   (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (hp + "noark-vs-perplexity.html", "NoArk vs Perplexity"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "Frequently asked questions about NoArk"),
  ],
  "faq": [
@@ -113,6 +114,7 @@ content["es"] = {
   (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (hp + "noark-vs-perplexity.html", "NoArk vs Perplexity"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "Preguntas frecuentes sobre NoArk"),
  ],
  "faq": [
@@ -168,6 +170,7 @@ content["fr"] = {
   (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (hp + "noark-vs-perplexity.html", "NoArk vs Perplexity"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "Questions fréquentes sur NoArk"),
  ],
  "faq": [
@@ -223,6 +226,7 @@ content["ja"] = {
   (hp + "noark-vs-gemini.html", "NoArk vs Gemini"),
   (hp + "noark-vs-perplexity.html", "NoArk vs Perplexity"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "NoArk についてのよくある質問"),
  ],
  "faq": [
@@ -278,6 +282,7 @@ content["zh-cn"] = {
   (hp + "noark-vs-gemini.html", "NoArk 对比 Gemini"),
   (hp + "noark-vs-perplexity.html", "NoArk 对比 Perplexity"),
   (ap, "NoArk 对比 Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk 对比 Manus"),
   (fp, "关于 NoArk 的常见问题"),
  ],
  "faq": [
@@ -333,6 +338,7 @@ content["zh-tw"] = {
   (hp + "noark-vs-gemini.html", "NoArk 對比 Gemini"),
   (hp + "noark-vs-perplexity.html", "NoArk 對比 Perplexity"),
   (ap, "NoArk 對比 Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk 對比 Manus"),
   (fp, "關於 NoArk 的常見問題"),
  ],
  "faq": [

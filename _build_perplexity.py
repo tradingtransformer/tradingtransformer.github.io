@@ -58,6 +58,7 @@ content[""] = {
   (mp, "NoArk vs Google Gemini"),
   (cp, "NoArk vs Character.AI"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "Frequently asked questions about NoArk"),
  ],
  "faq": [
@@ -111,6 +112,7 @@ content["es"] = {
   (mp, "NoArk vs Google Gemini"),
   (cp, "NoArk vs Character.AI"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "Preguntas frecuentes sobre NoArk"),
  ],
  "faq": [
@@ -164,6 +166,7 @@ content["fr"] = {
   (mp, "NoArk vs Google Gemini"),
   (cp, "NoArk vs Character.AI"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "Questions fréquentes sur NoArk"),
  ],
  "faq": [
@@ -217,6 +220,7 @@ content["ja"] = {
   (mp, "NoArk vs Google Gemini"),
   (cp, "NoArk vs Character.AI"),
   (ap, "NoArk vs Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk vs Manus"),
   (fp, "NoArk についてのよくある質問"),
  ],
  "faq": [
@@ -270,6 +274,7 @@ content["zh-cn"] = {
   (mp, "NoArk 对比 Google Gemini"),
   (cp, "NoArk 对比 Character.AI"),
   (ap, "NoArk 对比 Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk 对比 Manus"),
   (fp, "关于 NoArk 的常见问题"),
  ],
  "faq": [
@@ -323,6 +328,7 @@ content["zh-tw"] = {
   (mp, "NoArk 對比 Google Gemini"),
   (cp, "NoArk 對比 Character.AI"),
   (ap, "NoArk 對比 Apple Intelligence"),
+  (hp + "noark-vs-manus.html", "NoArk 對比 Manus"),
   (fp, "關於 NoArk 的常見問題"),
  ],
  "faq": [
