@@ -1,0 +1,45 @@
+zh-cn/index.html
+  s_8aee3b9c8d54fa::t_c4257ca612bce4 1349-1352
+es/noark-vs-claude.html
+  s_8aee3b9c8d54fa::t_6d09fdd884d145 1-397
+zh-cn/noark-vs-claude.html
+  s_8aee3b9c8d54fa::t_6d09fdd884d145 1-397
+zh-tw/index.html
+  s_8aee3b9c8d54fa::t_9c452d662df442 1349-1352
+fr/index.html
+  s_8aee3b9c8d54fa::t_cd708babbbbd5f 1349-1352
+ja/noark-vs-claude.html
+  s_8aee3b9c8d54fa::t_6d09fdd884d145 1-397
+es/index.html
+  s_8aee3b9c8d54fa::t_8c6bdea8e74bea 1349-1352
+noark-vs-claude.html
+  s_8aee3b9c8d54fa::t_6d09fdd884d145 1-395
+sitemap.xml
+  s_8aee3b9c8d54fa::t_775a40d09e8729 873-950
+_build_claude.py
+  s_8aee3b9c8d54fa::t_bfdf6b829030d6 1-399
+zh-tw/noark-vs-claude.html
+  s_8aee3b9c8d54fa::t_6d09fdd884d145 1-397
+fr/noark-vs-claude.html
+  s_8aee3b9c8d54fa::t_6d09fdd884d145 1-397
+index.html
+  s_8aee3b9c8d54fa::t_62280903c0619e 1350-1353
+ja/index.html
+  s_8aee3b9c8d54fa::t_cf2a7f279d2237 1349-1352
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.17-trip",
+  "base_commit_sha": "6a540c34d1523dd93947e2cd1ed0f1181361c58e",
+  "prompts": {},
+  "sessions": {
+    "s_8aee3b9c8d54fa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6f0f1a2f-bf9a-4912-a7c5-296b4035fd88",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
