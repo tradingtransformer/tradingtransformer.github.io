@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="2688" viewBox="0 0 1242 2688">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#04060f"/><stop offset="0.45" stop-color="#070d1c"/>
+    <stop offset="0.78" stop-color="#0b1630"/><stop offset="1" stop-color="#10162e"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#9ccbff" stop-opacity="0.45"/>
+    <stop offset="0.32" stop-color="#5b9bf0" stop-opacity="0.24"/>
+    <stop offset="0.7" stop-color="#2f6ad6" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#2f6ad6" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="diaFill" cx="0.5" cy="0.28" r="0.85">
+    <stop offset="0" stop-color="#e4f1ff"/><stop offset="0.45" stop-color="#8cc2ff"/>
+    <stop offset="1" stop-color="#2f6ad6"/>
+  </radialGradient>
+  <linearGradient id="diaEdge" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#4f97e8"/>
+  </linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#bfe0ff" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#3f7fd6" stop-opacity="0.15"/>
+  </linearGradient>
+</defs>
+<rect width="1242" height="2688" fill="url(#bg)"/>
+<ellipse cx="621" cy="1560" rx="880" ry="760" fill="url(#glow)"/>
+<g fill="#ffffff">
+  <circle cx="180" cy="300" r="2" opacity="0.5"/><circle cx="980" cy="240" r="2.5" opacity="0.6"/>
+  <circle cx="1080" cy="520" r="1.6" opacity="0.4"/><circle cx="120" cy="700" r="1.8" opacity="0.45"/>
+  <circle cx="1130" cy="980" r="2" opacity="0.5"/><circle cx="90" cy="1180" r="1.5" opacity="0.35"/>
+  <circle cx="1150" cy="1500" r="2.2" opacity="0.5"/><circle cx="70" cy="1650" r="1.7" opacity="0.4"/>
+  <circle cx="1100" cy="2050" r="1.8" opacity="0.45"/><circle cx="150" cy="2150" r="2" opacity="0.5"/>
+  <circle cx="1000" cy="2380" r="1.5" opacity="0.35"/><circle cx="260" cy="2450" r="1.8" opacity="0.4"/>
+</g>
+<text x="110" y="500" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="116" fill="#ffffff" letter-spacing="-1">唯一为每位</text>
+<text x="110" y="646" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="116" fill="#ffffff" letter-spacing="-1">钻石客户定制</text>
+<text x="110" y="792" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="116" fill="#8ec6ff" letter-spacing="-1">功能的 AI。</text>
+<g transform="translate(621,1560)">
+  <circle cx="0" cy="0" r="430" fill="none" stroke="url(#ring)" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="0" cy="0" r="360" fill="none" stroke="url(#ring)" stroke-width="2" opacity="0.32"/>
+  <path d="M-150,-180 L150,-180 L260,-90 L0,300 L-260,-90 Z" fill="url(#diaFill)" stroke="url(#diaEdge)" stroke-width="9" stroke-linejoin="round"/>
+  <line x1="-260" y1="-90" x2="260" y2="-90" stroke="#eaf6ff" stroke-width="5" opacity="0.85"/>
+  <g stroke="#eaf6ff" stroke-width="3" opacity="0.55" fill="none">
+    <line x1="-150" y1="-180" x2="-260" y2="-90"/><line x1="150" y1="-180" x2="260" y2="-90"/>
+    <line x1="-150" y1="-180" x2="0" y2="-90"/><line x1="150" y1="-180" x2="0" y2="-90"/>
+    <line x1="-150" y1="-180" x2="-120" y2="-90"/><line x1="150" y1="-180" x2="120" y2="-90"/>
+  </g>
+  <g stroke="#dbeeff" stroke-width="3" opacity="0.5" fill="none">
+    <line x1="-260" y1="-90" x2="0" y2="300"/><line x1="260" y1="-90" x2="0" y2="300"/>
+    <line x1="-120" y1="-90" x2="0" y2="300"/><line x1="120" y1="-90" x2="0" y2="300"/>
+    <line x1="0" y1="-90" x2="0" y2="300"/>
+  </g>
+  <g transform="translate(300,-250)" fill="#ffffff">
+    <path d="M0,-34 L8,-8 34,0 8,8 0,34 -8,8 -34,0 -8,-8 Z"/>
+  </g>
+  <circle cx="-230" cy="-150" r="6" fill="#ffffff" opacity="0.8"/>
+  <text x="0" y="392" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="44" fill="#bfe0ff" letter-spacing="2">为你量身打造</text>
+</g>
+<text x="621" y="2150" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="46" fill="#aeb6c4">告诉我们你最想要的，我们为你打造。</text>
+<text x="621" y="2400" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="44" fill="#cfd5e0">20+ 国家的 iOS 用户信赖之选</text>
+<text x="110" y="2620" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="34" fill="#7a8294">NoArk — 无限记忆</text>
+</svg>
