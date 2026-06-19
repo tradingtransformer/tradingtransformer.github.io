@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#05070f"/><stop offset="0.42" stop-color="#0b1020"/>
+    <stop offset="0.72" stop-color="#161430"/><stop offset="1" stop-color="#241a26"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.5"/>
+    <stop offset="0.34" stop-color="#ffcf8a" stop-opacity="0.26"/>
+    <stop offset="0.7" stop-color="#ffb877" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#ffb877" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="dial" cx="0.5" cy="0.4" r="0.7">
+    <stop offset="0" stop-color="#241d12"/><stop offset="0.7" stop-color="#15120c"/>
+    <stop offset="1" stop-color="#0c0a07"/>
+  </radialGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffe2a6"/><stop offset="1" stop-color="#c79544"/>
+  </linearGradient>
+  <radialGradient id="star" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#fff4d6"/><stop offset="1" stop-color="#ffce7a"/>
+  </radialGradient>
+</defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<ellipse cx="540" cy="770" rx="720" ry="570" fill="url(#glow)"/>
+<g fill="#ffffff">
+  <circle cx="150" cy="180" r="2" opacity="0.5"/><circle cx="900" cy="140" r="2.4" opacity="0.6"/>
+  <circle cx="1010" cy="360" r="1.6" opacity="0.4"/><circle cx="80" cy="500" r="1.8" opacity="0.45"/>
+  <circle cx="1020" cy="700" r="2" opacity="0.5"/><circle cx="60" cy="900" r="1.5" opacity="0.35"/>
+  <circle cx="1000" cy="1080" r="1.8" opacity="0.45"/><circle cx="120" cy="1180" r="2" opacity="0.5"/>
+</g>
+<text x="70" y="166" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="74" fill="#9aa1b2" letter-spacing="-2">Les autres IA</text>
+<text x="70" y="252" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="74" fill="#c7cdda" letter-spacing="-2" font-style="italic">disent comment.</text>
+<text x="70" y="374" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="74" fill="#ffffff" letter-spacing="-2">NoArk vous dit</text>
+<text x="70" y="460" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="74" fill="#ffd98a" letter-spacing="-2" font-style="italic">quoi faire.</text>
+<g transform="translate(540,770) scale(0.64)">
+  <circle cx="0" cy="0" r="430" fill="none" stroke="url(#rim)" stroke-width="2.5" opacity="0.4"/>
+  <circle cx="0" cy="0" r="356" fill="url(#dial)" stroke="url(#rim)" stroke-width="10"/>
+  <circle cx="0" cy="0" r="356" fill="none" stroke="#ffe2a6" stroke-width="2" opacity="0.25"/>
+  <g stroke="#ffe2a6" stroke-width="4" opacity="0.55">
+    <line x1="0" y1="-330" x2="0" y2="-300"/><line x1="0" y1="300" x2="0" y2="330"/>
+    <line x1="-330" y1="0" x2="-300" y2="0"/><line x1="300" y1="0" x2="330" y2="0"/>
+  </g>
+  <g stroke="#ffe2a6" stroke-width="2.5" opacity="0.3">
+    <line x1="233" y1="-233" x2="212" y2="-212"/><line x1="-233" y1="-233" x2="-212" y2="-212"/>
+    <line x1="233" y1="233" x2="212" y2="212"/><line x1="-233" y1="233" x2="-212" y2="212"/>
+  </g>
+  <g transform="rotate(18)">
+    <path d="M0,-250 L46,40 L0,8 Z" fill="url(#rim)"/>
+    <path d="M0,250 L-46,-40 L0,-8 Z" fill="#5a4a2a"/>
+    <path d="M0,-250 L-46,40 L0,8 Z" fill="#d9aa55"/>
+    <path d="M0,250 L46,-40 L0,-8 Z" fill="#403014"/>
+  </g>
+  <circle cx="0" cy="0" r="26" fill="#1a160e" stroke="#ffe2a6" stroke-width="6"/>
+  <g transform="translate(0,-356)">
+    <path d="M0,-46 L12,-12 46,0 12,12 0,46 -12,12 -46,0 -12,-12 Z" fill="url(#star)"/>
+  </g>
+  <text x="0" y="270" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="33" fill="#ffd98a" letter-spacing="2">DES CONSEILS, PAS QUE DES RÉPONSES</text>
+</g>
+<text x="540" y="1115" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="38" fill="#aeb6c4">Il vous dit ce qui compte — pour votre bien.</text>
+<text x="540" y="1190" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="40" fill="#cfd5e0">Adoptée par des utilisateurs iOS dans 20+ pays</text>
+<text x="50" y="1305" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="32" fill="#ffffff">NoArk — Mémoire Infinie</text>
+</svg>

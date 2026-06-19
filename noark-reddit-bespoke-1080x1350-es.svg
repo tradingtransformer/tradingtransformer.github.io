@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#04060f"/><stop offset="0.45" stop-color="#070d1c"/>
+    <stop offset="0.78" stop-color="#0b1630"/><stop offset="1" stop-color="#10162e"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#9ccbff" stop-opacity="0.45"/>
+    <stop offset="0.32" stop-color="#5b9bf0" stop-opacity="0.24"/>
+    <stop offset="0.7" stop-color="#2f6ad6" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#2f6ad6" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="diaFill" cx="0.5" cy="0.28" r="0.85">
+    <stop offset="0" stop-color="#e4f1ff"/><stop offset="0.45" stop-color="#8cc2ff"/>
+    <stop offset="1" stop-color="#2f6ad6"/>
+  </radialGradient>
+  <linearGradient id="diaEdge" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#4f97e8"/>
+  </linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#bfe0ff" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#3f7fd6" stop-opacity="0.15"/>
+  </linearGradient>
+</defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<ellipse cx="540" cy="760" rx="720" ry="560" fill="url(#glow)"/>
+<g fill="#ffffff">
+  <circle cx="150" cy="180" r="2" opacity="0.5"/><circle cx="900" cy="140" r="2.4" opacity="0.6"/>
+  <circle cx="1010" cy="360" r="1.6" opacity="0.4"/><circle cx="80" cy="500" r="1.8" opacity="0.45"/>
+  <circle cx="1020" cy="700" r="2" opacity="0.5"/><circle cx="60" cy="900" r="1.5" opacity="0.35"/>
+  <circle cx="1000" cy="1080" r="1.8" opacity="0.45"/><circle cx="120" cy="1180" r="2" opacity="0.5"/>
+</g>
+<text x="70" y="174" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="78" fill="#ffffff" letter-spacing="-2">La única IA que</text>
+<text x="70" y="268" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="78" fill="#ffffff" letter-spacing="-2">crea funciones</text>
+<text x="70" y="362" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="78" fill="#ffffff" letter-spacing="-2">para cada</text>
+<text x="70" y="456" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="78" fill="#8ec6ff" letter-spacing="-2">cliente diamante.</text>
+<g transform="translate(540,770) scale(0.62)">
+  <circle cx="0" cy="0" r="430" fill="none" stroke="url(#ring)" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="0" cy="0" r="360" fill="none" stroke="url(#ring)" stroke-width="2" opacity="0.32"/>
+  <path d="M-150,-180 L150,-180 L260,-90 L0,300 L-260,-90 Z" fill="url(#diaFill)" stroke="url(#diaEdge)" stroke-width="9" stroke-linejoin="round"/>
+  <line x1="-260" y1="-90" x2="260" y2="-90" stroke="#eaf6ff" stroke-width="5" opacity="0.85"/>
+  <g stroke="#eaf6ff" stroke-width="3" opacity="0.55" fill="none">
+    <line x1="-150" y1="-180" x2="-260" y2="-90"/><line x1="150" y1="-180" x2="260" y2="-90"/>
+    <line x1="-150" y1="-180" x2="0" y2="-90"/><line x1="150" y1="-180" x2="0" y2="-90"/>
+    <line x1="-150" y1="-180" x2="-120" y2="-90"/><line x1="150" y1="-180" x2="120" y2="-90"/>
+  </g>
+  <g stroke="#dbeeff" stroke-width="3" opacity="0.5" fill="none">
+    <line x1="-260" y1="-90" x2="0" y2="300"/><line x1="260" y1="-90" x2="0" y2="300"/>
+    <line x1="-120" y1="-90" x2="0" y2="300"/><line x1="120" y1="-90" x2="0" y2="300"/>
+    <line x1="0" y1="-90" x2="0" y2="300"/>
+  </g>
+  <g transform="translate(300,-250)" fill="#ffffff">
+    <path d="M0,-34 L8,-8 34,0 8,8 0,34 -8,8 -34,0 -8,-8 Z"/>
+  </g>
+  <circle cx="-230" cy="-150" r="6" fill="#ffffff" opacity="0.8"/>
+  <text x="0" y="392" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="44" fill="#bfe0ff" letter-spacing="2">HECHO A MEDIDA PARA TI</text>
+</g>
+<text x="540" y="1115" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="38" fill="#aeb6c4">Dinos qué quieres más y lo creamos para ti.</text>
+<text x="540" y="1190" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="40" fill="#cfd5e0">La eligen usuarios de iOS en 20+ países</text>
+<text x="50" y="1305" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="32" fill="#ffffff">NoArk — Memoria Infinita</text>
+</svg>
