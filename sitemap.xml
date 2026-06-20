@@ -5,7 +5,7 @@
   <!-- ===== Home page (all locales) ===== -->
   <url>
     <loc>https://www.tradingtransformer.com/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/"/>
@@ -17,8 +17,86 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/"/>
   </url>
   <url>
+    <loc>https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/which-ai-tells-you-what-to-do.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/which-ai-tells-you-what-to-do.html"/>
+  </url>
+  <url>
     <loc>https://www.tradingtransformer.com/es/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/"/>
@@ -31,7 +109,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/"/>
@@ -44,7 +122,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/"/>
@@ -57,7 +135,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/"/>
@@ -70,7 +148,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/"/>
@@ -404,7 +482,7 @@
 
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-apple-intelligence.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-apple-intelligence.html"/>
@@ -417,7 +495,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-apple-intelligence.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-apple-intelligence.html"/>
@@ -430,7 +508,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-apple-intelligence.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-apple-intelligence.html"/>
@@ -443,7 +521,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-apple-intelligence.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-apple-intelligence.html"/>
@@ -456,7 +534,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-apple-intelligence.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-apple-intelligence.html"/>
@@ -469,7 +547,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-apple-intelligence.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-apple-intelligence.html"/>
@@ -482,7 +560,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-character-ai.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-character-ai.html"/>
@@ -495,7 +573,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-character-ai.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-character-ai.html"/>
@@ -508,7 +586,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-character-ai.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-character-ai.html"/>
@@ -521,7 +599,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-character-ai.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-character-ai.html"/>
@@ -534,7 +612,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-character-ai.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-character-ai.html"/>
@@ -547,7 +625,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-character-ai.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-character-ai.html"/>
@@ -560,7 +638,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-chatgpt.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-chatgpt.html"/>
@@ -573,7 +651,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-chatgpt.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-chatgpt.html"/>
@@ -586,7 +664,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-chatgpt.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-chatgpt.html"/>
@@ -599,7 +677,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-chatgpt.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-chatgpt.html"/>
@@ -612,7 +690,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-chatgpt.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-chatgpt.html"/>
@@ -625,7 +703,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-chatgpt.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-chatgpt.html"/>
@@ -638,7 +716,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-gemini.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-gemini.html"/>
@@ -651,7 +729,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-gemini.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-gemini.html"/>
@@ -664,7 +742,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-gemini.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-gemini.html"/>
@@ -677,7 +755,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-gemini.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-gemini.html"/>
@@ -690,7 +768,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-gemini.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-gemini.html"/>
@@ -703,7 +781,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-gemini.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-gemini.html"/>
@@ -716,7 +794,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-perplexity.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-perplexity.html"/>
@@ -729,7 +807,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-perplexity.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-perplexity.html"/>
@@ -742,7 +820,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-perplexity.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-perplexity.html"/>
@@ -755,7 +833,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-perplexity.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-perplexity.html"/>
@@ -768,7 +846,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-perplexity.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-perplexity.html"/>
@@ -781,7 +859,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-perplexity.html</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-perplexity.html"/>
@@ -794,7 +872,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-manus.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-manus.html"/>
@@ -807,7 +885,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-manus.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-manus.html"/>
@@ -820,7 +898,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-manus.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-manus.html"/>
@@ -833,7 +911,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-manus.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-manus.html"/>
@@ -846,7 +924,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-manus.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-manus.html"/>
@@ -859,7 +937,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-manus.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-manus.html"/>
@@ -872,7 +950,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/noark-vs-claude.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-claude.html"/>
@@ -885,7 +963,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/es/noark-vs-claude.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-claude.html"/>
@@ -898,7 +976,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-cn/noark-vs-claude.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-claude.html"/>
@@ -911,7 +989,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/zh-tw/noark-vs-claude.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-claude.html"/>
@@ -924,7 +1002,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/fr/noark-vs-claude.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-claude.html"/>
@@ -937,7 +1015,7 @@
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/ja/noark-vs-claude.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/noark-vs-claude.html"/>

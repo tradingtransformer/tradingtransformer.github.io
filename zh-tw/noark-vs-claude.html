@@ -341,6 +341,49 @@
             <h2>不只是模型 —— 一款完整的 Apple 超級應用程式</h2>
             <p>在頭條與 Fiat Lux 之外,NoArk 還是一款面向 iPhone、iPad、Mac 和 Apple Vision 的<strong>完整 Apple 超級應用程式</strong>:涵蓋市場、生產力、旅行、教育和生活事務的 40 多個開箱即用工作流程,以及由 TradingTransformer 團隊打造、靈感來自克勞德·夏農 AI 選股願景的投資大腦。Claude Code 與 Cowork 在開發者的終端機和知識工作者的瀏覽器裡強大得很;NoArk 是你在<em>之間</em>的那些時刻 —— 當你想搞清楚下一步該做什麼時 —— 想要拿出來用的那一款。</p>
 
+            <style>
+.faq{max-width:760px;margin:8px auto 0}
+.faq-item{border-bottom:1px solid var(--hairline)}
+.faq-item summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:1.05em;color:var(--text);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.4em;color:var(--accent);font-weight:400;line-height:1}
+.faq-item[open] summary::after{content:"\2013"}
+.faq-a{padding:0 0 18px;color:var(--text-secondary);line-height:1.65}
+.faq-a p{margin:0 0 10px}
+.faq-a p:last-child{margin-bottom:0}
+</style>
+            <h2 id="faq">常見問題</h2>
+            <div class="faq">
+                <details class="faq-item">
+                    <summary>NoArk 是 Claude 的替代品嗎?</summary>
+                    <div class="faq-a"><p>並不完全是 —— NoArk 處於 AI 技術堆疊的另一層。Claude Code 與 Claude Cowork 專注於如何執行你已經定義好的任務:寫程式碼、跑工作流程、完成範圍清晰的工作。NoArk 關心的是更早的一步 —— 幫你思考首先哪些任務值得你的關注 —— 透過即時世界新聞、來自歷史最有智慧者(蒙格、賈伯斯、馬可·奧理略等 40 多位)AI 版本的建議,以及 40 多個用於發現優先順序的工作流程。在內部,NoArk 把請求路由到包括 Anthropic 的 Claude(Fable)在內的多個前沿模型,所以它是站在 Claude 之上,而不是與之對抗。</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>NoArk 與 Claude Code 有什麼不同?</summary>
+                    <div class="faq-a"><p>Claude Code 是為程式設計任務而生 —— 寫函式、重構模組、跑測試 —— 前提是你已經決定要做什麼。NoArk 則是幫你決定首先什麼值得做(或值得花時間)的:它透過帶一鍵分析的即時頭條把世界的變化呈現給你,在 Fiat Lux 分頁裡讓你把真實問題帶給 AI 查理·蒙格或史蒂夫·賈伯斯,並提供 40 多個用於在市場與生活之間設定優先順序的工作流程。用 NoArk 選對任務,然後把執行交給 Claude Code。</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>NoArk 與 Claude Cowork 有什麼不同?</summary>
+                    <div class="faq-a"><p>Claude Cowork 在被賦予一個目標之後,會去跑多步工作流程(研究、寫作、瀏覽器自動化)。NoArk 幫你首先到達正確的目標。它的主介面是帶一鍵解讀的即時全球頭條資訊流;它的 Fiat Lux 分頁把歷史最有智慧者的 AI 版本帶到真實問題上;它的 40 多個工作流程幫你把世界的原始訊號變成一份真正值得做的事情的短名單。然後,Cowork 可以去執行其中一件。</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>NoArk 用了 Claude 嗎?</summary>
+                    <div class="faq-a"><p>用了。NoArk 把每個請求路由到眾多前沿模型中最合適的一個,而 Anthropic 的 Claude(Fable)就是其中之一 —— 與 DeepSeek、Mistral、Kimi 和 Google 的 Gemini 並列。所以當你對一條頭條點了一鍵分析,或者向 Fiat Lux 中的某位導師提問時,底層的答案常常由 Claude 驅動。</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>為什麼聚焦於「做什麼」而不是「怎麼做」?</summary>
+                    <div class="faq-a"><p>因為對大多數人來說,大多數日子裡,瓶頸不是執行 —— 而是選出值得做的事。市場在動,新聞在爆,行程被填滿,而在錯的事情上下苦工,代價遠比在對的事情上慢一點要大。NoArk 的設計前提是:在行動之前幫你推理和排序,比從行動本身省下幾分鐘更有價值。</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>我的工作在 NoArk 裡是私密的嗎?</summary>
+                    <div class="faq-a"><p>是的。沒有登入、也不收集資料:你的對話、頭條分析與 Fiat Lux 對話都留在你自己的裝置和你自己的 iCloud 中,絕不堆放在我們的伺服器上,也絕不用於訓練模型。Apple 的隱私標籤寫著「不收集資料」。這比 Claude Code 或 Claude Cowork 更嚴格 —— 後者需要 Anthropic 帳號,並將你的提示詞和程式碼傳送到它們的伺服器。</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>NoArk 免費嗎?</summary>
+                    <div class="faq-a"><p>NoArk 在 iPhone、iPad、Mac 和 Apple Vision 上免費下載,含可選的應用程式內購買。開始使用無需帳號,也不收集資料。</p></div>
+                </details>
+            </div>
+
             <div class="cta">
                 <h2>試試這個私密的選擇</h2>
                 <p>iPhone、iPad、Mac 和 Apple Vision 免費。無需登入。不收集資料。</p>
@@ -353,6 +396,7 @@
                 <h2>繼續閱讀</h2>
                 <ul>
                     <li><a href="/zh-tw/">NoArk — 無限記憶:智慧型 AI 作業系統與超級應用程式</a></li>
+                    <li><a href="/zh-tw/which-ai-tells-you-what-to-do.html">哪款 AI 告訴你該做什麼，而不只是怎麼做？</a></li>
                     <li><a href="/zh-tw/noark-vs-chatgpt.html">NoArk 對比 ChatGPT</a></li>
                     <li><a href="/zh-tw/noark-vs-gemini.html">NoArk 對比 Google Gemini</a></li>
                     <li><a href="/zh-tw/noark-vs-perplexity.html">NoArk 對比 Perplexity</a></li>

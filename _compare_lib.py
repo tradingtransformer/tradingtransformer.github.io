@@ -20,6 +20,41 @@ LOC = {
 }
 HREFLANG = [("en",""),("es","es"),("zh-Hans","zh-cn"),("zh-Hant","zh-tw"),("fr","fr"),("ja","ja")]
 
+# Localized "Keep reading" cross-link to the question-shaped GEO page, injected
+# into every comparison page's related list (except that page itself).
+WHATTODO_SLUG = "which-ai-tells-you-what-to-do.html"
+WHATTODO_LINK = {
+    "":      ("/which-ai-tells-you-what-to-do.html", "Which AI tells you what to do, not just how?"),
+    "es":    ("/es/which-ai-tells-you-what-to-do.html", "¿Qué IA te dice qué hacer, no solo cómo?"),
+    "fr":    ("/fr/which-ai-tells-you-what-to-do.html", "Quelle IA vous dit quoi faire, pas seulement comment ?"),
+    "ja":    ("/ja/which-ai-tells-you-what-to-do.html", "「どうやるか」でなく「何をすべきか」を教えるAIは？"),
+    "zh-cn": ("/zh-cn/which-ai-tells-you-what-to-do.html", "哪款 AI 告诉你该做什么，而不只是怎么做？"),
+    "zh-tw": ("/zh-tw/which-ai-tells-you-what-to-do.html", "哪款 AI 告訴你該做什麼，而不只是怎麼做？"),
+}
+
+# Localized heading for the visible FAQ section (keyed by prefix)
+FAQ_HEADING = {
+    "":      "Frequently asked questions",
+    "es":    "Preguntas frecuentes",
+    "fr":    "Questions fréquentes",
+    "ja":    "よくある質問",
+    "zh-cn": "常见问题",
+    "zh-tw": "常見問題",
+}
+
+# Self-contained styling for the visible FAQ accordions (uses page CSS vars).
+FAQ_STYLE = '''<style>
+.faq{max-width:760px;margin:8px auto 0}
+.faq-item{border-bottom:1px solid var(--hairline)}
+.faq-item summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:1.05em;color:var(--text);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.4em;color:var(--accent);font-weight:400;line-height:1}
+.faq-item[open] summary::after{content:"\\2013"}
+.faq-a{padding:0 0 18px;color:var(--text-secondary);line-height:1.65}
+.faq-a p{margin:0 0 10px}
+.faq-a p:last-child{margin-bottom:0}
+</style>'''
+
 
 def _extract(prefix):
     """Pull reusable blocks from the locale's Apple Intelligence page."""
@@ -45,9 +80,13 @@ def _abs(prefix, slug):
     return f"{BASE}{prefix + '/' if prefix else ''}{slug}"
 
 
-def _hreflang_block(slug):
+def _hreflang_block(slug, prefixes=None):
+    # Only emit hreflang alternates for locales that actually exist (prefixes),
+    # so English-first pages don't point at not-yet-built localized URLs.
     out = [f'    <link rel="canonical" href="{{CANON}}">']
     for code, pfx in HREFLANG:
+        if prefixes is not None and pfx not in prefixes:
+            continue
         out.append(f'    <link rel="alternate" hreflang="{code}" href="{_abs(pfx, slug)}">')
     out.append(f'    <link rel="alternate" hreflang="x-default" href="{_abs("", slug)}">')
     return "\n".join(out)
@@ -59,6 +98,7 @@ def _jsonld(obj):
 
 def render(slug, competitor_display, content):
     """content: dict prefix -> field dict. Writes one file per locale."""
+    present = set(content.keys())
     for prefix, c in content.items():
         lang, inlang, home_name = LOC[prefix]
         b = _extract(prefix)
@@ -79,13 +119,33 @@ def render(slug, competitor_display, content):
         for h2, paras in c["sections"]:
             secs += f'            <h2>{h2}</h2>\n'
             for p in paras:
-                secs += f'            <p>{p}</p>\n'
+                # block-level HTML (lists, figures, style) is emitted raw, not wrapped in <p>
+                if p.lstrip().startswith(("<ul", "<ol", "<div", "<figure", "<style", "<table")):
+                    secs += f'            {p}\n'
+                else:
+                    secs += f'            <p>{p}</p>\n'
 
-        # --- related ---
+        # --- related (auto-inject the GEO cross-link, except on that page itself) ---
+        related = list(c["related"])
+        wt = WHATTODO_LINK.get(prefix)
+        if wt and slug != WHATTODO_SLUG and wt[0] not in [r[0] for r in related]:
+            related.insert(1, wt)
         rel = f'            <div class="related">\n                <h2>{c["related_heading"]}</h2>\n                <ul>\n'
-        for href, label in c["related"]:
+        for href, label in related:
             rel += f'                    <li><a href="{href}">{label}</a></li>\n'
         rel += '                </ul>\n            </div>'
+
+        # --- visible FAQ (mirrors the FAQPage JSON-LD) ---
+        faq_heading = FAQ_HEADING.get(prefix, "Frequently asked questions")
+        faq_html = (f'            {FAQ_STYLE}\n'
+                    f'            <h2 id="faq">{faq_heading}</h2>\n'
+                    f'            <div class="faq">\n')
+        for q, a in c["faq"]:
+            faq_html += (f'                <details class="faq-item">\n'
+                         f'                    <summary>{q}</summary>\n'
+                         f'                    <div class="faq-a"><p>{a}</p></div>\n'
+                         f'                </details>\n')
+        faq_html += '            </div>'
 
         # --- JSON-LD ---
         article = {
@@ -119,7 +179,7 @@ def render(slug, competitor_display, content):
     <meta name="keywords" content="{c["keywords"]}">
     <meta name="author" content="TradingTransformer Technologies LLC">
     <meta name="robots" content="index, follow">
-{_hreflang_block(slug).replace("{CANON}", canon)}
+{_hreflang_block(slug, present).replace("{CANON}", canon)}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -184,7 +244,7 @@ def render(slug, competitor_display, content):
             <h2>{c["glance"]}</h2>
             <table class="compare">
                 <thead>
-                    <tr><th>&nbsp;</th><th>{c["col_noark"]}</th><th>{competitor_display}</th></tr>
+                    <tr><th>&nbsp;</th><th>{c["col_noark"]}</th><th>{c.get("col_comp", competitor_display)}</th></tr>
                 </thead>
                 <tbody>
 {rows}                </tbody>
@@ -192,6 +252,8 @@ def render(slug, competitor_display, content):
             <p class="table-note">{c["note"]}</p>
 
 {secs}
+{faq_html}
+
             {b["cta"]}
 
 {rel}
