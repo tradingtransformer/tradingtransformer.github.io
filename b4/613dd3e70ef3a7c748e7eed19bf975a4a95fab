@@ -1,0 +1,41 @@
+zh-tw/index.html
+  s_afc2dde4433c3f::t_9fc97a5512486b 1204
+  s_afc2dde4433c3f::t_6329ff3b36ec88 1676
+  s_afc2dde4433c3f::t_a8e879435d4c77 415
+fr/index.html
+  s_afc2dde4433c3f::t_5cb5dd9fe009c3 1204
+  s_afc2dde4433c3f::t_ff5983f47cab7a 1676
+  s_afc2dde4433c3f::t_199048510d3f6a 415
+index.html
+  s_afc2dde4433c3f::t_ea64a67f3a15ba 1248
+  s_afc2dde4433c3f::t_3cf8f1c891c7fa 415
+  s_afc2dde4433c3f::t_381bb874982544 1721
+es/index.html
+  s_afc2dde4433c3f::t_1e80e003b5fefc 1676
+  s_afc2dde4433c3f::t_e9de942cc28907 415
+  s_afc2dde4433c3f::t_916bae3bedc6b5 1204
+ja/index.html
+  s_afc2dde4433c3f::t_2cfd0f8ed1c9a0 1204
+  s_afc2dde4433c3f::t_0754ac45ed245d 1676
+  s_afc2dde4433c3f::t_466c0bbcd89d92 415
+zh-cn/index.html
+  s_afc2dde4433c3f::t_6316478b1640c3 415
+  s_afc2dde4433c3f::t_8f73697c2297ff 1204
+  s_afc2dde4433c3f::t_2711fcc2978ac0 1676
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.18-trip",
+  "base_commit_sha": "b4613dd3e70ef3a7c748e7eed19bf975a4a95fab",
+  "prompts": {},
+  "sessions": {
+    "s_afc2dde4433c3f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f998ed14-6b69-4026-b037-ca7e51316139",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
