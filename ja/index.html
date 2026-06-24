@@ -281,6 +281,14 @@
         },
         {
           "@type": "Question",
+          "name": "NoArk は私の WhatsApp や Line など他のアプリのメッセージや通知を読めますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ——しかも単に「読みません」と約束しているからではなく、iOS がそれを不可能にしているからです。Apple はすべてのアプリを厳格なサンドボックスの中で動かします。各アプリは自分自身のデータとストレージにしか触れられず、どのアプリも他のアプリのファイルを読むことはできません——NoArk も例外ではありません。あなたの WhatsApp、Line、iMessage、銀行アプリ、写真は、NoArk が鍵を持たない壁の向こうにあります。通知も同じように守られています。Android には、デバイス上のすべての通知をアプリが読めるようにする NotificationListenerService という API があり——これが一部の Android アプリがこっそりあなたのチャットを抜き取る方法です——が、iOS には同等の API がまったくありません。iPhone のアプリがバックグラウンドに居座って、あなたの WhatsApp や Line の通知を盗み聞きする手段は一切ありません。ですから NoArk が目にできるのは、あなたが意図的に持ち込んだもの——写真、ファイル、あなたが入力または音声で伝える質問——だけです。それ以外には手が届くことすらありません。そしてこの同じ慎重さは、あなたが実際にアクセスを許可したあらゆるデータにも及びます。写真、ファイル、マイク、その他何であれ NoArk に許可を与えたとき、私たちは一般的なアプリよりはるかに抑制的に扱います——その場のタスクのためだけに使い、こっそり抱え込むことはなく、私たちのサーバーに送るのではなくあなたの端末にとどめます。あなたのデータを大切に扱うことは、私たちが用意した「設定」ではありません——それは私たちの約束です。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "なぜサインインする場所がないのですか？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1598,6 +1606,12 @@
                 <summary><h3>NoArk のメッセージはエンドツーエンドで暗号化されていますか？Apple や NoArk は私のメッセージを読めますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>はい——NoArk は<strong>エンドツーエンド暗号化メッセージ</strong>に対応しました。あなたと、あなたがメッセージを送る相手以外の誰も読めないように設計されています。メッセージを送信すると、NoArk はそれをあなたの端末上で<strong>暗号化された封筒に封入</strong>し、その判読不能な暗号文だけを <strong>CloudKit</strong>——Apple の公開データベース——にアップロードします。CloudKit は純粋に<strong>ゼロ知識のリレー</strong>として機能するだけです。</p>
                 <p>復号できる内容とすべての鍵は、<strong>あなたの端末から決して出ません</strong>。Apple が保持するのは読めないスクランブル化された暗号文だけで、しかも一時的に保存されるにすぎず、送信者が <strong>7 日間の TTL</strong> の後にそれを削除します。鍵を持つ2台の端末だけが、実際にメッセージを復号して読むことができます——<strong>Apple にも、私たちにも読めません</strong>。</p>
+            </details>
+            <details class="faq-item" id="ios-sandbox">
+                <summary><h3>NoArk は私の WhatsApp や Line など他のアプリのメッセージや通知を読めますか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>いいえ——しかも単に「読みません」と約束しているからではなく、<strong>iOS がそれを不可能にしている</strong>からです。Apple はすべてのアプリを厳格な<strong>サンドボックス</strong>の中で動かします。各アプリは自分自身のデータとストレージにしか触れられず、<strong>どのアプリも他のアプリのファイルを読むことはできません</strong>——NoArk も例外ではありません。あなたの WhatsApp、Line、iMessage、銀行アプリ、写真は、NoArk が鍵を持たない壁の向こうにあります。</p>
+                <p>通知も同じように守られています。<strong>Android</strong> には、デバイス上のすべての通知をアプリが読めるようにする <code>NotificationListenerService</code> という API があり——これが一部の Android アプリがこっそりあなたのチャットを抜き取る方法です。<strong>iOS には同等の API がまったくありません。</strong>iPhone のアプリがバックグラウンドに居座って、あなたの WhatsApp や Line の通知を盗み聞きする手段は一切ありません。ですから NoArk が目にできるのは、<strong>あなたが意図的に持ち込んだもの</strong>——写真、ファイル、あなたが入力または音声で伝える質問——だけです。それ以外には手が届くことすらありません。</p>
+                <p>そしてこの同じ慎重さは、あなたが<em>実際にアクセスを許可した</em>あらゆるデータにも及びます。写真、ファイル、マイク、その他何であれ NoArk に許可を与えたとき、私たちは<strong>一般的なアプリよりはるかに抑制的に</strong>扱います——その場のタスクのためだけに使い、こっそり抱え込むことはなく、私たちのサーバーに送るのではなくあなたの端末にとどめます。あなたのデータを大切に扱うことは、私たちが用意した「設定」ではありません——<strong>それは私たちの約束です</strong>。</p>
             </details>
             <details class="faq-item">
                 <summary><h3>なぜサインインする場所がないのですか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

@@ -281,6 +281,14 @@
         },
         {
           "@type": "Question",
+          "name": "NoArk 能读取我的 WhatsApp、Line 或其他应用的消息和通知吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能——而且不只是因为我们承诺不这么做，而是因为 iOS 让这件事根本不可能。Apple 让每个应用都运行在严格的沙盒中：每个应用只能访问自己的数据和存储，任何应用都无法读取另一个应用的文件——NoArk 也不例外。你的 WhatsApp、Line、iMessage、银行应用和照片都在 NoArk 没有钥匙的墙后面。通知也以同样的方式被锁住。Android 提供了一个 NotificationListenerService API，让应用可以读取设备上的所有通知——这正是某些 Android 应用悄悄抓取你聊天内容的方式——但 iOS 根本没有任何等效的 API。任何 iPhone 应用都没有办法待在后台偷听你的 WhatsApp 或 Line 通知。所以 NoArk 只能看到你主动带进来的东西——一张照片、一个文件、你输入或说出的一个问题。除此之外的一切，它连碰都碰不到。而且这份同样的谨慎也延伸到你确实授权给我们的任何数据。当你授予 NoArk 访问一张照片、一个文件、你的麦克风或其他任何东西的权限时，我们处理它的方式远比一般应用更克制——只在当下的任务里使用它，绝不悄悄留存，并且让它留在你的设备上，而不是流向我们的服务器。谨慎对待你的数据不是我们提供的某个开关，而是我们的承诺。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "为什么没有登录入口？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1598,6 +1606,12 @@
                 <summary><h3>NoArk 的消息是端到端加密的吗？Apple 或 NoArk 能读到我的消息吗？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>可以——NoArk 现已支持<strong>端到端加密消息</strong>，其设计确保除了你和与你对话的人之外，没有任何人能读到内容。当你发送一条消息时，NoArk 会在你的设备上把它<strong>封装进一个加密信封</strong>，并且只把这段无法识别的密文上传到 <strong>CloudKit</strong>——Apple 的公共数据库——它仅仅充当一个<strong>零知识中继</strong>。</p>
                 <p>可解密的内容和所有密钥<strong>从不离开你的设备</strong>：Apple 始终只持有它无法读取的乱码密文，且仅临时存储，直到发送方在 <strong>7 天 TTL</strong> 后将其删除。只有持有密钥的两台设备才能真正解密并阅读这条消息——<strong>Apple 不行，我们也不行</strong>。</p>
+            </details>
+            <details class="faq-item" id="ios-sandbox">
+                <summary><h3>NoArk 能读取我的 WhatsApp、Line 或其他应用的消息和通知吗？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>不能——而且不只是因为我们承诺不这么做，而是因为 <strong>iOS 让这件事根本不可能</strong>。Apple 让每个应用都运行在严格的<strong>沙盒</strong>中：每个应用只能访问自己的数据和存储，<strong>任何应用都无法读取另一个应用的文件</strong>——NoArk 也不例外。你的 WhatsApp、Line、iMessage、银行应用和照片都在 NoArk 没有钥匙的墙后面。</p>
+                <p>通知也以同样的方式被锁住。<strong>Android</strong> 提供了一个 <code>NotificationListenerService</code> API，让应用可以读取设备上的所有通知——这正是某些 Android 应用悄悄抓取你聊天内容的方式。<strong>iOS 根本没有任何等效的 API。</strong>任何 iPhone 应用都没有办法待在后台偷听你的 WhatsApp 或 Line 通知。所以 NoArk 只能看到<strong>你主动带进来的东西</strong>——一张照片、一个文件、你输入或说出的一个问题。除此之外的一切，它连碰都碰不到。</p>
+                <p>而且这份同样的谨慎也延伸到你<em>确实</em>授权给我们的任何数据。当你授予 NoArk 访问一张照片、一个文件、你的麦克风或其他任何东西的权限时，我们处理它的方式<strong>远比一般应用更克制</strong>——只在当下的任务里使用它，绝不悄悄留存，并且让它留在你的设备上，而不是流向我们的服务器。谨慎对待你的数据不是我们提供的某个开关，<strong>而是我们的承诺</strong>。</p>
             </details>
             <details class="faq-item">
                 <summary><h3>为什么没有登录入口？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

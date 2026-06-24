@@ -281,6 +281,14 @@
         },
         {
           "@type": "Question",
+          "name": "Can NoArk read my WhatsApp, Line, or other apps' messages and notifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — and not just because we promise not to, but because iOS makes it impossible. Apple runs every app inside a strict sandbox: each app can only touch its own data and storage, and no app can read another app's files — NoArk included. Your WhatsApp, Line, iMessage, banking, and photos sit behind walls NoArk has no key to. Notifications are locked down the same way. Android offers a NotificationListenerService API that lets an app read every notification on the device — which is how some Android apps quietly scrape your chats — but iOS has no equivalent API at all. There is simply no way for any iPhone app to sit in the background and listen in on your WhatsApp or Line notifications. So NoArk only ever sees what you deliberately bring into it — a photo, a file, a question you type or speak. Nothing else is even reachable. And the same care extends to anything you do grant us access to. When you give NoArk permission to a photo, a file, your microphone, or anything else, we handle it with far more restraint than the typical app — we use it only for the task at hand, we don't quietly hold onto it, and it stays on your device rather than flowing to our servers. Being careful with your data isn't a setting we offer; it's our promise."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Why is there no sign-in or account?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1643,6 +1651,12 @@
                 <summary><h3>Is NoArk messaging end-to-end encrypted? Can Apple or NoArk read my messages?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Yes — NoArk now supports <strong>end-to-end encrypted messaging</strong>, designed so that no one but you and the person you're messaging can ever read it. When you send a message, NoArk seals it into an <strong>encrypted envelope on your device</strong> and uploads only that opaque ciphertext to <strong>CloudKit</strong> — Apple's public database — which acts purely as a <strong>zero-knowledge relay</strong>.</p>
                 <p>The decryptable content and all the keys <strong>never leave your devices</strong>: Apple only ever holds scrambled ciphertext it can't read, stored temporarily until the sender deletes it after a <strong>7-day TTL</strong>. Only the two devices holding the keys can actually decrypt and read the message — <strong>not Apple, and not us</strong>.</p>
+            </details>
+            <details class="faq-item" id="ios-sandbox">
+                <summary><h3>Can NoArk read my WhatsApp, Line, or other apps' messages and notifications?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>No — and not just because we promise not to, but because <strong>iOS makes it impossible</strong>. Apple runs every app inside a strict <strong>sandbox</strong>: each app can only touch its own data and storage, and <strong>no app can read another app's files</strong> — NoArk included. Your WhatsApp, Line, iMessage, banking, and photos sit behind walls NoArk has no key to.</p>
+                <p>Notifications are locked down the same way. <strong>Android</strong> offers a <code>NotificationListenerService</code> API that lets an app read every notification on the device — which is how some Android apps quietly scrape your chats. <strong>iOS has no equivalent API at all.</strong> There is simply no way for any iPhone app to sit in the background and listen in on your WhatsApp or Line notifications. So NoArk only ever sees what <strong>you deliberately bring into it</strong> — a photo, a file, a question you type or speak. Nothing else is even reachable.</p>
+                <p>And the same care extends to anything you <em>do</em> grant us access to. When you give NoArk permission to a photo, a file, your microphone, or anything else, we handle it with <strong>far more restraint than the typical app</strong> — we use it only for the task at hand, we don't quietly hold onto it, and it stays on your device rather than flowing to our servers. Being careful with your data isn't a setting we offer; <strong>it's our promise</strong>.</p>
             </details>
             <details class="faq-item">
                 <summary><h3>Why is there no sign-in or account?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

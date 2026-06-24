@@ -281,6 +281,14 @@
         },
         {
           "@type": "Question",
+          "name": "¿Puede NoArk leer mis mensajes y notificaciones de WhatsApp, Line u otras apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — y no solo porque prometamos no hacerlo, sino porque iOS lo hace imposible. Apple ejecuta cada app dentro de un estricto sandbox: cada app solo puede acceder a sus propios datos y almacenamiento, y ninguna app puede leer los archivos de otra — NoArk incluido. Tu WhatsApp, Line, iMessage, banca y fotos quedan tras muros para los que NoArk no tiene llave. Las notificaciones están protegidas de la misma forma. Android ofrece una API NotificationListenerService que permite a una app leer todas las notificaciones del dispositivo — así es como algunas apps de Android husmean discretamente en tus chats — pero iOS no tiene ninguna API equivalente. Sencillamente no hay forma de que ninguna app de iPhone se quede en segundo plano escuchando tus notificaciones de WhatsApp o Line. Así que NoArk solo ve lo que tú decides traerle deliberadamente — una foto, un archivo, una pregunta que escribes o dices. Nada más es siquiera accesible. Y ese mismo cuidado se extiende a todo aquello a lo que sí nos das acceso. Cuando le das permiso a NoArk para una foto, un archivo, tu micrófono o cualquier otra cosa, lo tratamos con mucha más prudencia que la app típica — lo usamos solo para la tarea del momento, no lo retenemos en silencio y permanece en tu dispositivo en lugar de fluir a nuestros servidores. Ser cuidadosos con tus datos no es una opción que ofrecemos; es nuestra promesa."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿Por qué no hay inicio de sesión ni cuenta?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -1598,6 +1606,12 @@
                 <summary><h3>¿La mensajería de NoArk está cifrada de extremo a extremo? ¿Pueden Apple o NoArk leer mis mensajes?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
                 <p>Sí — NoArk ahora admite <strong>mensajería cifrada de extremo a extremo</strong>, diseñada para que nadie salvo tú y la persona con la que hablas pueda leerla jamás. Cuando envías un mensaje, NoArk lo sella en un <strong>sobre cifrado en tu dispositivo</strong> y sube únicamente ese texto cifrado opaco a <strong>CloudKit</strong> — la base de datos pública de Apple — que actúa puramente como un <strong>relé de conocimiento cero</strong>.</p>
                 <p>El contenido descifrable y todas las claves <strong>nunca salen de tus dispositivos</strong>: Apple solo llega a tener texto cifrado ilegible que no puede leer, almacenado temporalmente hasta que el remitente lo elimina tras un <strong>TTL de 7 días</strong>. Solo los dos dispositivos que poseen las claves pueden realmente descifrar y leer el mensaje — <strong>ni Apple, ni nosotros</strong>.</p>
+            </details>
+            <details class="faq-item" id="ios-sandbox">
+                <summary><h3>¿Puede NoArk leer mis mensajes y notificaciones de WhatsApp, Line u otras apps?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+                <p>No — y no solo porque prometamos no hacerlo, sino porque <strong>iOS lo hace imposible</strong>. Apple ejecuta cada app dentro de un estricto <strong>sandbox</strong>: cada app solo puede acceder a sus propios datos y almacenamiento, y <strong>ninguna app puede leer los archivos de otra</strong> — NoArk incluido. Tu WhatsApp, Line, iMessage, banca y fotos quedan tras muros para los que NoArk no tiene llave.</p>
+                <p>Las notificaciones están protegidas de la misma forma. <strong>Android</strong> ofrece una API <code>NotificationListenerService</code> que permite a una app leer todas las notificaciones del dispositivo — así es como algunas apps de Android husmean discretamente en tus chats. <strong>iOS no tiene ninguna API equivalente.</strong> Sencillamente no hay forma de que ninguna app de iPhone se quede en segundo plano escuchando tus notificaciones de WhatsApp o Line. Así que NoArk solo ve lo que <strong>tú decides traerle deliberadamente</strong> — una foto, un archivo, una pregunta que escribes o dices. Nada más es siquiera accesible.</p>
+                <p>Y ese mismo cuidado se extiende a todo aquello a lo que <em>sí</em> nos das acceso. Cuando le das permiso a NoArk para una foto, un archivo, tu micrófono o cualquier otra cosa, lo tratamos con <strong>mucha más prudencia que la app típica</strong> — lo usamos solo para la tarea del momento, no lo retenemos en silencio y permanece en tu dispositivo en lugar de fluir a nuestros servidores. Ser cuidadosos con tus datos no es una opción que ofrecemos; <strong>es nuestra promesa</strong>.</p>
             </details>
             <details class="faq-item">
                 <summary><h3>¿Por qué no hay inicio de sesión ni cuenta?</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
