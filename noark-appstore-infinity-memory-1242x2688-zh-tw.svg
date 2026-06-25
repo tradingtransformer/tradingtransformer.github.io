@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2688" height="2688" viewBox="0 0 2688 2688">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#5a0a16"/><stop offset="0.4" stop-color="#8c0f24"/>
+    <stop offset="0.72" stop-color="#b21133"/><stop offset="1" stop-color="#c8143c"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.42" r="0.58">
+    <stop offset="0" stop-color="#ff9caa" stop-opacity="0.6"/>
+    <stop offset="0.34" stop-color="#ff4f6e" stop-opacity="0.32"/>
+    <stop offset="0.72" stop-color="#e01e44" stop-opacity="0.06"/>
+    <stop offset="1" stop-color="#e01e44" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#fff2f4"/>
+    <stop offset="1" stop-color="#ffccd5"/>
+  </linearGradient>
+  <clipPath id="iconClip"><rect x="-150" y="-150" width="300" height="300" rx="66"/></clipPath>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="200%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
+    <feOffset dx="0" dy="22" result="sh"/>
+    <feFlood flood-color="#020714" flood-opacity="0.55"/>
+    <feComposite in2="sh" operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="iconShadow" x="-50%" y="-50%" width="200%" height="220%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="26"/>
+    <feOffset dx="0" dy="30" result="sh"/>
+    <feFlood flood-color="#02050f" flood-opacity="0.6"/>
+    <feComposite in2="sh" operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="2688" height="2688" fill="url(#bg)"/>
+<ellipse cx="1344" cy="1040" rx="869" ry="1182" fill="url(#glow)"/>
+<g transform="translate(723,0)"><g fill="#ffffff"><circle cx="150" cy="180" r="2" opacity="0.5"/><circle cx="900" cy="140" r="2.4" opacity="0.6"/><circle cx="1010" cy="360" r="1.6" opacity="0.4"/><circle cx="80" cy="500" r="1.8" opacity="0.45"/><circle cx="1020" cy="700" r="2" opacity="0.5"/><circle cx="60" cy="900" r="1.5" opacity="0.35"/><circle cx="1000" cy="1080" r="1.8" opacity="0.45"/><circle cx="120" cy="1180" r="2" opacity="0.5"/><circle cx="300" cy="100" r="1.4" opacity="0.4"/><circle cx="780" cy="1240" r="1.6" opacity="0.4"/></g></g>
+
+<text x="1344" y="340" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="62" fill="#ffd9df" letter-spacing="0.5">無限記憶。零曝光。</text>
+
+<g transform="translate(1344,1020) scale(1.78)" filter="url(#iconShadow)">
+  <image x="-150" y="-150" width="300" height="300" clip-path="url(#iconClip)"
+         xlink:href="data:image/jpeg;base64,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"/>
+  <rect x="-150" y="-150" width="300" height="300" rx="66" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+</g>
+
+<text x="1344" y="1650" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="300" letter-spacing="-7" fill="url(#gloss)" filter="url(#soft)">NOARK</text>
+<text x="1344" y="1772" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="68" letter-spacing="22" fill="#ffb3bf">∞  MEMORY</text>
+
+<text x="1344" y="2020" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="9" fill="#ffc0cb">進階 AI</text>
+<text x="1344" y="2128" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="86" fill="#ffffff">$49.99 起</text>
+
+<g transform="translate(1344,2360)">
+  <rect x="-410" y="-75" width="820" height="150" rx="75" fill="#ffffff"/>
+  <text x="0" y="20" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="58" fill="#0a1424">在 App Store 下載</text>
+</g>
+<text x="1344" y="2512" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="40" fill="#f3c2cb">7 天內不滿意，全額退款。</text>
+<text x="1344" y="2574" text-anchor="middle" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="38" fill="#ffd9df">應用程式利潤的 50% 用於慈善公益。</text>
+</svg>
