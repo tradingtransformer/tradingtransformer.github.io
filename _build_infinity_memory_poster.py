@@ -6,12 +6,12 @@
 # with the "NOARK" wordmark below it; promo slogan up top, price + guarantee at
 # the foot. Same blue brand gradient + starfield as the other covers.
 #
-# qlmanage fills a SQUARE viewport and clips a portrait viewBox, so each poster
-# is authored on a W==H square with the art in a centre column; the side bars
-# are cropped off after rendering. Build:
-#   python3 _build_infinity_memory_poster.py
-#   for s in reddit-1080x1350 appstore-1242x2688; do ... render+crop ... done
-# (see the render loop in the shell history, or re-run the documented commands)
+# Each poster is authored on a W==H square with the art in a centre column; the
+# side bars are cropped off after rendering. Build + rasterize:
+#   python3 _build_infinity_memory_poster.py   # writes the .svg files
+#   ./_render_posters.sh                        # .svg -> .png (crisp text)
+# Rasterize with Chrome headless (see _render_posters.sh), NOT qlmanage --
+# qlmanage softens text and substitutes a generic font, making headlines fuzzy.
 
 import base64
 
