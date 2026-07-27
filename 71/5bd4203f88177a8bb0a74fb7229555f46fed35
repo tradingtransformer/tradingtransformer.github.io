@@ -1,0 +1,56 @@
+blog/index.html
+  s_6e49f1d8ea39b1::t_c1af2582105018 1-132
+sitemap.xml
+  s_6e49f1d8ea39b1::t_e1f4e8309c6db5 1029-1048
+  s_6e49f1d8ea39b1::t_c34dfcfcbf10d7 8,21,34,47,60,73,86,99,112,125,138,151,166,179,192,205,218,231,246,259,272,285,298,311,326,339,352,365,378,391,406,419,432,445,458,471,485,498,511,524,537,550,563,576,589,602,615,628,641,654,667,680,693,706,719,732,745,758,771,784,797,810,823,836,849,862,875,888,901,914,927,940,953,966,979,992,1005,1018
+noark-vs-chatgpt.html
+  s_6e49f1d8ea39b1::t_1f85459aa5707a 373-384
+noark-vs-character-ai.html
+  s_6e49f1d8ea39b1::t_f0100d78b1d1e0 373-384
+zh-tw/index.html
+  s_6e49f1d8ea39b1::t_aa2cc0b047b4f2 47,138
+noark-vs-apple-intelligence.html
+  s_6e49f1d8ea39b1::t_aee475a2b15363 414-425
+ja/index.html
+  s_6e49f1d8ea39b1::t_aa2cc0b047b4f2 47,137
+zh-cn/index.html
+  s_6e49f1d8ea39b1::t_aa2cc0b047b4f2 47,138
+noark-vs-manus.html
+  s_6e49f1d8ea39b1::t_ac0a00ad27e58e 384-395
+index.html
+  s_6e49f1d8ea39b1::t_fa297333840a9b 985
+  s_6e49f1d8ea39b1::t_05440ba9eb5724 131-134
+  s_6e49f1d8ea39b1::t_db592c328ca177 8
+  s_6e49f1d8ea39b1::t_8f2bfcf22faa07 144
+  s_6e49f1d8ea39b1::t_cdd0f401385bef 47-49
+blog/best-private-ai-app.html
+  s_6e49f1d8ea39b1::t_12694886c3e48e 1-288
+noark-vs-claude.html
+  s_6e49f1d8ea39b1::t_4ed5453e0bf81f 409-420
+blog/ask-wisest-minds-in-history.html
+  s_6e49f1d8ea39b1::t_5c02f3356781d4 1-286
+noark-vs-perplexity.html
+  s_6e49f1d8ea39b1::t_4f01e73b506477 371-382
+fr/index.html
+  s_6e49f1d8ea39b1::t_aa2cc0b047b4f2 47,137
+manifest.json
+  s_6e49f1d8ea39b1::t_872e57ccd98ba0 1-14
+es/index.html
+  s_6e49f1d8ea39b1::t_aa2cc0b047b4f2 47,137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "715bd4203f88177a8bb0a74fb7229555f46fed35",
+  "prompts": {},
+  "sessions": {
+    "s_6e49f1d8ea39b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8322ce77-1dd5-4fdf-918d-d015bddb9b86",
+        "model": "arn:aws:bedrock:eu-central-1:133197901387:application-inference-profile/uhrol4cpo4z8"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
