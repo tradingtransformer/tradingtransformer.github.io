@@ -1,0 +1,14 @@
+{
+  "name": "NOARK Infinity Memory",
+  "short_name": "NoArk",
+  "description": "The private AI that never forgets — ask history's wisest minds when life feels confusing.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "/favicon-96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
