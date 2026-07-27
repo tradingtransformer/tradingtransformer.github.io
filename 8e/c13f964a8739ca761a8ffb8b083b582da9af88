@@ -1,0 +1,19 @@
+index.html
+  s_6e49f1d8ea39b1::t_092ffc3ac5859a 1143-1150
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "8ec13f964a8739ca761a8ffb8b083b582da9af88",
+  "prompts": {},
+  "sessions": {
+    "s_6e49f1d8ea39b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8322ce77-1dd5-4fdf-918d-d015bddb9b86",
+        "model": "arn:aws:bedrock:eu-central-1:133197901387:application-inference-profile/uhrol4cpo4z8"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
