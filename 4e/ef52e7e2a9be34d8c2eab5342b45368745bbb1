@@ -1,0 +1,36 @@
+noark-pitch/slides.html
+  s_88f40a3e181249::t_d8032bcfdcfcf4 933,939-940,947-948,955-956
+  s_88f40a3e181249::t_c3838a727aa78a 1082-1085
+  s_88f40a3e181249::t_e67184e9e84fea 969,971,975-984,1005
+  s_88f40a3e181249::t_06e9cd86504a68 1155
+  s_88f40a3e181249::t_225a9243c8c344 1230
+  s_88f40a3e181249::t_1660f216df1aa4 1372-1375
+  s_88f40a3e181249::t_74a72becbf491c 1243,1248,1250,1252-1258,1265
+  s_88f40a3e181249::t_7d7103c6378342 1387,1404,1409,1413
+  s_88f40a3e181249::t_77170914797be1 1249,1251
+  s_88f40a3e181249::t_59f9fae3c6a110 1040-1041,1048-1049
+  s_88f40a3e181249::t_95f927d34421e4 1021
+  s_88f40a3e181249::t_a22fbb00c8e53e 922-923
+ja/index.html
+  s_88f40a3e181249::t_0a726c6c426efe 976
+zh-tw/index.html
+  s_88f40a3e181249::t_f146cd3244a190 977
+zh-cn/index.html
+  s_88f40a3e181249::t_2d294ad0ddc106 977
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "4eef52e7e2a9be34d8c2eab5342b45368745bbb1",
+  "prompts": {},
+  "sessions": {
+    "s_88f40a3e181249": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a2c4cb89-e2ca-4ff0-af73-910e54a875fc",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
