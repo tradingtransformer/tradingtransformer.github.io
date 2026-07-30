@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /noark-pitch/
 
 # Sitemap location
 Sitemap: https://www.tradingtransformer.com/sitemap.xml
