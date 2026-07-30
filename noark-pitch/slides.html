@@ -459,24 +459,38 @@
   .paid-bar {
     display: flex;
     align-items: flex-end;
-    gap: 32px;
+    gap: 40px;
     margin-top: 18px;
     padding-top: 18px;
     border-top: 1px solid #eee;
   }
   .paid-bar-title {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: var(--muted);
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  .chart {
+    position: relative;
+    padding-bottom: 42px;
+  }
+  .chart::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 42px;
+    height: 1px;
+    background: #e0e0e0;
   }
   .bars {
     display: flex;
-    gap: 28px;
+    gap: 44px;
     align-items: flex-end;
-    height: 90px;
+    height: 200px;
+    padding: 0 8px;
   }
   .bar-col {
     display: flex;
@@ -484,31 +498,46 @@
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-  }
-  .bar {
-    width: 44px;
-    background: var(--accent);
-    border-radius: 2px 2px 0 0;
     position: relative;
   }
-  .bar.muted { background: #d0d0d0; }
+  .bar {
+    width: 60px;
+    background: var(--accent);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(255,90,95,0.15);
+  }
+  .bar.muted {
+    background: #e5e5e5;
+    box-shadow: none;
+  }
   .bar-num {
     position: absolute;
-    top: -18px;
+    top: -26px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--ink);
     white-space: nowrap;
+    letter-spacing: -0.3px;
+  }
+  .bar-col .bar:not(.muted) + .bar-num,
+  .bar-col .bar:not(.muted) .bar-num {
+    color: var(--accent);
   }
   .bar-label {
-    font-size: 11px;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
     font-weight: 500;
     color: var(--muted);
-    margin-top: 6px;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
+    line-height: 1.35;
+    white-space: nowrap;
   }
 
   /* Slide 9 — Traction & moat */
@@ -894,7 +923,7 @@
       live braver, connect deeper, and enjoy life more.
     </div>
     <div class="footer">
-      <span>NoArk Inc.</span>
+      <span>NOARK AI INC. <em style="font-style: normal; color: #b0b0b0; font-size: 10px; letter-spacing: 0.5px;">(to be founded)</em></span>
       <span>Pitch Deck</span>
     </div>
   </section>
@@ -930,7 +959,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>02</span>
     </div>
   </section>
@@ -962,8 +991,8 @@
             <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
           </svg>
         </div>
-        <h3>Deep</h3>
-        <p>Helps you build deeper connections with the real world — and with people who share your values. Think Berkshire annual meeting, not another feed.</p>
+        <h3>Deep &amp; Private</h3>
+        <p>Memories stay on your device — private by default. Helps you build deeper connections with the real world and people who share your values. Think Berkshire annual meeting, not another feed.</p>
       </div>
 
       <div class="benefit">
@@ -978,7 +1007,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>03</span>
     </div>
   </section>
@@ -994,7 +1023,7 @@
       <div class="her-caption">Still — Her (2013), dir. Spike Jonze</div>
     </div>
     <div class="her-footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>04</span>
     </div>
   </section>
@@ -1003,7 +1032,7 @@
     <div class="header">Our approach</div>
     <h2 class="slide-title">But an AI that remembers you must be <span style="color: var(--accent);">on your side</span>.</h2>
     <div class="approach-lead">
-      Today's AI leaves users with a nagging feeling — <strong>"this isn't really working for me."</strong> We're building NoArk so that feeling never happens.
+      Today's AI leaves users with a nagging feeling — <strong>"this AI isn't really on my side, thinking the best for me."</strong> We're building NoArk so that feeling never happens.
     </div>
 
     <div class="pillars">
@@ -1030,7 +1059,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>05</span>
     </div>
   </section>
@@ -1072,7 +1101,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>06</span>
     </div>
   </section>
@@ -1128,7 +1157,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>07</span>
     </div>
   </section>
@@ -1141,24 +1170,24 @@
     </div>
 
     <div class="paid-bar" style="border-top: none; padding-top: 0;">
-      <div>
+      <div class="chart">
         <div class="paid-bar-title">% of U.S. adults paying</div>
-        <div class="bars" style="height: 160px;">
+        <div class="bars">
           <div class="bar-col">
-            <div class="bar muted" style="height: 90%; width: 68px;"><div class="bar-num" style="font-size: 18px;">~20%</div></div>
-            <div class="bar-label" style="font-size: 13px;">Netflix<br>Spotify</div>
+            <div class="bar muted" style="height: 90%;"><div class="bar-num">~20%</div></div>
+            <div class="bar-label">Netflix<br>Spotify</div>
           </div>
           <div class="bar-col">
-            <div class="bar muted" style="height: 22%; width: 68px;"><div class="bar-num" style="font-size: 18px;">~5%</div></div>
-            <div class="bar-label" style="font-size: 13px;">Kalshi<br>Polymarket</div>
+            <div class="bar muted" style="height: 22%;"><div class="bar-num">~5%</div></div>
+            <div class="bar-label">Kalshi<br>Polymarket</div>
           </div>
           <div class="bar-col">
-            <div class="bar" style="height: 13%; width: 68px;"><div class="bar-num" style="font-size: 18px;">~3%</div></div>
-            <div class="bar-label" style="font-size: 13px;">Paid AI<br>today</div>
+            <div class="bar" style="height: 13%;"><div class="bar-num" style="color: var(--accent);">~3%</div></div>
+            <div class="bar-label">Paid AI<br>today</div>
           </div>
         </div>
       </div>
-      <div style="flex:1; font-size: 16px; font-weight: 300; line-height: 1.6; color: var(--muted); padding-left: 20px;">
+      <div style="flex:1; font-size: 15px; font-weight: 300; line-height: 1.6; color: var(--muted); padding-left: 8px;">
         <strong style="color: var(--ink); font-weight: 600;">~3% of U.S. adults</strong> pay for AI today — below even Kalshi and Polymarket, and 7× below Netflix/Spotify.
         <br><br>
         The paid AI market is <strong style="color: var(--accent); font-weight: 600;">not saturated</strong>. The winners will be the products people trust enough to keep paying for.
@@ -1166,7 +1195,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>08</span>
     </div>
   </section>
@@ -1202,7 +1231,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>09</span>
     </div>
   </section>
@@ -1237,7 +1266,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>10</span>
     </div>
   </section>
@@ -1257,7 +1286,7 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>11</span>
     </div>
   </section>
@@ -1283,17 +1312,19 @@
         <ul class="team-creds">
           <li><strong>First author</strong> of the award-winning <strong>Personalized Transformer for Recommendation</strong> paper — a foundational work on user-adaptive transformer models.</li>
           <li>Winner of the <strong>NSFC Overseas Outstanding Young Scientists</strong> grant (2025) — same grant won by <strong>Zhilin Yang</strong> in 2019 before Tsinghua &amp; founding <strong>Kimi</strong> (Moonshot AI).</li>
+          <li><strong>Area Chair</strong>, <strong>EMNLP 2026 Industry Track</strong> — invited to shape the field's flagship NLP conference.</li>
           <li>Joining <strong>Wuhan University</strong> as a <strong>full CS professor</strong> in 2027. <em>Research and NoArk are the same mission.</em></li>
-          <li>Academic lineage: UCLA PhD advisor — see also <strong>Arena.ai</strong> ($150M Series A), founded by an advisor's former student.</li>
+          <li>Academic lineage: UCLA PhD <a href="https://web.cs.ucla.edu/~chohsieh/" style="color: var(--accent); text-decoration: none;">advisor</a>'s students span <strong>OpenAI</strong>, <strong>Mistral AI</strong>, <strong>Meta TBD Lab</strong>, and other frontier labs — including <strong>Arena.ai</strong> ($150M Series A).</li>
           <li><strong>Global training:</strong> undergrad in <strong>Hong Kong</strong>, PhD in <strong>California</strong> (two master's along the way), visiting study at <strong>King's College, Cambridge</strong>.</li>
-          <li><strong>Industry:</strong> AT&amp;T Labs (former Bell Labs), <strong>Facebook (Meta)</strong>, <strong>LinkedIn</strong>, <strong>Coursera</strong> in Silicon Valley, and <strong>Trip.com</strong> in Shanghai.</li>
-          <li><strong>Prior founder &amp; investor:</strong> built and invested through <strong>TradingTransformer Technologies</strong> — cross-industry, cross-country experience now applied to NoArk.</li>
+          <li><strong>Industry:</strong> AT&amp;T Labs (former Bell Labs), <strong>Facebook (Meta)</strong>, <strong>LinkedIn</strong>, <strong>Coursera</strong>, <strong>Dataminr</strong> in Silicon Valley &amp; NYC, and <strong>Trip.com</strong> in Shanghai.</li>
+          <li><strong>Notable collaborator:</strong> a co-author on Dr. Wu's multimodal paper later became a <strong>co-author of the GPT-4 paper</strong> at OpenAI.</li>
+          <li><strong>Prior founder, value investor &amp; quant trader:</strong> built and invested through <strong>TradingTransformer Technologies</strong> — a rare operator who has shipped product, allocated capital, and modeled markets across three continents. That range is the moat.</li>
         </ul>
       </div>
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>12</span>
     </div>
   </section>
@@ -1339,47 +1370,57 @@
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
       <span>13</span>
     </div>
   </section>
 
   <section class="slide slide-fin">
     <div class="header">The ask · continued</div>
-    <h2 class="slide-title">Why this raise, why now — and <span style="color: var(--accent);">the signal</span>.</h2>
+    <h2 class="slide-title">Why <span style="color: var(--accent);">this raise</span>, why <span style="color: var(--accent);">now</span>.</h2>
 
     <div class="fin-lead">
-      Paid AI is still ~3% of U.S. adults. NoArk's paying users renew at 100%. The window to acquire loyal users is <strong>now</strong>.
+      A live product with 5.0 ★ reviews. 100% renewal across four paying countries. A researcher-founder about to become a full CS professor. Paid AI is <strong>~3% penetrated</strong> — and the memory-first, ad-free lane is still open.
     </div>
 
     <div class="fin-use">
       <div class="fin-use-card">
-        <div class="pct">6–12mo</div>
-        <h4>Payback period</h4>
-        <p>Time for subscription profit to return each ad dollar.</p>
+        <div class="pct">Now</div>
+        <h4>Timing</h4>
+        <p>Every major lab is racing to remember users. First to earn trust wins the seat next to them for life.</p>
       </div>
       <div class="fin-use-card">
-        <div class="pct">80%</div>
-        <h4>Gross margin</h4>
-        <p>Every subscription dollar compounds into runway.</p>
+        <div class="pct">Us</div>
+        <h4>Founder-market fit</h4>
+        <p>First-author of Personalized Transformer. NSFC grant. EMNLP 2026 AC. Full CS professor incoming.</p>
       </div>
       <div class="fin-use-card">
-        <div class="pct">100%</div>
-        <h4>M1 → M2 renewal</h4>
-        <p>Retention of a loyal partner, not a swappable tool.</p>
+        <div class="pct">$4M</div>
+        <h4>Right-sized</h4>
+        <p>Paid AI is early and payback is fast — $4M is enough to prove CAC, not so much it forces us to compromise the mission.</p>
       </div>
     </div>
 
     <div class="fin-payback" style="background: #fff5f5;">
-      <strong>Signal from the same lineage:</strong> a former student of the founder's UCLA PhD advisor just raised a <strong>$150M Series A</strong> at <strong>Arena.ai</strong> and hired that advisor from <strong>Google DeepMind</strong>.
+      <strong>Signal from the same lineage:</strong> a former student of Dr. Wu's UCLA PhD <a href="https://web.cs.ucla.edu/~chohsieh/" style="color: var(--accent); text-decoration: none;">advisor</a> just raised a <strong>$150M Series A</strong> at <strong>Arena.ai</strong> and hired that advisor from <strong>Google DeepMind</strong>. The same academic tree also seeds <strong>OpenAI</strong>, <strong>Mistral AI</strong>, and <strong>Meta TBD Lab</strong>.
+    </div>
+
+    <div class="fin-payback" style="margin-top: 12px; background: #fff5f5;">
+      <strong>Execution velocity:</strong> in under 3 months we've shipped nearly <strong>40 releases</strong> — v24.4.0 through v24.4.39. In the agentic-AI era, the team that iterates fastest compounds fastest.
     </div>
 
     <div class="fin-payback" style="margin-top: 12px;">
-      <strong>What $4M buys:</strong> the first AI companion people trust enough to pay for month after month — and a company that will never have to choose between users and advertisers.
+      <strong>What $4M buys:</strong> the first AI companion people trust enough to pay for month after month — a company built to serve one master, and a template for AI that <em>never</em> has to choose between its users and its advertisers, because it will never have advertisers. <strong style="color: var(--accent);">50% of profits go to education philanthropy</strong> — a durable magnet for the kind of <strong>talent, high-end consumers, and long-term investors</strong> that compound over decades. This is the raise that decides whether that company gets built.
     </div>
 
     <div class="footer">
-      <span>NoArk Infinity Memory</span>
+      <span>NoArk ∞ Memory</span>
+      <span>14</span>
+    </div>
+  </section>
+
+    <div class="footer">
+      <span>NoArk ∞ Memory</span>
       <span>14</span>
     </div>
   </section>
