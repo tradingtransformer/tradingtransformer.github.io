@@ -540,6 +540,127 @@
     white-space: nowrap;
   }
 
+  /* Slide 10 — Millionaire strip */
+  .millionaire-strip {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 36px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+    align-items: center;
+  }
+  .m-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .m-stat-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .m-stat-num {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .m-stat-num.accent { color: var(--accent); }
+  .m-stat-sub {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .m-countries {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .m-countries-title {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .m-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 44px;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .m-row-country { color: var(--ink); font-weight: 500; }
+  .m-row-num { color: var(--muted); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+  .m-row-track {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .m-row-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 4px;
+  }
+
+  /* Millionaire dedicated slide */
+  .mill-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 6px 0 16px;
+    padding: 14px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .mill-hero-stat .m-stat-label {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    margin-bottom: 5px;
+  }
+  .mill-hero-num {
+    font-size: 54px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+  .mill-hero-num.accent { color: var(--accent); }
+  .mill-hero-stat .m-stat-sub {
+    font-size: 12px;
+    margin-top: 6px;
+    color: var(--muted);
+  }
+  .mill-chart .m-countries-title {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+  }
+  .mill-chart .m-countries { gap: 6px; }
+  .mill-chart .m-row {
+    grid-template-columns: 100px 1fr 56px;
+    gap: 12px;
+    font-size: 13px;
+  }
+  .mill-chart .m-row-country { font-weight: 500; }
+  .mill-chart .m-row-num { font-size: 13px; }
+  .mill-chart .m-row-track { height: 8px; border-radius: 4px; }
+  .mill-chart .m-row-fill { border-radius: 4px; }
+  .mill-source {
+    font-size: 10px;
+    color: #a8a8a8;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
   /* Slide 9 — Traction & moat */
   .slide-traction { justify-content: flex-start; }
   .traction-lead {
@@ -1210,7 +1331,7 @@
     <div class="brand-sub">Infinity Memory</div>
     <div class="tagline">
       An AI that's <strong>on your side</strong> — and <strong>remembers you</strong>,<br>
-      so it can help you live braver, connect deeper, and enjoy life more.
+      so it can help you <strong style="color: #ff5a5f;">live braver</strong>, <strong style="color: #0f8b8d;">connect deeper</strong>, and <strong style="color: #d99a1f;">enjoy life more</strong>.
     </div>
     <div class="footer">
       <span>NOARK AI</span>
@@ -1556,6 +1677,46 @@
     </div>
   </section>
 
+  <section class="slide slide-earlypaid">
+    <div class="header">Who pays</div>
+    <h2 class="slide-title">The world's <span style="color: var(--accent);">paying elite</span> keeps growing.</h2>
+    <div class="market-lead">
+      The people most willing to pay for an AI that's <strong>truly on their side</strong> — decisions, wealth, legacy — are the same people whose ranks are growing fastest.
+    </div>
+
+    <div class="mill-hero">
+      <div class="mill-hero-stat">
+        <div class="m-stat-label">Millionaires worldwide</div>
+        <div class="mill-hero-num accent">~58M</div>
+        <div class="m-stat-sub">+~1M new millionaires in 2025 alone <span style="color:#bbb;">·</span> ~2,600 per day</div>
+      </div>
+      <div class="mill-hero-stat">
+        <div class="m-stat-label">Western Europe alone</div>
+        <div class="mill-hero-num">~15M</div>
+        <div class="m-stat-sub">Roughly one third of the global total</div>
+      </div>
+    </div>
+
+    <div class="mill-chart">
+      <div class="m-countries-title">Top European millionaire markets (2025)</div>
+      <div class="m-countries">
+        <div class="m-row"><span class="m-row-country">Germany</span><span class="m-row-track"><span class="m-row-fill" style="width: 100%;"></span></span><span class="m-row-num">2.65M</span></div>
+        <div class="m-row"><span class="m-row-country">UK</span><span class="m-row-track"><span class="m-row-fill" style="width: 92%;"></span></span><span class="m-row-num">2.43M</span></div>
+        <div class="m-row"><span class="m-row-country">France</span><span class="m-row-track"><span class="m-row-fill" style="width: 90%;"></span></span><span class="m-row-num">2.39M</span></div>
+        <div class="m-row"><span class="m-row-country">Netherlands</span><span class="m-row-track"><span class="m-row-fill" style="width: 49%;"></span></span><span class="m-row-num">1.29M</span></div>
+        <div class="m-row"><span class="m-row-country">Italy</span><span class="m-row-track"><span class="m-row-fill" style="width: 47%;"></span></span><span class="m-row-num">1.24M</span></div>
+        <div class="m-row"><span class="m-row-country">Spain</span><span class="m-row-track"><span class="m-row-fill" style="width: 41%;"></span></span><span class="m-row-num">1.08M</span></div>
+        <div class="m-row"><span class="m-row-country">Switzerland</span><span class="m-row-track"><span class="m-row-fill" style="width: 36%;"></span></span><span class="m-row-num">0.94M</span></div>
+      </div>
+      <div class="mill-source">Source: UBS Global Wealth Report 2025.</div>
+    </div>
+
+    <div class="footer">
+      <span>NoArk ∞ Memory</span>
+      <span>11</span>
+    </div>
+  </section>
+
   <section class="slide slide-traction">
     <div class="header">Traction &amp; moat</div>
     <h2 class="slide-title">Our users <span style="color: var(--accent);">don't leave</span>.</h2>
@@ -1592,7 +1753,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>11</span>
+      <span>12</span>
     </div>
   </section>
 
@@ -1627,7 +1788,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>12</span>
+      <span>13</span>
     </div>
   </section>
 
@@ -1663,7 +1824,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>13</span>
+      <span>14</span>
     </div>
   </section>
 
@@ -1699,7 +1860,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>14</span>
+      <span>15</span>
     </div>
   </section>
 
@@ -1741,7 +1902,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>15</span>
+      <span>16</span>
     </div>
   </section>
 
@@ -1763,7 +1924,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>16</span>
+      <span>17</span>
     </div>
   </section>
 
@@ -1803,7 +1964,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>17</span>
+      <span>18</span>
     </div>
   </section>
 
