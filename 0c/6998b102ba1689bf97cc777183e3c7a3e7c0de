@@ -1,0 +1,24 @@
+noark-pitch/slides.html
+  s_efc22b35b0b705::t_7acbceebc21891 1764,1771,1775
+  s_efc22b35b0b705::t_20234594d81de2 1779
+  s_efc22b35b0b705::t_b75857399b1a98 1774
+  s_efc22b35b0b705::t_24432fea66cc79 1350-1351
+  s_efc22b35b0b705::t_20b58e581d031c 1781
+  s_efc22b35b0b705::t_0b0368fa3e8d56 1778
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "0c6998b102ba1689bf97cc777183e3c7a3e7c0de",
+  "prompts": {},
+  "sessions": {
+    "s_efc22b35b0b705": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9f7f7e9-04d9-48ee-953f-87f268c6319f",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
