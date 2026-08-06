@@ -1,0 +1,43 @@
+fr/blog/ai-predicted-world-cup-2026.html
+  s_c2e3f67bf761e6::t_85d90e07160ce1 1-132
+zh-cn/blog/index.html
+  s_c2e3f67bf761e6::t_7dadedbac6e333 113-118
+sitemap.xml
+  s_c2e3f67bf761e6::t_85e1162bd6cf5a 1121-1198
+fr/blog/index.html
+  s_c2e3f67bf761e6::t_077a9f474fc7c8 113-118
+blog/ai-predicted-world-cup-2026.html
+  s_c2e3f67bf761e6::t_31bf0db25c1462 1-173
+es/blog/index.html
+  s_c2e3f67bf761e6::t_e559663cb03766 113-118
+ja/blog/index.html
+  s_c2e3f67bf761e6::t_e82c04e7812b51 113-118
+zh-tw/blog/index.html
+  s_c2e3f67bf761e6::t_479db4f42ee78e 113-118
+zh-cn/blog/ai-predicted-world-cup-2026.html
+  s_c2e3f67bf761e6::t_640dd7d70a0327 1-132
+es/blog/ai-predicted-world-cup-2026.html
+  s_c2e3f67bf761e6::t_77c1f1db79913e 1-132
+blog/index.html
+  s_c2e3f67bf761e6::t_ca70ae11a151a8 113-118
+zh-tw/blog/ai-predicted-world-cup-2026.html
+  s_c2e3f67bf761e6::t_bc6855f64aeaee 1-132
+ja/blog/ai-predicted-world-cup-2026.html
+  s_c2e3f67bf761e6::t_b0253b07cc42ec 1-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "bcf5c3dc5dfab146a1463952249f953121af3da5",
+  "prompts": {},
+  "sessions": {
+    "s_c2e3f67bf761e6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "71bd3458-db99-4660-b4c8-f4910083a13f",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
