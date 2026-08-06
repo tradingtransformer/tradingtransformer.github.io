@@ -56,6 +56,9 @@
 
     <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <link rel="dns-prefetch" href="https://wsw.ai">
 
     <!-- Preload critical images -->
@@ -536,10 +539,18 @@
             height: 52px;
         }
         .logo {
-            font-size: 1.2em;
-            font-weight: 600;
+            font-family: "Cormorant Garamond", "EB Garamond", "Baskerville", "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 1.15em;
+            font-weight: 500;
             color: var(--text);
-            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding-left: 0.04em;
+        }
+        .logo .tt-cap {
+            font-size: 1.35em;
+            font-weight: 500;
+            letter-spacing: 0;
         }
         nav ul {
             list-style: none;
@@ -957,7 +968,7 @@
 
     <header>
         <div class="container">
-            <div class="logo">Trading<span class="highlight">Transformer</span></div>
+            <div class="logo"><span class="tt-cap">T</span>RADING<span class="tt-cap">T</span>RANSFORMER</div>
             <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
