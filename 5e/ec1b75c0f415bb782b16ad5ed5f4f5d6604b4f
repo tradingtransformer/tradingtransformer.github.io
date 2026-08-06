@@ -1,0 +1,28 @@
+zh-cn/blog/index.html
+  s_c2e3f67bf761e6::t_f9135ca7fbc078 1-132
+sitemap.xml
+  s_c2e3f67bf761e6::t_643575652d8963 1036-1107
+index.html
+  s_c2e3f67bf761e6::t_8a25717f047c36 544,552
+  s_c2e3f67bf761e6::t_788ad5bf443cef 61
+ja/blog/index.html
+  s_c2e3f67bf761e6::t_f160b3ce1d23b2 1-132
+zh-tw/blog/index.html
+  s_c2e3f67bf761e6::t_e21233dbf7c7e5 1-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "5eec1b75c0f415bb782b16ad5ed5f4f5d6604b4f",
+  "prompts": {},
+  "sessions": {
+    "s_c2e3f67bf761e6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "71bd3458-db99-4660-b4c8-f4910083a13f",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
