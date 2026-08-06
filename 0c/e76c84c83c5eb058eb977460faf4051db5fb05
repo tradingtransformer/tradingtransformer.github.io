@@ -1,0 +1,62 @@
+noark-pitch/slides.html
+  s_dffc67c70d0365::t_34543b4be66b49 1749
+  s_dffc67c70d0365::t_7a6fdeb446b96e 1809-1811
+  s_dffc67c70d0365::t_698f68c724ca4a 2061-2062,2069,2077-2079
+  s_dffc67c70d0365::t_a61fafd372047f 2038
+  s_dffc67c70d0365::t_ce78983ed77548 115,117
+  s_dffc67c70d0365::t_26cf980dd5e74a 1538
+  s_dffc67c70d0365::t_0243aac1355218 54,129,178,280,301,353,368,412,428,438,458,474,540,565,581,592,605,644,674,706,727,820,844,885,913,940,988,1002,1027,1043,1069,1114,1145,1188,1207,1254,1293,1327,1686
+  s_39a05fa8655eac::t_83dd2c6189e075 444-447,452-453
+  s_dffc67c70d0365::t_7f4a8eb1350607 1418-1507
+  s_dffc67c70d0365::t_aa1b6814902a19 1520
+  s_dffc67c70d0365::t_c945dbfaa3267c 2188
+  s_dffc67c70d0365::t_39dd44e4989507 1712
+  s_dffc67c70d0365::t_3c31a92a1dde4e 61,102,140,216,253,278,300,351,366,426,457,672,704,725,818,852,883,911,969,1000,1041,1067,1113,1147,1195,1205,1267,1291,1325,1849
+  s_dffc67c70d0365::t_a44c7440ec5242 1710
+  s_dffc67c70d0365::t_4221bc27229e19 1554
+  s_39a05fa8655eac::t_1912ad121d5173 1727,1729
+  s_39a05fa8655eac::t_a87994300d2252 1227-1234
+  s_dffc67c70d0365::t_5a856dd65bcdb0 1372-1384
+  s_dffc67c70d0365::t_9d548e96ee933b 1331-1371,1385-1417
+  s_dffc67c70d0365::t_7562ec5279e060 1521
+  s_dffc67c70d0365::t_35e9812aff6ad9 1904
+  s_dffc67c70d0365::t_2a3997c1160d92 1719,1724
+  s_dffc67c70d0365::t_cfc3173e968e02 2059-2060,2063,2068,2070-2072,2076,2080-2081,2087
+  s_dffc67c70d0365::t_601b47e0215e99 2096-2127
+  s_dffc67c70d0365::t_21c56cb869ad98 1717,1722
+  s_dffc67c70d0365::t_d350f359553d5d 176
+  s_39a05fa8655eac::t_d5dfc0f8d90e09 1624
+  s_39a05fa8655eac::t_b0ced8e0ae3c52 1748
+  s_dffc67c70d0365::t_91b710579fb273 1756
+  s_dffc67c70d0365::t_2b9a727aa46f31 2049-2058,2064-2067,2073-2075,2082-2086,2088-2095
+  s_dffc67c70d0365::t_2480c7886d022a 2155
+  s_dffc67c70d0365::t_763397aa4f8e4c 2228
+  s_39a05fa8655eac::t_a0d06e3b4723db 399,407
+  s_dffc67c70d0365::t_5a046b5edb2b83 2166
+  s_39a05fa8655eac::t_00f771231846f5 1956-1959,1961-1963
+  s_dffc67c70d0365::t_5b5a6f015951d3 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "0ce76c84c83c5eb058eb977460faf4051db5fb05",
+  "prompts": {},
+  "sessions": {
+    "s_39a05fa8655eac": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3439f105-1a1d-4375-a15c-35b26da7a30a",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    },
+    "s_dffc67c70d0365": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "da013b93-4be8-45a1-b03d-e297a7a706a7",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
