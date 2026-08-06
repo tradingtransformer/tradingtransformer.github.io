@@ -1,0 +1,19 @@
+noark-pitch/slides.html
+  s_0862ba98ea906f::t_c0040ca000e122 2043
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "67e98cb224fd0f49ba4ba75b084cafab07125c14",
+  "prompts": {},
+  "sessions": {
+    "s_0862ba98ea906f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a3f4613d-6dfb-4c6f-b0c2-53471d39ae4f",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
