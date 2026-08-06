@@ -1,0 +1,23 @@
+index.html
+  s_c2e3f67bf761e6::t_963a6b9addadcb 547-548
+  s_c2e3f67bf761e6::t_43eb427f07d6dc 59-61
+  s_c2e3f67bf761e6::t_44fc5a86e7fbef 971
+  s_c2e3f67bf761e6::t_52523854edf4dd 542-544,551-552
+  s_c2e3f67bf761e6::t_ee109298c389cf 546,549-550,553
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "182a9799605907a272196514ea03a6b903cd5e5d",
+  "prompts": {},
+  "sessions": {
+    "s_c2e3f67bf761e6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "71bd3458-db99-4660-b4c8-f4910083a13f",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
