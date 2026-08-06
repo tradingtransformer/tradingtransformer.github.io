@@ -9,7 +9,7 @@
 <style>
   :root {
     --ink: #222222;
-    --muted: #6b6b6b;
+    --muted: #444444;
     --accent: #ff5a5f;
     --paper: #ffffff;
   }
@@ -51,14 +51,14 @@
   .brand-sub {
     font-size: 22px;
     font-weight: 400;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 56px;
   }
   .tagline {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.3;
     color: var(--ink);
     max-width: 760px;
@@ -99,7 +99,7 @@
   }
   .problem-num {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--accent);
     line-height: 1;
     min-width: 56px;
@@ -112,9 +112,9 @@
   }
   .problem-body p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 640px;
   }
 
@@ -126,7 +126,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -137,7 +137,7 @@
   }
   .solution-lead {
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.4;
     color: var(--ink);
     max-width: 760px;
@@ -173,9 +173,9 @@
   }
   .benefit p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
   }
 
   /* Slide 4 — Her */
@@ -213,7 +213,7 @@
   }
   .her-quote {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.25;
     max-width: 780px;
     color: #fff;
@@ -250,7 +250,7 @@
   }
   .approach-lead {
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.45;
     color: var(--ink);
     max-width: 760px;
@@ -275,9 +275,9 @@
   }
   .pillar p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
   }
   .approach-callout {
     background: #fafafa;
@@ -297,8 +297,8 @@
   }
   .mission-eyebrow {
     font-size: 15px;
-    font-weight: 300;
-    color: var(--muted);
+    font-weight: 400;
+    color: var(--ink);
     line-height: 1.5;
     max-width: 780px;
     margin-bottom: 20px;
@@ -348,9 +348,9 @@
   }
   .model-item p {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.45;
-    color: var(--muted);
+    color: var(--ink);
   }
 
   /* Slide 7 — Market validation */
@@ -363,9 +363,9 @@
   }
   .market-lead {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 780px;
     margin-bottom: 24px;
   }
@@ -396,7 +396,7 @@
     margin-bottom: 10px;
   }
   .circle-lg { width: 150px; height: 150px; }
-  .circle-md { width: 130px; height: 130px; }
+  .circle-md { width: 150px; height: 150px; }
   .circle-sm { width: 110px; height: 110px; }
   .circle .big-num {
     font-size: 26px;
@@ -404,12 +404,12 @@
     color: var(--accent);
     line-height: 1;
   }
-  .circle-md .big-num { font-size: 22px; }
+  .circle-md .big-num { font-size: 26px; }
   .circle-sm .big-num { font-size: 18px; }
   .circle .big-label {
     font-size: 10px;
     font-weight: 500;
-    color: var(--muted);
+    color: var(--ink);
     margin-top: 4px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -423,9 +423,9 @@
   }
   .circle-wrap p {
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.4;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 200px;
   }
   .competitors {
@@ -435,23 +435,27 @@
   .competitors-label {
     font-size: 12px;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   .competitors-list {
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+    column-gap: 16px;
     font-size: 15px;
     font-weight: 500;
     color: var(--ink);
   }
+  .competitors-list span {
+    text-align: left;
+  }
   .competitors-note {
     font-size: 13px;
-    font-weight: 300;
-    color: var(--muted);
+    font-weight: 400;
+    color: var(--ink);
     margin-top: 10px;
     line-height: 1.5;
     max-width: 780px;
@@ -467,7 +471,7 @@
   .paid-bar-title {
     font-size: 11px;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -533,7 +537,7 @@
     transform: translateX(-50%);
     font-size: 12px;
     font-weight: 500;
-    color: var(--muted);
+    color: var(--ink);
     text-align: center;
     letter-spacing: 0.2px;
     line-height: 1.35;
@@ -558,7 +562,7 @@
   .m-stat-label {
     font-size: 10px;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1.6px;
     text-transform: uppercase;
     margin-bottom: 4px;
@@ -574,7 +578,7 @@
   .m-stat-sub {
     font-size: 12px;
     font-weight: 400;
-    color: var(--muted);
+    color: var(--ink);
     margin-top: 4px;
   }
   .m-countries {
@@ -585,7 +589,7 @@
   .m-countries-title {
     font-size: 10px;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1.6px;
     text-transform: uppercase;
     margin-bottom: 4px;
@@ -598,7 +602,7 @@
     font-size: 12px;
   }
   .m-row-country { color: var(--ink); font-weight: 500; }
-  .m-row-num { color: var(--muted); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+  .m-row-num { color: var(--ink); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
   .m-row-track {
     height: 8px;
     background: #f0f0f0;
@@ -637,7 +641,7 @@
   .mill-hero-stat .m-stat-sub {
     font-size: 12px;
     margin-top: 6px;
-    color: var(--muted);
+    color: var(--ink);
   }
   .mill-chart .m-countries-title {
     font-size: 10px;
@@ -665,9 +669,9 @@
   .slide-traction { justify-content: flex-start; }
   .traction-lead {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 780px;
     margin-bottom: 32px;
   }
@@ -697,9 +701,9 @@
   }
   .traction-card p {
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
   }
   .traction-card p strong { font-weight: 600; color: var(--ink); }
   .moat-callout {
@@ -718,9 +722,9 @@
   .slide-comp { justify-content: flex-start; }
   .comp-lead {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 780px;
     margin-bottom: 24px;
   }
@@ -794,8 +798,6 @@
   }
   .comp-dot.us .dot {
     background: var(--accent);
-    width: 20px;
-    height: 20px;
     box-shadow: 0 0 0 4px rgba(255,90,95,0.2);
   }
   .comp-dot span {
@@ -813,9 +815,9 @@
   .slide-fin { justify-content: flex-start; }
   .fin-lead {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 820px;
     margin-bottom: 28px;
   }
@@ -839,7 +841,7 @@
   .fin-hero .amount-sub {
     font-size: 13px;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-top: 6px;
@@ -847,7 +849,7 @@
   .fin-hero .runway {
     flex: 1;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     color: var(--ink);
     padding-bottom: 4px;
@@ -878,9 +880,9 @@
   }
   .fin-use-card p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
   }
   .fin-payback {
     background: #fafafa;
@@ -906,9 +908,9 @@
   }
   .team-lead {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 800px;
     margin-bottom: 24px;
   }
@@ -935,7 +937,7 @@
   .team-portrait-caption {
     font-size: 10px;
     font-weight: 400;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 0.3px;
     margin-top: 6px;
     max-width: 180px;
@@ -964,7 +966,7 @@
   }
   .team-creds li {
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     color: var(--ink);
     padding-left: 14px;
@@ -983,7 +985,7 @@
   .team-creds li strong { font-weight: 600; }
   .team-creds li em {
     font-style: normal;
-    color: var(--muted);
+    color: var(--ink);
     font-size: 12px;
   }
 
@@ -995,9 +997,9 @@
   }
   .product-lead {
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 800px;
     margin-bottom: 18px;
   }
@@ -1022,7 +1024,7 @@
   }
   .product-caption {
     font-size: 11px;
-    color: var(--muted);
+    color: var(--ink);
     margin-top: 10px;
     letter-spacing: 0.3px;
   }
@@ -1036,9 +1038,9 @@
   }
   .product-v2-lead {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 800px;
     margin-bottom: 36px;
   }
@@ -1062,9 +1064,9 @@
   }
   .product-v2-card p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
   }
   .product-v2-card p strong { font-weight: 600; color: var(--ink); }
   .product-v2-quote {
@@ -1108,8 +1110,8 @@
   }
   .gtm-col-sub {
     font-size: 15px;
-    font-weight: 300;
-    color: var(--muted);
+    font-weight: 400;
+    color: var(--ink);
     margin-bottom: 40px;
     font-style: italic;
   }
@@ -1140,9 +1142,9 @@
   }
   .gtm-list li em {
     font-style: normal;
-    color: var(--muted);
+    color: var(--ink);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
   }
   .gtm-brands {
     display: flex;
@@ -1183,14 +1185,14 @@
   .gtm-persona .persona-label {
     font-size: 12px;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 14px;
   }
   .gtm-persona p {
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--ink);
     line-height: 1.5;
   }
@@ -1200,9 +1202,9 @@
   .slide-goals .slide-title { font-size: 44px; margin-bottom: 20px; }
   .goals-lead {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.55;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 800px;
     margin-bottom: 60px;
   }
@@ -1222,6 +1224,14 @@
     min-width: 240px;
     background: #fff;
   }
+  .goal-card.small {
+    padding: 24px 32px;
+    min-width: 200px;
+  }
+  .goal-card.small .goal-big { font-size: 46px; }
+  .goal-card.small .goal-arr { font-size: 22px; }
+  .goal-card.small .goal-year { margin-bottom: 14px; }
+  .goal-card.small .goal-sub { margin-bottom: 16px; }
   .goal-year {
     font-size: 14px;
     font-weight: 700;
@@ -1241,7 +1251,7 @@
   .goal-sub {
     font-size: 14px;
     font-weight: 500;
-    color: var(--muted);
+    color: var(--ink);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -1254,7 +1264,7 @@
   }
   .goal-arrow {
     font-size: 44px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--accent);
     line-height: 1;
   }
@@ -1278,9 +1288,9 @@
   }
   .gtm-lead {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
     max-width: 800px;
     margin-bottom: 56px;
   }
@@ -1312,11 +1322,188 @@
   }
   .gtm-phase p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--muted);
+    color: var(--ink);
   }
   .gtm-phase p strong { font-weight: 600; color: var(--ink); }
+
+  /* Slide — Operating model */
+  .slide-org { justify-content: flex-start; }
+  .slide-org .slide-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .org-lead {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 900px;
+    margin-bottom: 48px;
+  }
+  .org-lead strong { font-weight: 600; color: var(--ink); }
+  .org-loop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+  }
+  .org-stage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 22px;
+    border: 1.5px solid #e5e5e5;
+    border-radius: 8px;
+    min-height: 190px;
+  }
+  .org-num {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 14px;
+  }
+  .org-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .org-role {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1.15;
+    letter-spacing: -0.3px;
+  }
+  .org-stage h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .org-stage p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .org-arrow {
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .org-arrow-loop {
+    font-size: 34px;
+    color: var(--accent);
+  }
+  .org-callout {
+    background: #fff5f5;
+    border-left: 4px solid var(--accent);
+    padding: 20px 26px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .org-callout strong { font-weight: 600; color: var(--ink); }
+
+  /* Slide — Operating model: why it wins */
+  .slide-org-why { justify-content: flex-start; }
+  .slide-org-why .slide-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .org-why-lead {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 1000px;
+    margin-bottom: 32px;
+  }
+  .org-why-lead strong { font-weight: 600; color: var(--ink); }
+  .org-why-row {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .org-why-fig img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+  }
+  .org-why-caption {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-top: 10px;
+    max-width: 520px;
+  }
+  .org-why-caption strong { font-weight: 600; }
+  .org-why-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .org-why-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    border-left: 5px solid var(--accent);
+    padding: 4px 0 4px 18px;
+  }
+  .org-why-num {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+  .org-why-num-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .org-why-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .org-why-list li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--ink);
+    padding-left: 18px;
+    position: relative;
+  }
+  .org-why-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .org-why-list strong { font-weight: 600; color: var(--ink); }
 
   @media print {
     body { background: white; padding: 0; gap: 0; }
@@ -1330,8 +1517,8 @@
     <div class="brand">NoArk</div>
     <div class="brand-sub">Infinity Memory</div>
     <div class="tagline">
-      An AI that's <strong>on your side</strong> — and <strong>remembers you</strong>,<br>
-      so it can help you <strong style="color: #ff5a5f;">live braver</strong>, <strong style="color: #0f8b8d;">connect deeper</strong>, and <strong style="color: #d99a1f;">enjoy life more</strong>.
+      An AI that's <strong style="color: #5aaee0;">always on your side</strong> — and <strong style="color: #5aaee0;">always remembers you</strong>,<br>
+      so it can help you <strong style="color: #6bcf7f;">live braver, connect deeper, and enjoy life more</strong> in the real world.
     </div>
     <div class="footer">
       <span>NOARK AI</span>
@@ -1348,7 +1535,7 @@
         <div class="problem-num">01</div>
         <div class="problem-body">
           <h3>Deciding alone — with nowhere private to think</h3>
-          <p>The biggest calls in life get made at 2am. The chats where you'd work them out — career, health, family — sit on someone else's servers, trained on, monetized. Not a place you'd bring a real decision.</p>
+          <p>The biggest calls — career, health, family — need a private place to think. Today's AI chats sit on someone else's servers, trained on and monetized.</p>
         </div>
       </div>
 
@@ -1364,7 +1551,7 @@
         <div class="problem-num">03</div>
         <div class="problem-body">
           <h3>Memory isn't good enough</h3>
-          <p>ChatGPT, Gemini, Claude — memory is shallow. Can't empathize with an issue you raised months ago.</p>
+          <p>ChatGPT, Gemini, Claude — memory is shallow. Can't empathize with an issue you raised months ago, even years ago.</p>
         </div>
       </div>
     </div>
@@ -1434,7 +1621,7 @@
     <div class="her-content">
       <div class="her-header">Why now</div>
       <div class="her-quote">
-        The <strong>personal AI companion</strong> from <em>Her</em> is <strong>closer to reality than fiction</strong>. But its lonely, screen-lit world is <strong>not the future we want</strong>. NoArk is built for the opposite — an AI that helps you live braver and connect deeper with the real world.
+        The <strong style="color: #5aaee0;">personal AI companion</strong> from <em>Her</em> is closer to reality than fiction. But its <strong style="color: #ffd35a;">lonely, screen-lit world</strong> is not the future we want. NoArk is built for the opposite — an AI that helps you <strong style="color: #6bcf7f;">live braver, connect deeper, and enjoy life more</strong> in the real world.
       </div>
       <div class="her-caption">Still — Her (2013), dir. Spike Jonze</div>
     </div>
@@ -1496,7 +1683,7 @@
         <p>One master — the user. We never sell attention or serve two demands.</p>
       </div>
       <div class="model-item">
-        <div class="num">$50<span style="font-size:14px;font-weight:400;color:var(--muted);">/mo</span></div>
+        <div class="num">$50<span style="font-size:14px;font-weight:400;color:var(--ink);">/mo</span></div>
         <h4>Subscription only</h4>
         <p>Starting at $50/month. All revenue comes from paying users.</p>
       </div>
@@ -1520,26 +1707,26 @@
 
   <section class="slide slide-gtm">
     <div class="header">Go-to-market</div>
-    <h2 class="slide-title">Reach the users who already <span style="color: var(--accent);">pay for trust</span>.</h2>
+    <h2 class="slide-title">Reach the users who already <span style="color: var(--accent);">pay for trust</span> and <span style="color: #0f8b8d;">predictability</span>.</h2>
     <div class="gtm-lead">
-      Start where willingness to pay is highest. Distribute through brands that already earned that trust. Land with households whose decisions carry the highest stakes.
+      Start where willingness to pay is highest. High-end users pay for predictability — the same brand, the same standard, every time. Distribute through brands that already earned that trust. Land with households whose decisions carry the highest stakes.
     </div>
 
     <div class="gtm-phases">
       <div class="gtm-phase">
-        <div class="gtm-num">1</div>
+        <div class="gtm-num" style="color: #ff5a5f;">1</div>
         <h3>European markets first</h3>
-        <p>Privacy-first, high subscription willingness. <strong>Germany, UK, France, Switzerland, Nordics</strong> — where <strong>on-your-side, ad-free</strong> lands hardest.</p>
+        <p>Privacy-first, high subscription willingness. <strong style="color: #ff5a5f;">Germany, UK, France, Switzerland, Nordics</strong> — where <strong style="color: #ff5a5f;">on-your-side, ad-free</strong> lands hardest.</p>
       </div>
       <div class="gtm-phase">
-        <div class="gtm-num">2</div>
+        <div class="gtm-num" style="color: #0f8b8d;">2</div>
         <h3>High-end brand partnerships</h3>
-        <p>Co-brand with <strong>Four Seasons</strong>, <strong>Hermès</strong>, <strong>Rolex</strong>, <strong>LVMH</strong>. Their clients already pay for trust.</p>
+        <p>Co-brand with <strong style="color: #0f8b8d;">Four Seasons</strong>, <strong style="color: #0f8b8d;">Hermès</strong>, <strong style="color: #0f8b8d;">Rolex</strong>, <strong style="color: #0f8b8d;">LVMH</strong>, <strong style="color: #0f8b8d;">Mercedes</strong>, <strong style="color: #0f8b8d;">PGA</strong>. Their clients already pay for trust and predictability.</p>
       </div>
       <div class="gtm-phase">
-        <div class="gtm-num">3</div>
+        <div class="gtm-num" style="color: #5aaee0;">3</div>
         <h3>Millionaire families</h3>
-        <p>Wealth, health, kids, legacy — highest-stakes decisions, priced accordingly.</p>
+        <p><strong style="color: #5aaee0;">Wealth, health, kids, legacy</strong> — highest-stakes decisions.</p>
       </div>
     </div>
 
@@ -1558,15 +1745,15 @@
     </div>
 
     <div class="goals-row">
-      <div class="goal-card">
-        <div class="goal-year">2027</div>
+      <div class="goal-card small">
+        <div class="goal-year">End of 2027</div>
         <div class="goal-big">10,000</div>
         <div class="goal-sub">paid users</div>
         <div class="goal-arr">$10M ARR</div>
       </div>
       <div class="goal-arrow">→</div>
       <div class="goal-card">
-        <div class="goal-year">2029</div>
+        <div class="goal-year">End of 2029</div>
         <div class="goal-big">1,000,000</div>
         <div class="goal-sub">paid users</div>
         <div class="goal-arr">$1B ARR</div>
@@ -1608,14 +1795,6 @@
         <h4>Consumer AI market</h4>
         <p>Analyst estimates for personal AI &amp; assistant spend.</p>
       </div>
-      <div class="circle-wrap">
-        <div class="circle circle-sm">
-          <div class="big-num">&lt;1%</div>
-          <div class="big-label">no conflict</div>
-        </div>
-        <h4>No interest conflict</h4>
-        <p>Almost every AI serves two masters — users and advertisers. A truly conflict-free, user-first model is rare.</p>
-      </div>
     </div>
 
     <div class="competitors">
@@ -1627,6 +1806,9 @@
         <span>Apple Intelligence</span>
         <span>Meta AI</span>
         <span>Copilot</span>
+        <span>Character.AI</span>
+        <span>Perplexity</span>
+        <span>Replika</span>
       </div>
       <div class="competitors-note">
         Every one of these chases the same vision. They've proven the market. <strong>None are built to side with the user first, remember you, and stay ad-free.</strong>
@@ -1664,7 +1846,7 @@
           </div>
         </div>
       </div>
-      <div style="flex:1; font-size: 15px; font-weight: 300; line-height: 1.6; color: var(--muted); padding-left: 8px;">
+      <div style="flex:1; font-size: 15px; font-weight: 400; line-height: 1.6; color: var(--ink); padding-left: 8px;">
         <strong style="color: var(--ink); font-weight: 600;">~3% of U.S. adults</strong> pay for AI today — below even Kalshi and Polymarket, and 7× below Netflix/Spotify.
         <br><br>
         The paid AI market is <strong style="color: var(--accent); font-weight: 600;">not saturated</strong>. The winners will be the products people trust enough to keep paying for.
@@ -1719,7 +1901,7 @@
 
   <section class="slide slide-traction">
     <div class="header">Traction &amp; moat</div>
-    <h2 class="slide-title">Our users <span style="color: var(--accent);">don't leave</span>.</h2>
+    <h2 class="slide-title">Our paid users <span style="color: var(--accent);">don't leave</span>.</h2>
 
     <div class="traction-lead">
       The users who pay for NoArk stay — retention of a loyal partner, not a swappable tool.
@@ -1771,14 +1953,14 @@
         <div class="axis-x">Memory (personalization) →</div>
         <div class="axis-x-low">← Shallow</div>
 
-        <div class="comp-dot" style="left: 60%; top: 65%;"><div class="dot"></div><span>ChatGPT</span></div>
-        <div class="comp-dot" style="left: 68%; top: 82%;"><div class="dot"></div><span>Gemini</span></div>
-        <div class="comp-dot" style="left: 18%; top: 85%;"><div class="dot"></div><span>Meta AI</span></div>
-        <div class="comp-dot" style="left: 35%; top: 40%;"><div class="dot"></div><span>Claude</span></div>
-        <div class="comp-dot" style="left: 45%; top: 55%;"><div class="dot"></div><span>Copilot</span></div>
-        <div class="comp-dot" style="left: 55%; top: 42%;"><div class="dot"></div><span>Apple Intelligence</span></div>
+        <div class="comp-dot" style="left: 20%; top: 72%;"><div class="dot"></div><span>Meta AI</span></div>
+        <div class="comp-dot" style="left: 40%; top: 72%;"><div class="dot"></div><span>Gemini</span></div>
+        <div class="comp-dot" style="left: 60%; top: 72%;"><div class="dot"></div><span>ChatGPT</span></div>
+        <div class="comp-dot" style="left: 80%; top: 72%;"><div class="dot"></div><span>Copilot</span></div>
 
-        <div class="comp-dot us" style="left: 85%; top: 8%;"><div class="dot"></div><span>NoArk</span></div>
+        <div class="comp-dot" style="left: 30%; top: 28%;"><div class="dot"></div><span>Apple Intelligence</span></div>
+        <div class="comp-dot" style="left: 55%; top: 28%;"><div class="dot"></div><span>Claude</span></div>
+        <div class="comp-dot us" style="left: 82%; top: 28%;"><div class="dot"></div><span>NoArk</span></div>
       </div>
     </div>
 
@@ -1853,7 +2035,7 @@
           <li><strong>Area Chair</strong>, <strong>EMNLP 2026 Industry Track</strong>.</li>
           <li>Incoming <strong>full CS professor</strong>, <strong>Wuhan University</strong> (2027) — research and NoArk are one mission.</li>
           <li>UCLA <a href="https://web.cs.ucla.edu/~chohsieh/" style="color: var(--accent); text-decoration: none;">advisor</a>'s lineage: <strong>OpenAI, Mistral, Meta TBD Lab, Arena.ai</strong> ($150M Series A). A past co-author is a <strong>co-author of the GPT-4 paper</strong>.</li>
-          <li><strong>Founder, value investor &amp; quant trader:</strong> <strong>AT&amp;T Labs (former Bell Labs), Meta, LinkedIn, Coursera, Dataminr</strong> (Silicon Valley &amp; NYC), <strong>Trip.com</strong> (Shanghai), <strong>TradingTransformer Technologies</strong>. <strong>1B+ user product experience.</strong> Shipped product, allocated capital, modeled markets across three continents.</li>
+          <li><strong>Researcher, engineer, serial founder, value investor &amp; quant trader:</strong> <strong>AT&amp;T Labs (former Bell Labs), Meta, LinkedIn, Coursera, Dataminr</strong> (Silicon Valley &amp; NYC), <strong>Trip.com</strong> (Shanghai), <strong>TradingTransformer Technologies</strong>. <strong>1B+ user product experience.</strong> Shipped product, allocated capital, modeled markets across three continents.</li>
         </ul>
       </div>
     </div>
@@ -1861,6 +2043,85 @@
     <div class="footer">
       <span>NoArk ∞ Memory</span>
       <span>15</span>
+    </div>
+  </section>
+
+  <section class="slide slide-org">
+    <div class="header">Operating model</div>
+    <h2 class="slide-title">A company that runs as <span style="color: var(--accent);">a loop</span> — humans lead, agents execute.</h2>
+
+    <div class="org-lead">
+      One tight loop across three stages. AI agents do the heavy lifting; a small team of human experts supervises taste, judgment, and direction.
+    </div>
+
+    <div class="org-loop">
+      <div class="org-stage">
+        <div class="org-roles">
+          <div class="org-role" style="color: #ff5a5f;">Research</div>
+          <div class="org-role" style="color: #e07b3d;">Product</div>
+          <div class="org-role" style="color: #d99a1f;">Engineering</div>
+        </div>
+        <p>Build what to build next. Ship it fast.</p>
+      </div>
+      <div class="org-arrow">→</div>
+      <div class="org-stage">
+        <div class="org-roles">
+          <div class="org-role" style="color: #7ba428;">Marketing</div>
+          <div class="org-role" style="color: #0f8b8d;">Sales</div>
+        </div>
+        <p>Reach the right users. Convert.</p>
+      </div>
+      <div class="org-arrow">→</div>
+      <div class="org-stage">
+        <div class="org-roles">
+          <div class="org-role" style="color: #2d6ea8;">Customer Service</div>
+          <div class="org-role" style="color: #6a4c93;">Operations</div>
+          <div class="org-role" style="color: #b0416b;">Analytics</div>
+        </div>
+        <p>Measure, run, listen. Feed learning back.</p>
+      </div>
+      <div class="org-arrow org-arrow-loop">↺</div>
+    </div>
+
+    <div class="org-callout">
+      <strong>Agents execute every role. Humans supervise.</strong> How $4M funds a $1B ARR path.
+    </div>
+
+    <div class="footer">
+      <span>NoArk ∞ Memory</span>
+      <span>16</span>
+    </div>
+  </section>
+
+  <section class="slide slide-org-why">
+    <div class="header">Why the loop wins</div>
+    <h2 class="slide-title">The <span style="color: var(--accent);">4×</span> speedup — a new kind of business model.</h2>
+
+    <div class="org-why-lead">
+      Big companies scale by adding headcount and slow to a crawl. A tight <strong>research → engineering → ops → learning</strong> loop, with agents doing the work and humans supervising, moves the whole business at research pace — and it's <strong>already proven in production</strong>.
+    </div>
+
+    <div class="org-why-row">
+      <div class="org-why-fig">
+        <img src="img/auto-research-loop.png" alt="Closing the Auto-Research Loop — human alone vs. human + AI loop">
+        <div class="org-why-caption">From <strong>Wu &amp; Hsieh (2026)</strong>, "Closing the Auto-Research Loop" — human + AI loop delivered <strong>~4× the offline gain in a quarter of the time</strong> in a production search-ranking system.</div>
+      </div>
+      <div class="org-why-body">
+        <div class="org-why-stat">
+          <div class="org-why-num">~4×</div>
+          <div class="org-why-num-label">iteration speed</div>
+        </div>
+        <ul class="org-why-list">
+          <li><strong>Less headcount, more output.</strong> One expert in the loop supervises what used to take a whole team.</li>
+          <li><strong>Compounding learnings.</strong> Every cycle feeds the next — the org gets smarter each loop, not just each hire.</li>
+          <li><strong>Same lineage as the paper.</strong> Co-authored by <strong>Dr. Liwei Wu</strong> (NoArk founder) and his UCLA advisor <strong>Prof. Cho-Jui Hsieh</strong>. We built the loop we're pitching.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>NoArk ∞ Memory</span>
+      <span>17</span>
     </div>
   </section>
 
@@ -1891,7 +2152,7 @@
       <div class="fin-use-card">
         <div class="pct">10%</div>
         <h4>Engineering</h4>
-        <p>Lean team — AI agents cover headcount needs.</p>
+        <p>Lean team — <strong>see slide 16</strong>, AI agents at every role.</p>
       </div>
       <div class="fin-use-card">
         <div class="pct">10%</div>
@@ -1902,7 +2163,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>16</span>
+      <span>18</span>
     </div>
   </section>
 
@@ -1924,7 +2185,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>17</span>
+      <span>19</span>
     </div>
   </section>
 
@@ -1964,7 +2225,7 @@
 
     <div class="footer">
       <span>NoArk ∞ Memory</span>
-      <span>18</span>
+      <span>20</span>
     </div>
   </section>
 
