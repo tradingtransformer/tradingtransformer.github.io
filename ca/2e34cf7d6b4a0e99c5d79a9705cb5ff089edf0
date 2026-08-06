@@ -1,0 +1,32 @@
+noark-pitch/slides.html
+  s_4c7603d261eafc::t_c17103d9fb646e 2197-2202
+  s_4c7603d261eafc::t_c671687d2e3a53 1549-1555
+  s_4c7603d261eafc::t_20a40b0130e4b1 2318,2325,2330,2335,2345,2349-2350,2354-2355,2359-2360,2365,2370,2375
+  s_4c7603d261eafc::t_ed00a115efc962 1524-1525
+  s_4c7603d261eafc::t_470a6d9ff84573 2307-2317,2319-2324,2326-2329,2331-2334,2336-2339,2341-2344,2346-2348,2351-2353,2356-2358,2361-2364,2366-2369,2371-2374,2380
+  s_4c7603d261eafc::t_1980df5b42b204 2340
+  s_4c7603d261eafc::t_ec0713ff7da3b3 1509,1512-1513,1519-1520,1532,1542,1547,1563,1566
+  s_4c7603d261eafc::t_cb3777eae35a41 1497
+  s_4c7603d261eafc::t_c4b857fe9aec08 2187-2195
+  s_4c7603d261eafc::t_c442762f56bd67 1492,1498-1499
+  s_4c7603d261eafc::t_6bb706677b1024 2178
+  s_4c7603d261eafc::t_e92b2c0b795bf8 1522-1523
+  s_4c7603d261eafc::t_f956afc7131726 2184
+  s_4c7603d261eafc::t_0aebfc5b7ff6f8 903-964
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "ca2e34cf7d6b4a0e99c5d79a9705cb5ff089edf0",
+  "prompts": {},
+  "sessions": {
+    "s_4c7603d261eafc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "569b3b84-f46b-4e45-aea0-14fdca89b9ad",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
