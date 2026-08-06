@@ -1033,6 +1033,78 @@
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/es/blog/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/fr/blog/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/ja/blog/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/zh-cn/blog/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://www.tradingtransformer.com/zh-tw/blog/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tradingtransformer.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tradingtransformer.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.tradingtransformer.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.tradingtransformer.com/ja/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.tradingtransformer.com/zh-cn/blog/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tradingtransformer.com/zh-tw/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tradingtransformer.com/blog/"/>
   </url>
   <url>
     <loc>https://www.tradingtransformer.com/blog/best-private-ai-app.html</loc>
