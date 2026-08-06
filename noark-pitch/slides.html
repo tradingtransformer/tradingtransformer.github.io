@@ -923,13 +923,20 @@
     align-items: flex-start;
   }
   .team-portrait {
-    width: 180px;
-    height: 210px;
+    width: 160px;
+    height: 190px;
     border-radius: 6px;
     background: #f4f4f4;
     overflow: hidden;
     flex-shrink: 0;
   }
+  .team-portraits {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 160px;
+  }
+  .team-portraits > div { display: flex; flex-direction: column; }
   .team-portrait img {
     width: 100%;
     height: 100%;
@@ -942,7 +949,7 @@
     color: var(--ink);
     letter-spacing: 0.3px;
     margin-top: 6px;
-    max-width: 180px;
+    max-width: 160px;
     line-height: 1.4;
   }
   .team-body { flex: 1; padding-top: 2px; }
@@ -2022,10 +2029,20 @@
 
     <div class="team-row">
       <div>
-        <div class="team-portrait">
-          <img src="img/founder-manning.jpg" alt="NoArk founder with Professor Christopher Manning (Stanford)">
+        <div class="team-portraits">
+          <div>
+            <div class="team-portrait">
+              <img src="img/founder-hsieh.jpg" alt="NoArk founder with UCLA advisor Prof. Cho-Jui Hsieh">
+            </div>
+            <div class="team-portrait-caption">Founder with UCLA advisor <strong>Prof. Cho-Jui Hsieh</strong>.</div>
+          </div>
+          <div>
+            <div class="team-portrait">
+              <img src="img/founder-manning.jpg" alt="NoArk founder with Professor Christopher Manning (Stanford)">
+            </div>
+            <div class="team-portrait-caption">With <strong>Prof. Christopher Manning</strong> (Stanford NLP). <em>Shown for context — not affiliated with NoArk.</em></div>
+          </div>
         </div>
-        <div class="team-portrait-caption">Founder (left) with <strong>Prof. Christopher Manning</strong> (Stanford NLP). <em>Shown for context — not affiliated with NoArk.</em></div>
       </div>
       <div class="team-body">
         <div class="team-name">Dr. Liwei Wu</div>
