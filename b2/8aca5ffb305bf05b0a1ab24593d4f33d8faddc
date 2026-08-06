@@ -1,0 +1,20 @@
+noark-pitch/slides.html
+  s_0862ba98ea906f::t_81da11f0063f3c 1958-1963,1965
+  s_0862ba98ea906f::t_0c6b92bec63f8f 801-802
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.39-trip",
+  "base_commit_sha": "b28aca5ffb305bf05b0a1ab24593d4f33d8faddc",
+  "prompts": {},
+  "sessions": {
+    "s_0862ba98ea906f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a3f4613d-6dfb-4c6f-b0c2-53471d39ae4f",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/ypvzpmevzxdl"
+      },
+      "human_author": "wuliwei <wuliwei@trip.com>"
+    }
+  }
+}
