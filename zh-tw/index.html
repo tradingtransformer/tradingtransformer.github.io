@@ -54,6 +54,9 @@
 
     <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <link rel="dns-prefetch" href="https://wsw.ai">
 
     <!-- Preload critical images -->
@@ -157,7 +160,7 @@
           "name": "AI 智慧體能協助預測市場嗎？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "能幫上忙——但好的智慧體給你的是直白的判斷，而不只是一句放手去做。下面是有人問 Charlie（我們以查理·蒙格為原型的 AI 智慧體）如何勸年輕人用預測市場時，他給出的未經修飾的回答。核心結論：我不會勸年輕人用預測市場，我會勸他們別用。其一，年輕人最缺的不是資訊，是本金——頂層 1% 的用戶賺走絕大部分利潤，剩下 99% 的人長期期望收益趨近於零。其二，預測市場訓練短期回饋迴路，而年輕人最需要延遲滿足的能力——真正的複利以年計，不以分鐘計。其三，它讓你覺得自己很聰明，卻不會讓你變富有；真正的財富來自創造價值，不是來自預測正確。如果非要用，就設硬上限、只當資訊源、永遠不要替代獨立判斷，把省下的時間和錢花在讀書和思考上。預測市場不會讓你變聰明，只會讓你覺得自己很聰明——而覺得自己很聰明，是通往愚蠢最快的路。——Charlie"
+            "text": "能幫上忙——但好的智慧體給你的是直白的判斷，而不只是一句放手去做。下面是有人問 Charlie（我們以查理·蒙格為原型的 AI 智慧體）如何勸年輕人用預測市場時，他給出的未經修飾的回答。核心結論：我不會勸年輕人用預測市場，我會勸他們別用。其一，年輕人最缺的不是資訊，是本金——頂層 1% 的用戶賺走絕大部分利潤，剩下 99% 的人長期期望收益趨近於零。其二，預測市場訓練短期回饋迴路，而年輕人最需要延遲滿足的能力——真正的複利以年計，不以分鐘計。其三，它讓你覺得自己很聰明，卻不會讓你變富有；真正的財富來自創造價值，不是來自預測正確。如果非要用，就設硬上限、只當資訊源、永遠不要替代獨立判斷，把省下的時間和錢花在讀書和思考上。預測市場不會讓你變聰明，只會讓你覺得自己很聰明——而覺得自己很聰明，是通往愚蠢最快的路。——Charlie。實際驗證：在 2026 國際足總世界盃中，我們的 AI 正確預測西班牙奪冠、基利安·姆巴佩榮膺最佳射手——推理依據是：西班牙 2024 年歐洲盃的奪冠證明其控球戰術能在北美的溫暖氣候中發揮；而姆巴佩相對梅西的年齡優勢，在漫長而艱苦的賽程中會逐步顯現。"
           }
         },
         {
@@ -538,10 +541,18 @@
             height: 52px;
         }
         .logo {
-            font-size: 1.2em;
-            font-weight: 600;
+            font-family: "Cormorant Garamond", "EB Garamond", "Baskerville", "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 1.15em;
+            font-weight: 700;
             color: var(--text);
-            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding-left: 0.04em;
+        }
+        .logo .tt-cap {
+            font-size: 1.35em;
+            font-weight: 700;
+            letter-spacing: 0;
         }
         nav ul {
             list-style: none;
@@ -959,7 +970,7 @@
 
     <header>
         <div class="container">
-            <div class="logo">Trading<span class="highlight">Transformer</span></div>
+            <div class="logo"><span class="tt-cap">T</span>RADING<span class="tt-cap">T</span>RANSFORMER</div>
             <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -983,7 +994,15 @@
 
     <section class="hero">
         <div class="container">
-            <p style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 1.15em; font-weight: 700; color: var(--accent); margin: 0 0 20px;">NoArk — 無限記憶</p>
+            <!-- AI Prediction Highlight -->
+            <div style="max-width: 760px; margin: 0 auto 48px; background: linear-gradient(160deg, #1d1d1f 0%, #2c2c2e 100%); border-radius: 24px; padding: 44px 40px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.18);">
+                <p style="text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72em; font-weight: 700; color: var(--positive); margin: 0 0 14px;">AI 預測 &mdash; 已驗證</p>
+                <h3 style="color: #fff; font-size: 1.6em; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 18px;">2026 國際足總世界盃</h3>
+                <p style="color: rgba(255,255,255,0.85); font-size: 1.15em; line-height: 1.6; max-width: 600px; margin: 0 auto 20px;">我們的 AI 正確預測<strong style="color: #fff;">西班牙</strong>奪冠，<strong style="color: #fff;">基利安&middot;姆巴佩</strong>榮膺最佳射手。</p>
+                <p style="color: rgba(255,255,255,0.55); font-size: 0.98em; line-height: 1.6; max-width: 580px; margin: 0 auto;">推理依據：西班牙在 2024 年歐洲盃的奪冠證明其控球戰術能在北美的溫暖氣候中發揮；而姆巴佩相對梅西的年齡優勢，在漫長而艱苦的賽程中會逐步顯現。</p>
+            </div>
+
+            <p style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 1.15em; font-weight: 700; color: var(--accent); margin: 0 0 20px;">NoArk &mdash; 無限記憶</p>
             <h1>當生活陷入迷惘，別獨自面對。</h1>
             <p class="hero-tagline" style="margin-top: 0.5em;">向歷史上最有智慧的人請教。</p>
             <p class="hero-desc">重大的抉擇、輾轉難眠的夜、身邊沒人能問的難題——你不必獨自面對。在 NoArk<a href="#name-story" style="color: var(--accent); text-decoration: none;">（名字源自挪亞方舟，點此看由來）</a>的 <strong style="color: var(--text);">Fiat Lux</strong>（拉丁語，意為「要有光」） 分頁裡，你可以用文字、語音、照片或檔案，與歷史上最偉大頭腦的 AI 對話：查理·蒙格、史蒂夫·賈伯斯、愛因斯坦、李奧納多·達文西、馬可·奧理略，以及另外 30 多位，他們都願意陪你想清楚真正困擾你的問題。而且就我們所知，NoArk 是唯一一款把你的全部資料都保存在你自己裝置上的 AI 智慧體應用——我們不要求你登入，不索取電子郵件或電話，你的聊天和記憶保持私密且本機儲存，我們也從不靠你的資料牟利。這一切都運行在 <strong style="color: var(--text);">Infinity Memory（無限記憶）</strong> 之上——NoArk 永不遺忘，每一次對話、決定與細節都會延續下來，你永遠不必從零開始。它同時也是一款涵蓋市場、生產力、旅行與生活的全能超級應用。</p>
@@ -1478,6 +1497,7 @@
                 <p style="margin-top: 16px;"><strong>總結：</strong>年輕人最寶貴的資產是時間和可塑性。預測市場把時間碎片化、注意力短期化、思維方式賭博化——每一樣都在侵蝕他們最需要培養的能力。真正聰明的年輕人，應該把精力花在讀好書、學能產生複利的技能、建立能創造價值的系統上。</p>
                 <p style="margin-top: 16px;">預測市場不會讓你變聰明，只會讓你覺得自己很聰明。而覺得自己很聰明，是通往愚蠢最快的路。</p>
                 <p style="margin-top: 12px; text-align: right;">——Charlie</p>
+                <p style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--hairline);"><strong>實際驗證：</strong>在 2026 國際足總世界盃中，我們的 AI 正確預測<strong>西班牙</strong>奪冠、<strong>基利安&middot;姆巴佩</strong>榮膺最佳射手——推理依據是：西班牙 2024 年歐洲盃的奪冠證明其控球戰術能在北美的溫暖氣候中發揮；而姆巴佩相對梅西的年齡優勢，在漫長而艱苦的賽程中會逐步顯現。</p>
             </details>
             <details class="faq-item">
                 <summary><h3>克勞德·夏農對 AI 與選股做出過什麼預言？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>

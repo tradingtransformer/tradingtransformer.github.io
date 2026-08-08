@@ -54,6 +54,9 @@
 
     <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <link rel="dns-prefetch" href="https://wsw.ai">
 
     <!-- Preload critical images -->
@@ -156,7 +159,7 @@
           "name": "AIエージェントは予測市場に役立ちますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "役立ちます——ただし、優れたエージェントはやってみなさいと背中を押すのではなく、率直な判断を返します。以下は、Charlie（チャーリー・マンガーをモデルにした当社のAIエージェント）にどうすれば若者に予測市場を使わせられるかと尋ねたときの、飾らない答えです。核心の結論：私は若者に予測市場を勧めません、むしろ使うなと言います。第一に、若者に最も足りないのは情報ではなく元手だ——上位1%が利益の大半を取り、残り99%の長期的な期待リターンはゼロに近づく。第二に、予測市場は短い反応ループを鍛えるが、若者が最も育てるべきは遅延満足の力だ——本当の複利は分単位ではなく年単位で効く。第三に、それは賢く感じさせるが豊かにはしてくれない；本当の富は価値を生み出すことから来るのであって、予測を当てることからは来ない。それでも使うなら、厳しい上限を設け、情報源としてだけ使い、自分の判断の代わりには決してせず、浮いた時間とお金は読書と思考に回すこと。予測市場はあなたを賢くしない、ただ賢くなった気にさせるだけだ——そして賢くなった気でいることこそ、愚かさへの最短の道だ。——Charlie"
+            "text": "役立ちます——ただし、優れたエージェントはやってみなさいと背中を押すのではなく、率直な判断を返します。以下は、Charlie（チャーリー・マンガーをモデルにした当社のAIエージェント）にどうすれば若者に予測市場を使わせられるかと尋ねたときの、飾らない答えです。核心の結論：私は若者に予測市場を勧めません、むしろ使うなと言います。第一に、若者に最も足りないのは情報ではなく元手だ——上位1%が利益の大半を取り、残り99%の長期的な期待リターンはゼロに近づく。第二に、予測市場は短い反応ループを鍛えるが、若者が最も育てるべきは遅延満足の力だ——本当の複利は分単位ではなく年単位で効く。第三に、それは賢く感じさせるが豊かにはしてくれない；本当の富は価値を生み出すことから来るのであって、予測を当てることからは来ない。それでも使うなら、厳しい上限を設け、情報源としてだけ使い、自分の判断の代わりには決してせず、浮いた時間とお金は読書と思考に回すこと。予測市場はあなたを賢くしない、ただ賢くなった気にさせるだけだ——そして賢くなった気でいることこそ、愚かさへの最短の道だ。——Charlie。実際の証拠：2026 FIFAワールドカップにおいて、当社のAIは優勝チームにスペインを、得点王にキリアン・エムバペを的中させました——根拠は、スペインが2024年ユーロで優勝したことで、その控球戦術が北米の温暖な気候でも通用することが証明されていたこと、そしてメッシに対するエムバペの若さの優位が、過酷な大会日程を通じて効いてくる、というものでした。"
           }
         },
         {
@@ -537,10 +540,18 @@
             height: 52px;
         }
         .logo {
-            font-size: 1.2em;
-            font-weight: 600;
+            font-family: "Cormorant Garamond", "EB Garamond", "Baskerville", "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 1.15em;
+            font-weight: 700;
             color: var(--text);
-            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding-left: 0.04em;
+        }
+        .logo .tt-cap {
+            font-size: 1.35em;
+            font-weight: 700;
+            letter-spacing: 0;
         }
         nav ul {
             list-style: none;
@@ -958,7 +969,7 @@
 
     <header>
         <div class="container">
-            <div class="logo">Trading<span class="highlight">Transformer</span></div>
+            <div class="logo"><span class="tt-cap">T</span>RADING<span class="tt-cap">T</span>RANSFORMER</div>
             <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -982,6 +993,14 @@
 
     <section class="hero">
         <div class="container">
+            <!-- AI Prediction Highlight -->
+            <div style="max-width: 760px; margin: 0 auto 48px; background: linear-gradient(160deg, #1d1d1f 0%, #2c2c2e 100%); border-radius: 24px; padding: 44px 40px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.18);">
+                <p style="text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72em; font-weight: 700; color: var(--positive); margin: 0 0 14px;">AI予測 &mdash; 検証済み</p>
+                <h3 style="color: #fff; font-size: 1.6em; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 18px;">2026 FIFAワールドカップ</h3>
+                <p style="color: rgba(255,255,255,0.85); font-size: 1.15em; line-height: 1.6; max-width: 600px; margin: 0 auto 20px;">当社のAIは、優勝チームに<strong style="color: #fff;">スペイン</strong>を、得点王に<strong style="color: #fff;">キリアン・エムバペ</strong>を的中させました。</p>
+                <p style="color: rgba(255,255,255,0.55); font-size: 0.98em; line-height: 1.6; max-width: 580px; margin: 0 auto;">その根拠：スペインが2024年ユーロで優勝したことは、彼らのボール・コントロール戦術が北米の温暖な気候でも通用することを証明していた。そしてメッシに対するエムバペの若さの優位は、過酷な大会日程を通じて効いてくる——というものでした。</p>
+            </div>
+
             <p style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 1.15em; font-weight: 700; color: var(--accent); margin: 0 0 20px;">NOARK Infinity Memory</p>
             <h1>人生に迷ったら、ひとりで抱え込まないで。</h1>
             <p class="hero-tagline" style="margin-top: 0.5em;">歴史上の賢人たちに聞いてみよう。</p>
@@ -1477,6 +1496,7 @@
                 <p style="margin-top: 16px;"><strong>まとめ：</strong>若者の最も貴重な資産は時間と可塑性だ。予測市場は時間を細切れにし、注意を短期化し、思考をギャンブル化する——そのどれもが、彼らが最も育てるべき能力を蝕む。本当に賢い若者は、良書を読み、複利を生むスキルを学び、価値を生むシステムを築くことに力を注ぐ。</p>
                 <p style="margin-top: 16px;">予測市場はあなたを賢くしない。ただ賢くなった気にさせるだけだ。そして賢くなった気でいることこそ、愚かさへの最短の道だ。</p>
                 <p style="margin-top: 12px; text-align: right;">——Charlie</p>
+                <p style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--hairline);"><strong>実際の証拠：</strong>2026 FIFAワールドカップにおいて、当社のAIは優勝チームに<strong>スペイン</strong>を、得点王に<strong>キリアン・エムバペ</strong>を的中させました——根拠は、スペインが2024年ユーロで優勝したことで、その控球戦術が北米の温暖な気候でも通用することが証明されていたこと、そしてメッシに対するエムバペの若さの優位が、過酷な大会日程を通じて効いてくる、というものでした。</p>
             </details>
             <details class="faq-item">
                 <summary><h3>クロード・シャノンはAIと銘柄選定について何を予言しましたか？</h3><svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
